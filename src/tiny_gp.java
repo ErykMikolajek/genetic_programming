@@ -73,6 +73,7 @@ public class tiny_gp {
         return( 0 ); // should never get here
     }
 
+//    Method sets parameters written in first line of file
     void setup_fitness(String fname) {
         try {
             int i,j;
@@ -112,6 +113,7 @@ public class tiny_gp {
         }
     }
 
+    // TODO Chane fintess function - calculation of return value
     double fitness_function( char [] Prog ) {
         int i = 0, len;
         double result, fit = 0.0;
@@ -388,7 +390,7 @@ public class tiny_gp {
         seed = s;
         if ( seed >= 0 )
             rd.setSeed(seed);
-        setup_fitness(fname);
+        setup_fitness(fname); // set parameters from first line of file
         for ( int i = 0; i < FSET_START; i ++ )
             x[i]= (maxrandom-minrandom)*rd.nextDouble()+minrandom;
         pop = create_random_pop(POPSIZE, DEPTH, fitness );
