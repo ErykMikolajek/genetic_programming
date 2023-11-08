@@ -16,7 +16,8 @@ command
     ;
 
 loop
-    : 'for' '(' expression ')' block
+    : 'for' '(' expression ')' block        # ForLoop
+    | 'while' '(' boolStatement ')' block   # WhileLoop
     ;
 
 block
@@ -24,7 +25,7 @@ block
     ;
 
 ifStatement
-    : 'if' '(' boolStatement ')' EOL* block EOL* ('elif' '(' boolStatement ')' EOL* block)* EOL* ('else' EOL* block)?
+    : 'if' '(' boolStatement ')' EOL* block EOL* ('else' EOL* block)?
     ;
 
 boolStatement

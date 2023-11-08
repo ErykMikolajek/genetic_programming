@@ -8,7 +8,7 @@ public enum PossibleExpressions {
     SUB(4),
     VARIABLE(5);
     public final int label;
-    private PossibleExpressions(int label) {
+    PossibleExpressions(int label) {
         this.label = label;
     }
 }

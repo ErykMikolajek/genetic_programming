@@ -11,6 +11,7 @@ public class Individual {
     Node last_child = head;
     int MAX_RANDOM_VALUE = 100;
     int MIN_RANDOM_VALUE = 0;
+    double MUTATION_PER_NODE = 0.05;
     static Random random = new Random();
     public Individual(Node root){
         head = root;
@@ -74,6 +75,33 @@ public class Individual {
         return new Individual(offspring);
     }
 
+    public void mutate(Node root){
+        if (root.children_ == null){
+            return;
+        }
+        for (Node child : root.children_){
+            if (random.nextInt(1, 101) <= (MUTATION_PER_NODE * 100)){
+                if (child.expression_ != PossibleExpressions.VARIABLE) {
+                    PossibleExpressions[] enumValues = PossibleExpressions.values();
+                    PossibleExpressions randomExpression = enumValues[random.nextInt(enumValues.length)];
+                    switch (randomExpression) {
+                        case MUL -> child.expression_ = PossibleExpressions.MUL;
+                        case DIV -> child.expression_ = PossibleExpressions.DIV;
+                        case ADD -> child.expression_ = PossibleExpressions.ADD;
+                        case SUB -> child.expression_ = PossibleExpressions.SUB;
+//                        case VARIABLE -> {
+//                            child.value_ = random.nextInt(MIN_RANDOM_VALUE, MAX_RANDOM_VALUE);
+//                            child.children_ = null;
+//                        }
+                    }
+                }
+                else{
+                    child.value_ = random.nextInt(MIN_RANDOM_VALUE, MAX_RANDOM_VALUE);
+                }
+            }
+            mutate(child);
+        }
+    }
 
     public void selfRepresent(Node node){
         if (node.parent_ == null) {
@@ -101,5 +129,9 @@ public class Individual {
             selfRepresent(node.children_[1]);
             System.out.print(")");
         }
+    }
+
+    public void save(String filename){
+        //TODO: Serialize to JSON file
     }
 }

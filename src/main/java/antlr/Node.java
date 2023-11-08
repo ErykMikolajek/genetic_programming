@@ -78,6 +78,7 @@ public class Node {
                 for (int i = 0; i < levelSize; i++) {
                     Node node = queue.poll();
 
+                    assert node != null;
                     if (node.children_ != null) {
                         Collections.addAll(queue, node.children_);
                     }
