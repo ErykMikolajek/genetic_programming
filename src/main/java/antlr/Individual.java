@@ -2,13 +2,21 @@ package antlr;
 
 import java.util.Random;
 
+import static antlr.Node.copyTree;
+import static antlr.Node.getNodesAtLevel;
+import static java.lang.Math.min;
+
 public class Individual {
     Node head = new Node(null, null, null);
     Node last_child = head;
     int MAX_RANDOM_VALUE = 100;
     int MIN_RANDOM_VALUE = 0;
     static Random random = new Random();
-    Node generateIndividual(int maxDepth){
+    public Individual(Node root){
+        head = root;
+    }
+    public Individual(){}
+    public Node generateIndividual(int maxDepth){
         PossibleExpressions[] enumValues = PossibleExpressions.values();
         PossibleExpressions randomExpression = enumValues[random.nextInt(enumValues.length)];
 
@@ -16,7 +24,6 @@ public class Individual {
         if (maxDepth == 1) {
             newNode = new Node(PossibleExpressions.VARIABLE, null, last_child,
                     random.nextInt(MIN_RANDOM_VALUE, MAX_RANDOM_VALUE));
-            return newNode;
         }
         else {
             switch (randomExpression) {
@@ -40,11 +47,35 @@ public class Individual {
             Node child1 = generateIndividual(maxDepth - 1);
             Node child2 = generateIndividual(maxDepth - 1);
             newNode.children_ = new Node[]{child1, child2};
-            return newNode;
         }
+        return newNode;
+    }
+    public Individual crossover(Individual parent2){
+        Node offspring = copyTree(head);
+        Node parent2Copy = copyTree(parent2.head);
+        int h1 = offspring.height();
+        int h2 = parent2Copy.height();
+
+        System.out.println("\nParent1 height: " + h1);
+        System.out.println("Parent2 height: " + h2);
+
+        int crossoverHeight = random.nextInt(1, min(h1, h2));
+        System.out.println("Crossover height: " + crossoverHeight);
+
+        Node[] parent1COPoints = getNodesAtLevel(offspring, crossoverHeight).toArray(new Node[0]);
+        Node[] parent2COPoints = getNodesAtLevel(parent2Copy, crossoverHeight).toArray(new Node[0]);
+
+        Node crossoverPoint1 = parent1COPoints[random.nextInt(0, parent1COPoints.length)];
+        Node crossoverPoint2 = parent2COPoints[random.nextInt(0, parent2COPoints.length)];
+
+        crossoverPoint2.parent_ = crossoverPoint1.parent_;
+        crossoverPoint1.parent_.children_[0] = crossoverPoint2;
+
+        return new Individual(offspring);
     }
 
-    void selfRepresent(Node node){
+
+    public void selfRepresent(Node node){
         if (node.parent_ == null) {
             node = node.children_[0];
         }
