@@ -1,10 +1,20 @@
 package antlr;
 
+import java.io.IOException;
+import java.util.Arrays;
+import java.util.Objects;
 import java.util.Random;
 
 import static antlr.Node.copyTree;
 import static antlr.Node.getNodesAtLevel;
 import static java.lang.Math.min;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.JsonNode;
+import com.fasterxml.jackson.databind.SerializationFeature;
+import com.fasterxml.jackson.databind.node.ArrayNode;
+import com.fasterxml.jackson.databind.node.ObjectNode;
+import java.io.File;
+
 
 public class Individual {
     Node head = new Node(null, null, null);
@@ -131,7 +141,77 @@ public class Individual {
         }
     }
 
-    public void save(String filename){
-        //TODO: Serialize to JSON file
+    public void save(String fileName) throws IOException {
+        ObjectMapper objectMapper = new ObjectMapper();
+        objectMapper.enable(SerializationFeature.INDENT_OUTPUT);
+        ObjectNode rootNode = createJsonNode(head);
+
+        objectMapper.writeValue(new File(fileName), rootNode);
+    }
+
+    public Node load(String fileName) throws IOException {
+        ObjectMapper objectMapper = new ObjectMapper();
+        JsonNode rootNode = objectMapper.readTree(new File(fileName));
+
+        return createTreeNode(rootNode);
+    }
+
+    private ObjectNode createJsonNode(Node node){
+        if (node == null)
+            return null;
+        ObjectMapper objectMapper = new ObjectMapper();
+        ObjectNode nodeObject = objectMapper.createObjectNode();
+        if (node.expression_ == null)
+            nodeObject.put("expression_label", "null");
+        else
+            nodeObject.put("expression_label", node.expression_.label);
+        nodeObject.put("value", node.value_);
+//        if (node.parent_ == null)
+//            nodeObject.put("parent", "null");
+//        else
+//            nodeObject.put("parent", node.parent_);
+
+        ArrayNode childrenArray = objectMapper.createArrayNode();
+        if (node.children_ != null) {
+            for (Node child : node.children_) {
+                ObjectNode childNode = createJsonNode(child);
+                childrenArray.add(childNode);
+            }
+        }
+
+        nodeObject.set("children", childrenArray);
+
+        return nodeObject;
+    }
+
+    private Node createTreeNode(JsonNode jsonNode) {
+        if (jsonNode == null || jsonNode.isNull())
+            return null;
+        Node treeNode;
+        PossibleExpressions[] enumValues = PossibleExpressions.values();
+        if (Objects.equals(jsonNode.get("expression_label").asText(), "null"))
+            treeNode = new Node(null, null, null, jsonNode.get("value").asInt());
+        else {
+            PossibleExpressions expression = enumValues[jsonNode.get("expression_label").asInt() - 1];
+            treeNode = new Node(expression, null, null, jsonNode.get("value").asInt());
+        }
+
+
+        JsonNode childrenNode = jsonNode.get("children");
+        if (childrenNode != null && childrenNode.isArray()) {
+            Node[] children = new Node[childrenNode.size()];
+            int index = 0;
+            for (JsonNode child : childrenNode) {
+                Node childTreeNode = createTreeNode(child);
+                children[index++] = childTreeNode;
+//                if (childTreeNode != null) {
+//                    treeNode.addChild(childTreeNode);
+//                }
+                treeNode.children_ = children;
+                System.out.println(Arrays.toString(children));
+            }
+        }
+
+        return treeNode;
     }
 }
