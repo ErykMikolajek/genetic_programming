@@ -1,11 +1,7 @@
 grammar MiniGPLang;
 
 prog
-    :(line EOL*)+ line? EOF    # Program
-    ;
-
-line
-    : EOL* command+ EOL*
+    : command+ EOF    # Program
     ;
 
 command
