@@ -25,8 +25,8 @@ ifStatement
     ;
 
 boolStatement
-    : expression comparisonOperator expression      # VariableOperatorVariable
-    | expression                                    # VariableBool
+    : expression comparisonOperator expression      # ExpressionOperatorExpression
+    | expression                                    # ExpressionBool
     | boolStatement logicalOperator boolStatement   # BoolOperatorBool
     | '(' boolStatement ')'                         # ParenthesisBool
     | '~' boolStatement                             # NotOperator
@@ -58,7 +58,7 @@ comparisonOperator
     | '>'          # ComparisonGreater
     | '<='         # ComparisonLessEqual
     | '>='         # ComparisonGreaterEqual
-    | '=='          # ComparisonEqual
+    | '=='         # ComparisonEqual
     | '!='         # ComparisonNotEqual
     ;
 

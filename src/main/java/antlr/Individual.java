@@ -28,22 +28,22 @@ public class Individual {
     }
     public Individual(){}
     public Node generateIndividual(int maxDepth){
-        PossibleExpressions[] enumValues = PossibleExpressions.values();
-        PossibleExpressions randomExpression = enumValues[random.nextInt(enumValues.length)];
+        ExpressionsEnum[] enumValues = ExpressionsEnum.values();
+        ExpressionsEnum randomExpression = enumValues[random.nextInt(enumValues.length)];
 
         Node newNode = null;
         if (maxDepth == 1) {
-            newNode = new Node(PossibleExpressions.VARIABLE, null, last_child,
+            newNode = new Node(ExpressionsEnum.VARIABLE, null, last_child,
                     random.nextInt(MIN_RANDOM_VALUE, MAX_RANDOM_VALUE));
         }
         else {
             switch (randomExpression) {
-                case MUL -> newNode = new Node(PossibleExpressions.MUL, null, last_child);
-                case DIV -> newNode = new Node(PossibleExpressions.DIV, null, last_child);
-                case ADD -> newNode = new Node(PossibleExpressions.ADD, null, last_child);
-                case SUB -> newNode = new Node(PossibleExpressions.SUB, null, last_child);
+                case MUL -> newNode = new Node(ExpressionsEnum.MUL, null, last_child);
+                case DIV -> newNode = new Node(ExpressionsEnum.DIV, null, last_child);
+                case ADD -> newNode = new Node(ExpressionsEnum.ADD, null, last_child);
+                case SUB -> newNode = new Node(ExpressionsEnum.SUB, null, last_child);
                 case VARIABLE -> {
-                    newNode = new Node(PossibleExpressions.VARIABLE, null, last_child,
+                    newNode = new Node(ExpressionsEnum.VARIABLE, null, last_child,
                             random.nextInt(MIN_RANDOM_VALUE, MAX_RANDOM_VALUE));
                     if (last_child == head) {
                         head.children_ = new Node[]{newNode};
@@ -91,14 +91,14 @@ public class Individual {
         }
         for (Node child : root.children_){
             if (random.nextInt(1, 101) <= (MUTATION_PER_NODE * 100)){
-                if (child.expression_ != PossibleExpressions.VARIABLE) {
-                    PossibleExpressions[] enumValues = PossibleExpressions.values();
-                    PossibleExpressions randomExpression = enumValues[random.nextInt(enumValues.length)];
+                if (child.expression_ != ExpressionsEnum.VARIABLE) {
+                    ExpressionsEnum[] enumValues = ExpressionsEnum.values();
+                    ExpressionsEnum randomExpression = enumValues[random.nextInt(enumValues.length)];
                     switch (randomExpression) {
-                        case MUL -> child.expression_ = PossibleExpressions.MUL;
-                        case DIV -> child.expression_ = PossibleExpressions.DIV;
-                        case ADD -> child.expression_ = PossibleExpressions.ADD;
-                        case SUB -> child.expression_ = PossibleExpressions.SUB;
+                        case MUL -> child.expression_ = ExpressionsEnum.MUL;
+                        case DIV -> child.expression_ = ExpressionsEnum.DIV;
+                        case ADD -> child.expression_ = ExpressionsEnum.ADD;
+                        case SUB -> child.expression_ = ExpressionsEnum.SUB;
 //                        case VARIABLE -> {
 //                            child.value_ = random.nextInt(MIN_RANDOM_VALUE, MAX_RANDOM_VALUE);
 //                            child.children_ = null;
@@ -188,11 +188,11 @@ public class Individual {
         if (jsonNode == null || jsonNode.isNull())
             return null;
         Node treeNode;
-        PossibleExpressions[] enumValues = PossibleExpressions.values();
+        ExpressionsEnum[] enumValues = ExpressionsEnum.values();
         if (Objects.equals(jsonNode.get("expression_label").asText(), "null"))
             treeNode = new Node(null, null, null, jsonNode.get("value").asInt());
         else {
-            PossibleExpressions expression = enumValues[jsonNode.get("expression_label").asInt() - 1];
+            ExpressionsEnum expression = enumValues[jsonNode.get("expression_label").asInt() - 1];
             treeNode = new Node(expression, null, null, jsonNode.get("value").asInt());
         }
 
