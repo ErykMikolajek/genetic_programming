@@ -1,7 +1,7 @@
 grammar MiniGPLang;
 
 prog
-    : command+ EOF    # Program
+    : NUMBER EOL command+ EOF    # Program
     ;
 
 command
@@ -45,7 +45,7 @@ expression
 
 variable
     : VARNAME
-    | NUMBER
+    | NUMBER        # NumberGet
     ;
 
 logicalOperator
