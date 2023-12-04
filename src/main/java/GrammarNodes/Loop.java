@@ -21,12 +21,12 @@ public class Loop extends Node {
         if (statementExpressionChild == null || childrenBlock == null || childrenBlock.size() < 2) return "";
         StringBuilder output = new StringBuilder();
         switch (rule){
-            case FOR -> output.append("for (").append(statementExpressionChild.plot()).append(") {\n");
-            case WHILE -> output.append("while (").append(statementExpressionChild.plot()).append(") {\n");
+            case FOR -> output.append("\nfor (").append(statementExpressionChild.plot()).append(") {\n");
+            case WHILE -> output.append("\nwhile (").append(statementExpressionChild.plot()).append(") {\n");
         }
         for (Node n : childrenBlock)
             output.append("\t").append(n.plot());
-        output.append("\n}");
+        output.append("\n}\n");
         return output.toString();
     }
 

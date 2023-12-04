@@ -24,15 +24,15 @@ public class IfStatement extends Node{
     public String plot(){
         if (childBoolStatement == null || childrenBlock1 == null || childrenBlock1.size() < 2
         || childrenBlock2 == null || childrenBlock2.size() < 2) return "";
-        StringBuilder output = new StringBuilder("if (" + childBoolStatement.plot() + ") {\n");
+        StringBuilder output = new StringBuilder("\nif (" + childBoolStatement.plot() + ") {\n");
         for (Node n : childrenBlock1)
             output.append("\t").append(n.plot());
-        output.append("\n}");
+        output.append("\n}\n");
         if (hasElse) {
-            output.append("\nelse {");
+            output.append("\nelse {\n");
             for (Node n : childrenBlock2)
                 output.append("\t").append(n.plot());
-            output.append("\n}");
+            output.append("\n}\n");
         }
         return output.toString();
     }

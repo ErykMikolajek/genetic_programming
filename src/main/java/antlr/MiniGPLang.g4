@@ -1,7 +1,7 @@
 grammar MiniGPLang;
 
 prog
-    : EOL* command+ EOF    # Program
+    : EOL* (command EOL*)+ EOF    # Program
     ;
 
 command
@@ -18,7 +18,7 @@ loop
     ;
 
 block
-    : '{' EOL? command+ '}'
+    : '{' EOL* (command EOL*)* EOL*'}'
     ;
 
 ifStatement
@@ -34,7 +34,7 @@ boolStatement
     ;
 
 assignVariable
-    : VARNAME '=' expression EOL
+    : VARNAME '=' expression EOL*
     ;
 
 expression

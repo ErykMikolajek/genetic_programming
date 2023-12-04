@@ -13,6 +13,7 @@ public class ProgramNode extends Node{
         StringBuilder output = new StringBuilder();
         for (Node n : children){
             if (n != null)
+//                output.append(n.plot()).append("\n");
                 output.append(n.plot());
         }
         return output.toString();

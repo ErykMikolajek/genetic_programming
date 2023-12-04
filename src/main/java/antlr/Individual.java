@@ -79,9 +79,7 @@ public class Individual {
 //            mutate(child);
 //        }
 //    }
-    public String plot(){
-        return this.programHead.plot();
-    }
+    public String plot() {return this.programHead.plot();}
 
 //    public void print(Node node){
 //        if (node.parent_ == null) {

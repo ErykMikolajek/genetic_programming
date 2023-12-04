@@ -8,6 +8,6 @@ public class Output extends Node{
 
     public String plot(){
         if (child == null) return "";
-        else return "output " + child.plot();
+        else return "\noutput " + child.plot();
     }
 }

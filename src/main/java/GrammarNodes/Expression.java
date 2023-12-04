@@ -12,10 +12,6 @@ public class Expression extends Node{
 
     public PossibleExpressions rule;
     public ArrayList<Node> children;
-    public Expression(PossibleExpressions rule, ArrayList<Node> children){
-        this.rule = rule;
-        this.children = children;
-    }
     public Expression(PossibleExpressions rule, Node child1, Node child2){
         this.rule = rule;
         this.children = new ArrayList<>(Arrays.asList(child1, child2));
