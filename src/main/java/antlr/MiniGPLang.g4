@@ -1,7 +1,7 @@
 grammar MiniGPLang;
 
 prog
-    : NUMBER EOL command+ EOF    # Program
+    : EOL* (command EOL*)+ EOF    # Program
     ;
 
 command
@@ -9,6 +9,7 @@ command
     | ifStatement               # CommandIfStatement
     | expression                # CommandExpression
     | assignVariable            # CommandAssign
+    | output                    # CommandOutput
     ;
 
 loop
@@ -17,7 +18,7 @@ loop
     ;
 
 block
-    : '{' EOL? command+ '}'
+    : '{' EOL* (command EOL*)* EOL*'}'
     ;
 
 ifStatement
@@ -25,22 +26,26 @@ ifStatement
     ;
 
 boolStatement
-    : expression comparisonOperator expression      # VariableOperatorVariable
-    | expression                                    # VariableBool
+    : expression comparisonOperator expression      # ExpressionOperatorExpression
+    | expression                                    # ExpressionBool
     | boolStatement logicalOperator boolStatement   # BoolOperatorBool
-    | '(' boolStatement ')'                         # ParenthesisBool
-    | '~' boolStatement                             # NotOperator
+//    | '(' boolStatement ')'                         # ParenthesisBool
+//    | '~' boolStatement                             # NotOperator
     ;
 
 assignVariable
-    : TYPE VARNAME '=' expression EOL
+    : VARNAME '=' expression EOL*
     ;
 
 expression
-    : '(' expression ')'                    # ParenthesisExpression
-    | expression ('*' | '/') expression     # MultiplicationDivision
+//    : '(' expression ')'                    # ParenthesisExpression
+    : expression ('*' | '/') expression     # MultiplicationDivision
     | expression ('+' | '-') expression     # AdditionSubstraction
     | variable                              # VariableExpression
+    ;
+
+output
+    : 'output' expression
     ;
 
 variable
@@ -56,20 +61,12 @@ logicalOperator
 comparisonOperator
     : '<'          # ComparisonLess
     | '>'          # ComparisonGreater
-    | '<='         # ComparisonLessEqual
-    | '>='         # ComparisonGreaterEqual
-    | '=='          # ComparisonEqual
+    | '=='         # ComparisonEqual
     | '!='         # ComparisonNotEqual
     ;
 
 VARNAME
-    : [A-Z_]+
-    ;
-
-TYPE
-    : 'int'
-    | 'double'
-    | 'bool'
+    : 'var'[0-9]+
     ;
 
 NUMBER
