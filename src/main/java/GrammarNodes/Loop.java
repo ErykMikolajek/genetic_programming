@@ -1,8 +1,6 @@
 package GrammarNodes;
 
 import java.util.ArrayList;
-import java.util.Arrays;
-
 public class Loop extends Node {
 
     public enum PossibleLoops {FOR, WHILE}
@@ -18,7 +16,7 @@ public class Loop extends Node {
     }
 
     public String plot(){
-        if (statementExpressionChild == null || childrenBlock == null || childrenBlock.size() < 2) return "";
+        if (statementExpressionChild == null || childrenBlock == null) return "";
         StringBuilder output = new StringBuilder();
         switch (rule){
             case FOR -> output.append("\nfor (").append(statementExpressionChild.plot()).append(") {\n");

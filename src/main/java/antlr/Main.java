@@ -7,7 +7,6 @@ public class Main {
         
         Individual program1 = new Individual(8);
         System.out.println();
-        System.out.println();
         System.out.println(program1.plot());
 //        Individual program2 = new Individual();
 

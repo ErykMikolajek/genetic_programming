@@ -1,7 +1,5 @@
 package GrammarNodes;
 
-import java.util.ArrayList;
-
 public class Variable extends Node{
 
     public enum PossibleVariables {VARIABLE_NAME, NUMBER}
