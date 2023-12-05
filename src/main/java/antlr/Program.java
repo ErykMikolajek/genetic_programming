@@ -1,8 +1,6 @@
 package antlr;
 
 import GrammarNodes.*;
-
-import javax.swing.*;
 import java.util.ArrayList;
 
 import static antlr.Individual.random;

@@ -8,7 +8,7 @@ public class ComparisonOperator extends Node{
         LESS,
         GREATER,
         EQUAL,
-        NOT_EQUAL;
+        NOT_EQUAL
     }
     public PossibleComparisonOperators rule;
     public ArrayList<Node> children;

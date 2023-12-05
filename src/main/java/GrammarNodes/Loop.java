@@ -1,8 +1,6 @@
 package GrammarNodes;
 
 import java.util.ArrayList;
-import java.util.Arrays;
-
 public class Loop extends Node {
 
     public enum PossibleLoops {FOR, WHILE}
