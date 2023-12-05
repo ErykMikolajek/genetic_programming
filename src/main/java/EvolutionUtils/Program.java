@@ -1,9 +1,9 @@
-package antlr;
+package EvolutionUtils;
 
 import GrammarNodes.*;
 import java.util.ArrayList;
 
-import static antlr.Individual.random;
+import static EvolutionUtils.Individual.random;
 
 public class Program {
 

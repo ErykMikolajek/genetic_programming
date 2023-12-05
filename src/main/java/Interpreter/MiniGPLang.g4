@@ -49,7 +49,7 @@ output
     ;
 
 variable
-    : VARNAME
+    : VARNAME       # VariableGet
     | NUMBER        # NumberGet
     ;
 

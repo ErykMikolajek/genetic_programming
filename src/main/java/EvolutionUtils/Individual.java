@@ -1,19 +1,10 @@
-package antlr;
+package EvolutionUtils;
 
-import java.io.IOException;
-import java.util.Arrays;
-import java.util.Objects;
 import java.util.Random;
 
 import static java.lang.Math.min;
 
 import GrammarNodes.Node;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.databind.JsonNode;
-import com.fasterxml.jackson.databind.SerializationFeature;
-import com.fasterxml.jackson.databind.node.ArrayNode;
-import com.fasterxml.jackson.databind.node.ObjectNode;
-import java.io.File;
 
 
 public class Individual {
