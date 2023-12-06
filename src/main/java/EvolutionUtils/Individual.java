@@ -1,19 +1,10 @@
-package antlr;
+package EvolutionUtils;
 
-import java.io.IOException;
-import java.util.Arrays;
-import java.util.Objects;
 import java.util.Random;
 
 import static java.lang.Math.min;
 
 import GrammarNodes.Node;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.databind.JsonNode;
-import com.fasterxml.jackson.databind.SerializationFeature;
-import com.fasterxml.jackson.databind.node.ArrayNode;
-import com.fasterxml.jackson.databind.node.ObjectNode;
-import java.io.File;
 
 
 public class Individual {
@@ -28,6 +19,9 @@ public class Individual {
     public Individual(int depth){
         this.programHead = Program.generateProgram(depth);
     }
+    // TODO: Naprawic crossover, mutate, serializacje i deserializacje
+    // TODO: Dodac możliwość wysyłania prgramu prosto do interpretera i pobieranie z interpretera wyniku działania programu
+
 //    public Individual crossover(Individual parent2){
 //        Node offspring = copyTree(head);
 //        Node parent2Copy = copyTree(parent2.head);
