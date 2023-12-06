@@ -6,6 +6,8 @@ import Interpreter.MiniGPLangParser;
 
 public class AntlrProgram extends MiniGPLangBaseVisitor<Program> {
 
+    //TODO: Naprawic petle, dodac instrukjce input
+
     public static void evaluateCommand(Command command) {
         if (command instanceof IfStatement statement) {
             if (statement.ifBlockSatisfied) {

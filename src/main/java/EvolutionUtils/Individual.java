@@ -19,6 +19,9 @@ public class Individual {
     public Individual(int depth){
         this.programHead = Program.generateProgram(depth);
     }
+    // TODO: Naprawic crossover, mutate, serializacje i deserializacje
+    // TODO: Dodac możliwość wysyłania prgramu prosto do interpretera i pobieranie z interpretera wyniku działania programu
+
 //    public Individual crossover(Individual parent2){
 //        Node offspring = copyTree(head);
 //        Node parent2Copy = copyTree(parent2.head);

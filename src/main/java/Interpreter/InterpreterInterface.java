@@ -11,6 +11,8 @@ import java.io.IOException;
 
 public class InterpreterInterface {
     public static void main(String[] args) {
+        //TODO: zliczanie instrukcji, po zbyt dużej liczbie instrukcji program przestaje się wykonywać
+        //TODO: zwiekszanie countera instrukcji wraz z wzrostem fitnessu/zlozonosci programu
         if (args.length != 1)
             System.err.println("Usage: no filename with program");
         else {
