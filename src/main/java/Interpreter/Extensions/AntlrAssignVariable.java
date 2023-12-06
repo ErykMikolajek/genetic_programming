@@ -9,6 +9,6 @@ public class AntlrAssignVariable extends MiniGPLangBaseVisitor<AssignVariable> {
         AntlrExpression expressionVisitor = new AntlrExpression();
         int variableValue = ((Variable) expressionVisitor.visit(ctx.getChild(2))).value;
         VariablesTable.addVariable(ctx.getChild(0).getText(), variableValue);
-        return new AssignVariable();
+        return new AssignVariable(ctx.getChild(0).getText(), (Variable) expressionVisitor.visit(ctx.getChild(2)));
     }
 }

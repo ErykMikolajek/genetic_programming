@@ -7,6 +7,7 @@ public class AntlrVariable extends MiniGPLangBaseVisitor<Variable> {
     @Override
     public Variable visitVariableGet(MiniGPLangParser.VariableGetContext ctx) {
         String varName = ctx.getChild(0).getText();
+        int f = VariablesTable.getVariableValue(varName);
         return new Variable(VariablesTable.getVariableValue(varName));
     }
 
