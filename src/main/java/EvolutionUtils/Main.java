@@ -5,7 +5,7 @@ import java.io.IOException;
 public class Main {
     public static void main(String[] args) throws IOException {
         
-        Individual program1 = new Individual(3);
+        Individual program1 = new Individual(2);
         System.out.println();
         System.out.println(program1.plot());
 

@@ -30,19 +30,19 @@ public class Program {
 
         switch (randomCommand){
             case LOOP -> {
-                return generateLoop(depth - 1);
+                return generateLoop(depth);
             }
             case IF_STATEMENT -> {
-                return generateIfStatement(depth - 1);
+                return generateIfStatement(depth);
             }
             case EXPRESSION -> {
-                return generateExpression(depth - 1);
+                return generateExpression(depth);
             }
             case ASSIGN -> {
-                return generateAssign(depth - 1);
+                return generateAssign(depth);
             }
             case OUTPUT -> {
-                return generateOutput(depth - 1);
+                return generateOutput(depth);
             }
             default -> {
                 return null;
