@@ -4,7 +4,7 @@ import Interpreter.MiniGPLangParser;
 
 public class BoolStatement {
     public boolean satisfied;
-    public BoolStatement(Expression variable){
+    public BoolStatement(Command variable){
         if (variable instanceof Variable){
             satisfied = (((Variable) variable).value != 0);
         }

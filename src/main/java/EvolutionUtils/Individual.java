@@ -13,6 +13,7 @@ public class Individual {
     int MAX_RANDOM_VALUE = 100;
     int MIN_RANDOM_VALUE = 0;
     double MUTATION_PER_NODE = 0.05;
+    int individualDepth;
     static Random random = new Random();
     public Individual(Node root){
         programHead = root;
@@ -20,13 +21,14 @@ public class Individual {
     public Individual() {}
 
     public void generate(int depth){
+        individualDepth = depth;
         this.programHead = Program.generateProgram(depth);
     }
     public String plot() {
         return this.programHead.plot();
     }
     public String eval(int maxOperations){
-        InterpreterInterface interpreter = new InterpreterInterface(maxOperations);
+        InterpreterInterface interpreter = new InterpreterInterface(individualDepth * 10);
 
         return interpreter.evaluateProgram(this.plot(), "inputFile.txt", "output1.txt");
     }

@@ -13,30 +13,26 @@ import static org.antlr.v4.runtime.CharStreams.fromString;
 
 public class InterpreterInterface {
 
-    private int maxOperationCount;
+    private final int maxOperationCount;
     public InterpreterInterface(int maxOperationCount){
         this.maxOperationCount = maxOperationCount;
     }
 
-    // TODO: zliczanie instrukcji, po zbyt dużej liczbie instrukcji program przestaje się wykonywać
-    // TODO: zwiekszanie countera instrukcji wraz z wzrostem fitnessu/zlozonosci programu
-
-
     public String evaluateProgram(String program, String inputFileName, String outputFileName){
         MiniGPLangParser parser = getParser(program);
         ParseTree antlrAST = parser.prog();
-        AntlrProgram programVisitor = new AntlrProgram(inputFileName);
+        AntlrProgram programVisitor = new AntlrProgram(inputFileName, maxOperationCount);
         programVisitor.visit(antlrAST);
 
         try {
             FileWriter outputFile = new FileWriter("target/" + outputFileName);
-            outputFile.write(programVisitor.programOutput);
+            outputFile.write(AntlrProgram.programOutput);
             outputFile.close();
         } catch (IOException e) {
             System.out.println("An error occurred.");
         }
 
-        return programVisitor.programOutput;
+        return AntlrProgram.programOutput;
     }
 
 

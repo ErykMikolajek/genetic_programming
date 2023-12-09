@@ -7,15 +7,16 @@ import Interpreter.MiniGPLangParser;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 import java.io.File;
-import java.io.IOException;
 
 public class AntlrProgram extends MiniGPLangBaseVisitor<Program> {
 
-    public String programOutput = "";
+    public static String programOutput = "";
     public static Scanner inputFile;
-    //TODO: Naprawic petle, dodac instrukjce input
+    static int maxOperationCount;
 
-    public AntlrProgram(String inputFileName){
+    public AntlrProgram(String inputFileName, int maxCount){
+        programOutput = "";
+        maxOperationCount = maxCount;
         File inFile = new File("target/" + inputFileName);
         try {
             inputFile = new Scanner(inFile);
@@ -24,24 +25,23 @@ public class AntlrProgram extends MiniGPLangBaseVisitor<Program> {
         }
     }
 
-//        else if (command instanceof Output output) {
-//            programOutput += output.value + "\n";
-//        }
-//        else if (command instanceof AssignVariable assignVariable){
-//            VariablesTable.addVariable(assignVariable.name, assignVariable.var.value);
-//        }
     @Override
     public Program visitProgram(MiniGPLangParser.ProgramContext ctx)  {
         AntlrCommand commandVisitor = new AntlrCommand();
-        for (int i = 0; i < ctx.getChildCount(); i++)
-        {
-            Command command = commandVisitor.visit(ctx.getChild(i));
+        for (int i = 0; i < ctx.getChildCount(); i++) {
+            try {
+                commandVisitor.visit(ctx.getChild(i));
+            } catch (RuntimeException exception) {
+                System.out.println("Program went into some trouble");
+                break;
+            }
         }
 
         inputFile.close();
-//        for (String ss : VariablesTable.savedVariables.keySet()) System.out.println(ss + ": " + VariablesTable.getVariableValue(ss));
-        System.out.println("\nZmienne:");
-        for (String ss : VariablesTable.savedVariables.keySet()) System.out.println(ss + ": " + VariablesTable.getVariableValue(ss));
-        return super.visitProgram(ctx);
+//        System.out.println("\nZmienne:");
+//        for (String ss : VariablesTable.savedVariables.keySet())
+//            System.out.println(ss + ": " + VariablesTable.getVariableValue(ss));
+
+        return null;
     }
 }

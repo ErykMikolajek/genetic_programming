@@ -5,9 +5,9 @@ import Interpreter.MiniGPLangParser;
 
 import java.util.Objects;
 
-public class AntlrExpression extends MiniGPLangBaseVisitor<Expression> {
+public class AntlrExpression extends MiniGPLangBaseVisitor<Command> {
     @Override
-    public Expression visitAdditionSubstraction(MiniGPLangParser.AdditionSubstractionContext ctx) {
+    public Command visitAdditionSubstraction(MiniGPLangParser.AdditionSubstractionContext ctx) {
         AntlrExpression x = new AntlrExpression();
 
         Variable l = (Variable) x.visit(ctx.getChild(0));
@@ -24,19 +24,19 @@ public class AntlrExpression extends MiniGPLangBaseVisitor<Expression> {
     }
 
     @Override
-    public Expression visitVariableExpression(MiniGPLangParser.VariableExpressionContext ctx) {
+    public Command visitVariableExpression(MiniGPLangParser.VariableExpressionContext ctx) {
         AntlrVariable variableVisitor = new AntlrVariable();
         return variableVisitor.visit(ctx.getChild(0));
     }
 
     @Override
-    public Expression visitInputExpression(MiniGPLangParser.InputExpressionContext ctx) {
+    public Command visitInputExpression(MiniGPLangParser.InputExpressionContext ctx) {
         AntlrInput inputVisitor = new AntlrInput();
         return inputVisitor.visit(ctx.getChild(0));
     }
 
     @Override
-    public Expression visitMultiplicationDivision(MiniGPLangParser.MultiplicationDivisionContext ctx) {
+    public Command visitMultiplicationDivision(MiniGPLangParser.MultiplicationDivisionContext ctx) {
         AntlrExpression x = new AntlrExpression();
 
         Variable l = (Variable) x.visit(ctx.getChild(0));
@@ -47,8 +47,9 @@ public class AntlrExpression extends MiniGPLangBaseVisitor<Expression> {
             return new Variable(l.value * r.value);
         }
         else if (Objects.equals(character, "/")){
-            int position = ctx.start.getCharPositionInLine() + 1;
-            if (r.value == 0) {}// TODO: handle null division
+            if (r.value == 0)
+                throw new BadProgramException("RuntimeException: Division by Zero\n" +
+                        "The program encountered an attempt to divide by zero.");
             return new Variable(l.value / r.value);
         }
         else return null;

@@ -13,8 +13,9 @@ public class AntlrInput extends MiniGPLangBaseVisitor<Variable> {
             String data = inputFile.nextLine();
             int value = Integer.parseInt(data);
             return new Variable(value);
-
         }
-        else return null;
+        else throw new BadProgramException("RuntimeException: Insufficient data in input file\n" +
+                "The program attempted to read more numbers from the input file than are available.\n");
     }
+
 }

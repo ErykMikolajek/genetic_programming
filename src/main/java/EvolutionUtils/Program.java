@@ -10,9 +10,6 @@ public class Program {
     public static int maxVariableId = 0;
     public static int MAX_VARIABLE_VALUE = 100;
 
-    //TODO: Generacja drzew o głębokości 1, 2, naprawa ucinania wierzchołków
-    //TODO: Dodac input i output
-
     public static Node generateProgram(int depth){
         ArrayList<Node> children = new ArrayList<>();
         while (depth > 0){

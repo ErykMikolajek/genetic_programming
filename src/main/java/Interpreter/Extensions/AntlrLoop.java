@@ -9,7 +9,9 @@ public class AntlrLoop extends MiniGPLangBaseVisitor<Command> {
         AntlrExpression expressionVisitor = new AntlrExpression();
         AntlrBlock blockVisitor = new AntlrBlock();
 
-        for (int i = 0; i < ((Variable) expressionVisitor.visit(ctx.expression())).value; i++)
+        int range = ((Variable) expressionVisitor.visit(ctx.expression())).value;
+
+        for (int i = 0; i < range; i++)
             blockVisitor.visit(ctx.block());
 
         return null;

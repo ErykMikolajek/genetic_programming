@@ -3,10 +3,11 @@ package Interpreter.Extensions;
 import Interpreter.MiniGPLangBaseVisitor;
 import Interpreter.MiniGPLangParser;
 
-public class AntlrOutput extends MiniGPLangBaseVisitor<Output> {
+public class AntlrOutput extends MiniGPLangBaseVisitor<Command> {
     @Override
-    public Output visitOutput(MiniGPLangParser.OutputContext ctx) {
+    public Command visitOutput(MiniGPLangParser.OutputContext ctx) {
         AntlrExpression expressionVisitor = new AntlrExpression();
-        return new Output(((Variable) expressionVisitor.visit(ctx.getChild(1))).value);
+        AntlrProgram.programOutput += ((Variable) expressionVisitor.visit(ctx.getChild(1))).value + "\n";
+        return null;
     }
 }
