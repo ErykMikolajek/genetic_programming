@@ -221,6 +221,18 @@ public class MiniGPLangBaseListener implements MiniGPLangListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
+	@Override public void enterInputExpression(MiniGPLangParser.InputExpressionContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitInputExpression(MiniGPLangParser.InputExpressionContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
 	@Override public void enterOutput(MiniGPLangParser.OutputContext ctx) { }
 	/**
 	 * {@inheritDoc}
@@ -228,6 +240,18 @@ public class MiniGPLangBaseListener implements MiniGPLangListener {
 	 * <p>The default implementation does nothing.</p>
 	 */
 	@Override public void exitOutput(MiniGPLangParser.OutputContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterInput(MiniGPLangParser.InputContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitInput(MiniGPLangParser.InputContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *

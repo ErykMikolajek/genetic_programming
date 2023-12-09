@@ -7,8 +7,6 @@ public class AntlrOutput extends MiniGPLangBaseVisitor<Output> {
     @Override
     public Output visitOutput(MiniGPLangParser.OutputContext ctx) {
         AntlrExpression expressionVisitor = new AntlrExpression();
-
-
-        return super.visitOutput(ctx);
+        return new Output(((Variable) expressionVisitor.visit(ctx.getChild(1))).value);
     }
 }

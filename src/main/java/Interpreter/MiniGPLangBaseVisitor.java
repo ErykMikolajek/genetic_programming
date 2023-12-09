@@ -3,6 +3,8 @@ package Interpreter;
 
 import org.antlr.v4.runtime.tree.AbstractParseTreeVisitor;
 
+import java.io.FileNotFoundException;
+
 /**
  * This class provides an empty implementation of {@link MiniGPLangVisitor},
  * which can be extended to create a visitor which only needs to handle a subset
@@ -138,7 +140,21 @@ public class MiniGPLangBaseVisitor<T> extends AbstractParseTreeVisitor<T> implem
 	 * <p>The default implementation returns the result of calling
 	 * {@link #visitChildren} on {@code ctx}.</p>
 	 */
+	@Override public T visitInputExpression(MiniGPLangParser.InputExpressionContext ctx) { return visitChildren(ctx); }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation returns the result of calling
+	 * {@link #visitChildren} on {@code ctx}.</p>
+	 */
 	@Override public T visitOutput(MiniGPLangParser.OutputContext ctx) { return visitChildren(ctx); }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation returns the result of calling
+	 * {@link #visitChildren} on {@code ctx}.</p>
+	 */
+	@Override public T visitInput(MiniGPLangParser.InputContext ctx) { return visitChildren(ctx); }
 	/**
 	 * {@inheritDoc}
 	 *

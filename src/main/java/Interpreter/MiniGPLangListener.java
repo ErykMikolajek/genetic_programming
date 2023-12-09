@@ -207,6 +207,18 @@ public interface MiniGPLangListener extends ParseTreeListener {
 	 */
 	void exitMultiplicationDivision(MiniGPLangParser.MultiplicationDivisionContext ctx);
 	/**
+	 * Enter a parse tree produced by the {@code InputExpression}
+	 * labeled alternative in {@link MiniGPLangParser#expression}.
+	 * @param ctx the parse tree
+	 */
+	void enterInputExpression(MiniGPLangParser.InputExpressionContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code InputExpression}
+	 * labeled alternative in {@link MiniGPLangParser#expression}.
+	 * @param ctx the parse tree
+	 */
+	void exitInputExpression(MiniGPLangParser.InputExpressionContext ctx);
+	/**
 	 * Enter a parse tree produced by {@link MiniGPLangParser#output}.
 	 * @param ctx the parse tree
 	 */
@@ -216,6 +228,16 @@ public interface MiniGPLangListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitOutput(MiniGPLangParser.OutputContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link MiniGPLangParser#input}.
+	 * @param ctx the parse tree
+	 */
+	void enterInput(MiniGPLangParser.InputContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link MiniGPLangParser#input}.
+	 * @param ctx the parse tree
+	 */
+	void exitInput(MiniGPLangParser.InputContext ctx);
 	/**
 	 * Enter a parse tree produced by the {@code VariableGet}
 	 * labeled alternative in {@link MiniGPLangParser#variable}.

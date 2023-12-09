@@ -5,6 +5,7 @@ import java.util.Random;
 import static java.lang.Math.min;
 
 import GrammarNodes.Node;
+import Interpreter.InterpreterInterface;
 
 
 public class Individual {
@@ -16,8 +17,18 @@ public class Individual {
     public Individual(Node root){
         programHead = root;
     }
-    public Individual(int depth){
+    public Individual() {}
+
+    public void generate(int depth){
         this.programHead = Program.generateProgram(depth);
+    }
+    public String plot() {
+        return this.programHead.plot();
+    }
+    public String eval(int maxOperations){
+        InterpreterInterface interpreter = new InterpreterInterface(maxOperations);
+
+        return interpreter.evaluateProgram(this.plot(), "inputFile.txt", "output1.txt");
     }
     // TODO: Naprawic crossover, mutate, serializacje i deserializacje
     // TODO: Dodac możliwość wysyłania prgramu prosto do interpretera i pobieranie z interpretera wyniku działania programu
@@ -73,7 +84,6 @@ public class Individual {
 //            mutate(child);
 //        }
 //    }
-    public String plot() {return this.programHead.plot();}
 
 //    public void print(Node node){
 //        if (node.parent_ == null) {

@@ -30,6 +30,12 @@ public class AntlrExpression extends MiniGPLangBaseVisitor<Expression> {
     }
 
     @Override
+    public Expression visitInputExpression(MiniGPLangParser.InputExpressionContext ctx) {
+        AntlrInput inputVisitor = new AntlrInput();
+        return inputVisitor.visit(ctx.getChild(0));
+    }
+
+    @Override
     public Expression visitMultiplicationDivision(MiniGPLangParser.MultiplicationDivisionContext ctx) {
         AntlrExpression x = new AntlrExpression();
 
