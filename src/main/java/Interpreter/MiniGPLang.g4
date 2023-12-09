@@ -42,10 +42,15 @@ expression
     : expression ('*' | '/') expression     # MultiplicationDivision
     | expression ('+' | '-') expression     # AdditionSubstraction
     | variable                              # VariableExpression
+    | input                                 # InputExpression
     ;
 
 output
     : 'output' expression
+    ;
+
+input
+    : 'input'
     ;
 
 variable
