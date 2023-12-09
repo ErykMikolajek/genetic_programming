@@ -7,30 +7,25 @@ public class AntlrBoolStatement extends MiniGPLangBaseVisitor<BoolStatement> {
     @Override
     public BoolStatement visitExpressionOperatorExpression(MiniGPLangParser.ExpressionOperatorExpressionContext ctx) {
         AntlrExpression expressionVisitor = new AntlrExpression();
-        Expression left = expressionVisitor.visit(ctx.getChild(0));
-        Expression right = expressionVisitor.visit(ctx.getChild(2));
-
-        int leftValue = ((Variable) left).value;
-        int rightValue = ((Variable) right).value;
+        int left = ((Variable) expressionVisitor.visit(ctx.expression(0))).value;
+        int right = ((Variable) expressionVisitor.visit(ctx.expression(1))).value;
 
         AntlrComparisonOperator comparisonOperatorVisitor = new AntlrComparisonOperator();
-        ComparisonOperator operator = comparisonOperatorVisitor.visit(ctx.getChild(1));
+        ComparisonOperator operator = comparisonOperatorVisitor.visit(ctx.comparisonOperator());
         BoolStatement returnStatement = new BoolStatement();
         switch (operator) {
-            case LESS -> returnStatement.satisfied = leftValue < rightValue;
-            case GREATER -> returnStatement.satisfied = leftValue > rightValue;
-            case EQUAL -> returnStatement.satisfied = leftValue == rightValue;
-            case NOT_EQUAL -> returnStatement.satisfied = leftValue != rightValue;
+            case LESS -> returnStatement.satisfied = left < right;
+            case GREATER -> returnStatement.satisfied = left > right;
+            case EQUAL -> returnStatement.satisfied = left == right;
+            case NOT_EQUAL -> returnStatement.satisfied = left != right;
         }
-
         return returnStatement;
     }
 
     @Override
     public BoolStatement visitExpressionBool(MiniGPLangParser.ExpressionBoolContext ctx) {
         AntlrExpression expressionVisitor = new AntlrExpression();
-        Variable var = (Variable) expressionVisitor.visit(ctx.getChild(0));
-        return new BoolStatement(var);
+        return new BoolStatement(expressionVisitor.visit(ctx.expression()));
     }
 
     @Override
@@ -38,12 +33,12 @@ public class AntlrBoolStatement extends MiniGPLangBaseVisitor<BoolStatement> {
         AntlrBoolStatement antlrBoolStatementVisitor = new AntlrBoolStatement();
         AntlrLogicalOperator antlrLogicalOperatorVisitor = new AntlrLogicalOperator();
 
-        BoolStatement left = antlrBoolStatementVisitor.visit(ctx.getChild(0));
-        BoolStatement right = antlrBoolStatementVisitor.visit(ctx.getChild(2));
+        BoolStatement left = antlrBoolStatementVisitor.visit(ctx.boolStatement(0));
+        BoolStatement right = antlrBoolStatementVisitor.visit(ctx.boolStatement(1));
 
         BoolStatement returnStatement = new BoolStatement();
 
-        LogicalOperator operator = antlrLogicalOperatorVisitor.visit(ctx.getChild(1));
+        LogicalOperator operator = antlrLogicalOperatorVisitor.visit(ctx.logicalOperator());
 
         switch (operator){
             case AND -> returnStatement.satisfied = left.satisfied && right.satisfied;

@@ -1,5 +1,7 @@
 package Interpreter.Extensions;
 
+import Interpreter.MiniGPLangParser;
+
 public class BoolStatement {
     public boolean satisfied;
     public BoolStatement(Expression variable){
@@ -12,4 +14,5 @@ public class BoolStatement {
     public BoolStatement(){
         satisfied = false;
     }
+
 }

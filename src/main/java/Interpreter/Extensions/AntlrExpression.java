@@ -42,8 +42,6 @@ public class AntlrExpression extends MiniGPLangBaseVisitor<Expression> {
         Variable l = (Variable) x.visit(ctx.getChild(0));
         Variable r = (Variable) x.visit(ctx.getChild(2));
 
-//        System.out.println("MultiplicationDivision: " + ctx.getChild(2).getText());
-
         String character = ctx.getChild(1).getText();
         if (Objects.equals(character, "*")){
             return new Variable(l.value * r.value);
