@@ -10,15 +10,11 @@ public class Program {
     public static int maxVariableId = 0;
     public static int MAX_VARIABLE_VALUE = 100;
 
-    //TODO: Generacja drzew o głębokości 1, 2, naprawa ucinania wierzchołków
-    //TODO: Dodac input i output
-
     public static Node generateProgram(int depth){
         ArrayList<Node> children = new ArrayList<>();
         while (depth > 0){
             children.add(generateCommand(depth--));
         }
-//        System.out.println("MAX VARIABLE ID: " + maxVariableId);
         return new ProgramNode(children);
     }
 
@@ -26,7 +22,12 @@ public class Program {
         if (depth == 0) return null;
 
         Commands[] commandsValues = Commands.values();
+
+        if (depth == 1)
+            commandsValues = new Commands[] {Commands.EXPRESSION, Commands.ASSIGN, Commands.OUTPUT};
+
         Commands randomCommand = commandsValues[random.nextInt(commandsValues.length)];
+
 
         switch (randomCommand){
             case LOOP -> {
@@ -92,37 +93,38 @@ public class Program {
             assert block1 != null;
             returnNode = new IfStatement(false, boolStatement, block1);
         }
-
         return returnNode;
     }
 
     private static Node generateExpression(int depth) {
         if (depth == 0) return null;
         Expression.PossibleExpressions[] enumValues = Expression.PossibleExpressions.values();
+
+        if (depth == 1)
+            enumValues = new Expression.PossibleExpressions[] {
+                    Expression.PossibleExpressions.VARIABLE, Expression.PossibleExpressions.INPUT
+            };
+
         Expression.PossibleExpressions randomExpression = enumValues[random.nextInt(enumValues.length)];
 
         Node returnNode = null;
-        if (depth == 1) {
-            returnNode = Program.generateVariable(1);
-        }
-        else {
-            Node childExpression1 = Program.generateExpression(depth - 1);
-            Node childExpression2 = Program.generateExpression(depth - 1);
-            switch (randomExpression) {
-                case MUL -> returnNode = new Expression(Expression.PossibleExpressions.MUL,
+        Node childExpression1 = Program.generateExpression(depth - 1);
+        Node childExpression2 = Program.generateExpression(depth - 1);
+        switch (randomExpression) {
+            case MUL -> returnNode = new Expression(Expression.PossibleExpressions.MUL,
+                    childExpression1, childExpression2);
+            case DIV -> {
+                if (childExpression2 instanceof Variable && ((Variable) childExpression2).variableValue == 0)
+                    ((Variable) childExpression2).variableValue = random.nextInt(1, MAX_VARIABLE_VALUE);
+                returnNode = new Expression(Expression.PossibleExpressions.DIV,
                         childExpression1, childExpression2);
-                case DIV -> {
-                    if (childExpression2 instanceof Variable && ((Variable) childExpression2).variableValue == 0)
-                        ((Variable) childExpression2).variableValue = random.nextInt(1, MAX_VARIABLE_VALUE);
-                    returnNode = new Expression(Expression.PossibleExpressions.DIV,
-                            childExpression1, childExpression2);
-                }
-                case ADD -> returnNode = new Expression(Expression.PossibleExpressions.ADD,
-                        childExpression1, childExpression2);
-                case SUB -> returnNode = new Expression(Expression.PossibleExpressions.SUB,
-                        childExpression1, childExpression2);
-                case VARIABLE -> returnNode = Program.generateVariable(depth - 1);
             }
+            case ADD -> returnNode = new Expression(Expression.PossibleExpressions.ADD,
+                    childExpression1, childExpression2);
+            case SUB -> returnNode = new Expression(Expression.PossibleExpressions.SUB,
+                    childExpression1, childExpression2);
+            case VARIABLE -> returnNode = Program.generateVariable(depth);
+            case INPUT -> returnNode = new Input();
         }
 
         return returnNode;
@@ -142,7 +144,7 @@ public class Program {
         if (depth == 0) return null;
 
         Output returnNode;
-        Node expression = Program.generateExpression(depth - 1);
+        Node expression = Program.generateExpression(Math.max(1, depth - 1));
         returnNode = new Output(expression);
         return returnNode;
     }
@@ -174,9 +176,9 @@ public class Program {
         if (depth == 0) return null;
         ArrayList<Node> returnNodes = new ArrayList<>();
 
-        int numberOfCommands = random.nextInt(depth);
+        int numberOfCommands = random.nextInt(1, depth + 1);
         for (int k = 0; k < numberOfCommands; k++){
-            returnNodes.add(generateCommand(depth - 1));
+            returnNodes.add(generateCommand(depth));
         }
         return returnNodes;
     }
@@ -203,7 +205,7 @@ public class Program {
 
                 returnNode = new ComparisonOperator(randomOperator, childExpression1, childExpression2);
             }
-            case EXPRESSION -> returnNode = Program.generateExpression(depth - 1);
+            case EXPRESSION -> returnNode = Program.generateExpression(depth);
             case BOOL_OPERATOR_BOOL -> {
                 Node boolStatement1 = Program.generateBoolStatement(Math.max(1, depth - 1));
                 Node boolStatement2 = Program.generateBoolStatement(Math.max(1, depth - 1));

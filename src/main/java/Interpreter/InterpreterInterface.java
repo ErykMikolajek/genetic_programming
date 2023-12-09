@@ -2,57 +2,47 @@ package Interpreter;
 
 import Interpreter.Extensions.AntlrProgram;
 import org.antlr.v4.runtime.CharStream;
-import org.antlr.v4.runtime.CharStreams;
 import org.antlr.v4.runtime.CommonTokenStream;
 import org.antlr.v4.runtime.tree.ParseTree;
+import java.io.FileWriter;
 import org.antlr.v4.runtime.tree.ParseTreeWalker;
 
 import java.io.IOException;
 
+import static org.antlr.v4.runtime.CharStreams.fromString;
+
 public class InterpreterInterface {
-    public static void main(String[] args) {
-        //TODO: zliczanie instrukcji, po zbyt dużej liczbie instrukcji program przestaje się wykonywać
-        //TODO: zwiekszanie countera instrukcji wraz z wzrostem fitnessu/zlozonosci programu
-        if (args.length != 1)
-            System.err.println("Usage: no filename with program");
-        else {
-            String fileName = args[0];
-            MiniGPLangParser parser = getParser(fileName);
-            try
-            {
-                ParseTree antlrAST = parser.prog();
 
-                // Create a listener for errors and reinitialization checking
-//                AntlrListener listener = new AntlrListener();
+    private final int maxOperationCount;
+    public InterpreterInterface(int maxOperationCount){
+        this.maxOperationCount = maxOperationCount;
+    }
 
-//                ParseTreeWalker firstWalker = new ParseTreeWalker();
-//                firstWalker.walk(listener, antlrAST);
+    public String evaluateProgram(String program, String inputFileName, String outputFileName){
+        MiniGPLangParser parser = getParser(program);
+        ParseTree antlrAST = parser.prog();
+        AntlrProgram programVisitor = new AntlrProgram(inputFileName, maxOperationCount);
+        programVisitor.visit(antlrAST);
 
-                // Create a visitor for converting the parse tree into lines expressions objects
-                AntlrProgram programVisitor = new AntlrProgram();
-                programVisitor.visit(antlrAST);
-
-            }
-            catch (Exception e)
-            {
-                System.out.println(e);
-            }
-
+        try {
+            FileWriter outputFile = new FileWriter("target/" + outputFileName);
+            outputFile.write(AntlrProgram.programOutput);
+            outputFile.close();
+        } catch (IOException e) {
+            System.out.println("An error occurred.");
         }
+
+        return AntlrProgram.programOutput;
     }
 
 
-    private static MiniGPLangParser getParser(String fileName)
+    private static MiniGPLangParser getParser(String program)
     {
         MiniGPLangParser parser;
-        try {
-            CharStream input = CharStreams.fromFileName(fileName);
-            MiniGPLangLexer lexer = new MiniGPLangLexer(input);
-            CommonTokenStream tokens = new CommonTokenStream(lexer);
-            parser = new MiniGPLangParser(tokens);
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
+        CharStream stream = fromString(program);
+        MiniGPLangLexer lexer = new MiniGPLangLexer(stream);
+        CommonTokenStream tokens = new CommonTokenStream(lexer);
+        parser = new MiniGPLangParser(tokens);
         return parser;
     }
 }

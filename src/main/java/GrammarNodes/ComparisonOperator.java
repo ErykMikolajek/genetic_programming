@@ -18,7 +18,6 @@ public class ComparisonOperator extends Node{
     }
 
     public String plot(){
-        if (children == null || children.size() < 2) return "";
         String output = children.get(0).plot();
         switch (rule){
             case LESS -> output += " < ";

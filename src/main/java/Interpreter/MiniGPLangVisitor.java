@@ -3,6 +3,8 @@ package Interpreter;
 
 import org.antlr.v4.runtime.tree.ParseTreeVisitor;
 
+import java.io.FileNotFoundException;
+
 /**
  * This interface defines a complete generic visitor for a parse tree produced
  * by {@link MiniGPLangParser}.
@@ -128,11 +130,24 @@ public interface MiniGPLangVisitor<T> extends ParseTreeVisitor<T> {
 	 */
 	T visitMultiplicationDivision(MiniGPLangParser.MultiplicationDivisionContext ctx);
 	/**
+	 * Visit a parse tree produced by the {@code InputExpression}
+	 * labeled alternative in {@link MiniGPLangParser#expression}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitInputExpression(MiniGPLangParser.InputExpressionContext ctx);
+	/**
 	 * Visit a parse tree produced by {@link MiniGPLangParser#output}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
 	T visitOutput(MiniGPLangParser.OutputContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link MiniGPLangParser#input}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitInput(MiniGPLangParser.InputContext ctx);
 	/**
 	 * Visit a parse tree produced by the {@code VariableGet}
 	 * labeled alternative in {@link MiniGPLangParser#variable}.

@@ -16,7 +16,6 @@ public class Loop extends Node {
     }
 
     public String plot(){
-        if (statementExpressionChild == null || childrenBlock == null) return "";
         StringBuilder output = new StringBuilder();
         switch (rule){
             case FOR -> output.append("\nfor (").append(statementExpressionChild.plot()).append(") {\n");

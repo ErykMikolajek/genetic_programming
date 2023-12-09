@@ -9,7 +9,6 @@ public class VariableAssignment extends Node{
     }
 
     public String plot(){
-        if (child == null) return "";
-        else return "\n" + variableName + " = " + child.plot() + "\n";
+        return "\n" + variableName + " = " + child.plot() + "\n";
     }
 }

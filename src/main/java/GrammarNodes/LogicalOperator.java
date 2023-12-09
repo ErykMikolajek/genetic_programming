@@ -13,7 +13,6 @@ public class LogicalOperator extends Node{
         this.children = new ArrayList<>(Arrays.asList(child1, child2));
     }
     public String plot(){
-        if (children == null || children.size() < 2) return "";
         String output = children.get(0).plot();
         switch (rule){
             case AND -> output += " && ";
