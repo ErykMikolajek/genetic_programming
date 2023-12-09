@@ -7,7 +7,6 @@ public class Output extends Node{
     }
 
     public String plot(){
-        if (child == null) return "";
-        else return "\noutput " + child.plot();
+        return "\noutput " + child.plot();
     }
 }
