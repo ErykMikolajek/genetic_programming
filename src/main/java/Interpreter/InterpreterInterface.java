@@ -30,6 +30,7 @@ public class InterpreterInterface {
             outputFile.close();
         } catch (IOException e) {
             System.out.println("An error occurred.");
+            return "";
         }
 
         return AntlrProgram.programOutput;
