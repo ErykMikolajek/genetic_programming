@@ -3,7 +3,7 @@ package GrammarNodes;
 import java.util.ArrayList;
 
 public class ProgramNode extends Node{
-    public ArrayList<Node> children;
+//    public ArrayList<Node> children;
 
     public ProgramNode(ArrayList<Node> children) {
         this.children = children;

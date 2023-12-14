@@ -1,7 +1,7 @@
 package GrammarNodes;
 
 public class Output extends Node{
-    public Node child;
+//    public Node child;
     public Output(Node child){
         this.child = child;
     }

@@ -1,7 +1,7 @@
 package GrammarNodes;
 
 public class VariableAssignment extends Node{
-    public Node child;
+//    public Node child;
     public String variableName;
     public VariableAssignment(Node child, String variableName){
         this.child = child;

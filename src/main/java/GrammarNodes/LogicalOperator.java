@@ -7,7 +7,7 @@ public class LogicalOperator extends Node{
     public enum PossibleLogicalOperators {AND, OR}
 
     public PossibleLogicalOperators rule;
-    public ArrayList<Node> children;
+//    public ArrayList<Node> children;
     public LogicalOperator(PossibleLogicalOperators rule, Node child1, Node child2){
         this.rule = rule;
         this.children = new ArrayList<>(Arrays.asList(child1, child2));

@@ -5,8 +5,8 @@ public class IfStatement extends Node{
 
     public boolean hasElse;
     public Node childBoolStatement;
-    public ArrayList<Node> childrenBlock1;
-    public ArrayList<Node> childrenBlock2;
+//    public ArrayList<Node> childrenBlock1;
+//    public ArrayList<Node> childrenBlock2;
 
     public IfStatement(boolean hasElse, Node child1, ArrayList<Node> childBlock1){
         this.childBoolStatement = child1;
