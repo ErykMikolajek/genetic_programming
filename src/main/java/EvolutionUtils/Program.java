@@ -26,7 +26,7 @@ public class Program {
         Commands[] commandsValues = Commands.values();
 
         if (depth == 1)
-            commandsValues = new Commands[] {Commands.EXPRESSION, Commands.ASSIGN, Commands.OUTPUT};
+            commandsValues = new Commands[] {Commands.EXPRESSION /*, Commands.ASSIGN, Commands.OUTPUT*/};
 
         Commands randomCommand = commandsValues[random.nextInt(commandsValues.length)];
 
