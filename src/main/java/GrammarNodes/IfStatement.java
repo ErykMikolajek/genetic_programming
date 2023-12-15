@@ -34,4 +34,10 @@ public class IfStatement extends Node{
         }
         return output.toString();
     }
+
+    @Override
+    public String getSuperClass() {
+        return "IfStatement";
+    }
+
 }

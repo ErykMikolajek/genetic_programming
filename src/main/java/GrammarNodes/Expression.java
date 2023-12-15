@@ -25,4 +25,9 @@ public class Expression extends Node{
         }
         return output;
     }
+
+    @Override
+    public String getSuperClass() {
+        return "Expression";
+    }
 }

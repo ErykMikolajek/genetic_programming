@@ -21,4 +21,9 @@ public class LogicalOperator extends Node{
         output += children.get(1).plot();
         return output;
     }
+
+    @Override
+    public String getSuperClass() {
+        return "LogicalOperator";
+    }
 }

@@ -9,4 +9,9 @@ public class Output extends Node{
     public String plot(){
         return "\noutput " + child.plot();
     }
+
+    @Override
+    public String getSuperClass() {
+        return "Output";
+    }
 }

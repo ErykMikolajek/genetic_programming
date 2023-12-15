@@ -27,4 +27,9 @@ public class Loop extends Node {
         return output.toString();
     }
 
+    @Override
+    public String getSuperClass() {
+        return "Loop";
+    }
+
 }

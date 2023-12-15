@@ -17,4 +17,9 @@ public class ProgramNode extends Node{
         }
         return output.toString();
     }
+
+    @Override
+    public String getSuperClass() {
+        return "ProgramNode";
+    }
 }

@@ -22,4 +22,9 @@ public class Variable extends Node{
         }
         return output;
     }
+
+    @Override
+    public String getSuperClass() {
+        return "Variable";
+    }
 }

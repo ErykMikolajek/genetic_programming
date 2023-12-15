@@ -36,28 +36,77 @@ public class Individual {
     // TODO: Dodac możliwość wysyłania prgramu prosto do interpretera i pobieranie z interpretera wyniku działania programu
 
     public Individual crossover(Individual parent2){
-//        Node offspring = copyTree(head);
-//        Node parent2Copy = copyTree(parent2.head);
-        int h1 = this.height(this.programHead);
-        int h2 = parent2.height(parent2.programHead);
+        int h1 = height(this.programHead);
+        int h2 = height(parent2.programHead);
+        int counter = 0;
+        Node node1 = this.programHead;
+        Node node2 = parent2.programHead;
+        int limit  = 1000000000;
 
-        System.out.println("\nParent1 height: " + h1);
-        System.out.println("Parent2 height: " + h2);
-//
-//        int crossoverHeight = random.nextInt(1, min(h1, h2));
-//        System.out.println("Crossover height: " + crossoverHeight);
-//
-//        Node[] parent1COPoints = getNodesAtLevel(offspring, crossoverHeight).toArray(new Node[0]);
-//        Node[] parent2COPoints = getNodesAtLevel(parent2Copy, crossoverHeight).toArray(new Node[0]);
-//
-//        Node crossoverPoint1 = parent1COPoints[random.nextInt(0, parent1COPoints.length)];
-//        Node crossoverPoint2 = parent2COPoints[random.nextInt(0, parent2COPoints.length)];
-//
-//        crossoverPoint2.parent_ = crossoverPoint1.parent_;
-//        crossoverPoint1.parent_.children_[0] = crossoverPoint2;
+        while( counter < limit)
+        {
+            for (int i=0; i<random.nextInt(0, h1); i++)
+            {
+                node1 = getRandomNode(node1);
+            }
+            for (int i=0; i<random.nextInt(0, h1); i++)
+            {
+                node2 = getRandomNode(node2);
+            }
+            int heightNode1 = height(node1);
+            int heightNode2 = height(node2);
 
-//        return new Individual(this);
+            if ( node1.getSuperClass().equals(node2.getSuperClass()) && heightNode1 != 0 && heightNode2 != 0
+                && h1 != heightNode1 && h2 != heightNode2)
+            {
+                System.out.println("\nParent1 height: " + heightNode1);
+                System.out.println("Parent2 height: " + heightNode2);
+                System.out.println("\nParent1 node: " + node1.getSuperClass());
+                System.out.println("Parent2 node: " + node2.getSuperClass());
+                break;
+            }
+            counter += 1;
+            if ( counter % 100 == 0)
+            {
+                node1 = this.programHead;
+                node2 = parent2.programHead;
+            }
+            if (counter == limit - 1)
+            {
+                System.out.println("PROGRAM NOT CROSSED");
+            }
+        }
+        node1.child = node2.child;
+        node1.children = node2.children;
+        node1.childrenBlock1 = node2.childrenBlock1;
+        node1.childrenBlock2 = node2.childrenBlock2;
         return this;
+    }
+
+    public Node getRandomNode(Node myNode) {
+        if ( !myNode.children.isEmpty() ) {
+            if(random.nextInt(0, 2) != 0)
+            {
+                int newNodeId = random.nextInt(0, myNode.children.size());
+                return myNode.children.get(newNodeId);
+            }
+
+        } else if ( !myNode.childrenBlock1.isEmpty() || !myNode.childrenBlock2.isEmpty()) {
+            if(random.nextInt(0, 2) != 0 && !myNode.childrenBlock1.isEmpty())
+            {
+                int newNodeId = random.nextInt(0, myNode.childrenBlock1.size());
+                return myNode.childrenBlock1.get(newNodeId);
+            }
+            if(random.nextInt(0, 2) != 0 && !myNode.childrenBlock2.isEmpty()) {
+                int newNodeId = random.nextInt(0, myNode.childrenBlock2.size());
+                return myNode.childrenBlock2.get(newNodeId);
+            }
+        } else if(myNode.child != null)
+        {
+            if(random.nextInt(0, 2) != 0)
+                return myNode.child;
+        }
+        return myNode;
     }
 
 //    public void mutate(Node root){
@@ -222,7 +271,6 @@ public class Individual {
     public int height(Node myNode) {
         int maxHeight1 = 0;
         int maxHeight2 = 0;
-
         if ( myNode.child != null )
         {
             return 1;
