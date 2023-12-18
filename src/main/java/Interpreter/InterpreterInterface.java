@@ -29,6 +29,7 @@ public class InterpreterInterface {
             outputFile.write(AntlrProgram.programOutput);
             outputFile.close();
         } catch (IOException e) {
+            // TODO: Throw an error when accessing a variable before initialization 
             System.out.println("An error occurred.");
             return "";
         }
