@@ -1,6 +1,8 @@
 package EvolutionUtils;
 
 import GrammarNodes.*;
+import GrammarNodes.ProgramNode;
+
 import java.util.ArrayList;
 
 import static EvolutionUtils.Individual.random;

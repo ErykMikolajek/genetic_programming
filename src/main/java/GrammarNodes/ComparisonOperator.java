@@ -11,7 +11,7 @@ public class ComparisonOperator extends Node{
         NOT_EQUAL
     }
     public PossibleComparisonOperators rule;
-    public ArrayList<Node> children;
+//    public ArrayList<Node> children;
     public ComparisonOperator(PossibleComparisonOperators rule, Node child1, Node child2){
         this.rule = rule;
         this.children = new ArrayList<>(Arrays.asList(child1, child2));
@@ -27,5 +27,10 @@ public class ComparisonOperator extends Node{
         }
         output += children.get(1).plot();
         return output;
+    }
+
+    @Override
+    public String getSuperClass() {
+        return "ComparisonOperator";
     }
 }

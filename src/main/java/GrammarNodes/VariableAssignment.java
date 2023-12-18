@@ -1,7 +1,7 @@
 package GrammarNodes;
 
 public class VariableAssignment extends Node{
-    public Node child;
+//    public Node child;
     public String variableName;
     public VariableAssignment(Node child, String variableName){
         this.child = child;
@@ -10,5 +10,10 @@ public class VariableAssignment extends Node{
 
     public String plot(){
         return "\n" + variableName + " = " + child.plot() + "\n";
+    }
+
+    @Override
+    public String getSuperClass() {
+        return "VariableAssignment";
     }
 }
