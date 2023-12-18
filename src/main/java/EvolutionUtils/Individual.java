@@ -37,10 +37,6 @@ public class Individual {
     // TODO: Dodac możliwość wysyłania prgramu prosto do interpretera i pobieranie z interpretera wyniku działania programu
 
     public Individual crossover(Individual parent2){
-        ArrayList<String> commands = new ArrayList<>(List.of("Loop", "IfStatement", "Expression", "VariableAssign", "Output"));
-        ArrayList<String> expression = new ArrayList<>(List.of("Input", "Variable"));
-
-
         int h1 = height(this.programHead);
         int h2 = height(parent2.programHead);
         int counter = 0;
@@ -58,28 +54,55 @@ public class Individual {
             {
                 node2 = getRandomNode(node2);
             }
-            int heightNode1 = height(node1);
-            int heightNode2 = height(node2);
 
-            if (    (   (  commands.contains(node1.getSuperClass()) && commands.contains(node2.getSuperClass()) ) ||
-                        (  expression.contains(node1.getSuperClass()) && expression.contains(node2.getSuperClass()) ) ||
-                        (  node1.getSuperClass().equals("BoolStatement") && node2.getSuperClass().equals("BoolStatement") ) ||
-                        (  node1.getSuperClass().equals("ComparisonOperator") && node2.getSuperClass().equals("ComparisonOperator") ) ||
-                        (  node1.getSuperClass().equals("LogicalOperator") && node2.getSuperClass().equals("LogicalOperator") ) ||
-                        (  node1.getSuperClass().equals("ProgramNode") && node2.getSuperClass().equals("ProgramNode") )
-                    ) && heightNode1 != 0 && heightNode2 != 0
-                    && h1 != heightNode1 && h2 != heightNode2)
-            {
-                System.out.println("\nParent1 height: " + heightNode1);
-                System.out.println("Parent2 height: " + heightNode2);
-                System.out.println("\nParent1 node: " + node1.getSuperClass());
-                System.out.println("Parent2 node: " + node2.getSuperClass());
-                node1 = node2;
-                node1.child = node2.child;
-                node1.children = node2.children;
-                node1.childrenBlock1 = node2.childrenBlock1;
-                node1.childrenBlock2 = node2.childrenBlock2;
-                break;
+            if (!node1.children.isEmpty()) {
+                int index = random.nextInt(node1.children.size());
+                int depth1 = height(node1.children.get(index));
+                int depth2 = height(node2);
+                Node newNode = node2;
+                if (depth1 == depth2 && depth1 != h1 && depth2 != h2)
+                {
+                    System.out.println(node1.children.get(index).getSuperClass());
+                    node1.children.set(index, newNode);
+                    System.out.println(node1.children.get(index).getSuperClass());
+                    break;
+                }
+            } else if (!node1.childrenBlock1.isEmpty()) {
+                int index = random.nextInt(node1.childrenBlock1.size());
+                int depth1 = height(node1.childrenBlock1.get(index));
+                int depth2 = height(node2);
+                Node newNode = node2;
+                if (depth1 == depth2 && depth1 != h1 && depth2 != h2)
+                {
+                    System.out.println(node1.childrenBlock1.get(index).getSuperClass());
+                    node1.childrenBlock1.set(index, newNode);
+                    System.out.println(node1.childrenBlock1.get(index).getSuperClass());
+                    break;
+                }
+            } else if (!node1.childrenBlock2.isEmpty()) {
+                int index = random.nextInt(node1.childrenBlock2.size());
+                int depth1 = height(node1.childrenBlock2.get(index));
+                int depth2 = height(node2);
+                Node newNode = node2;
+                if (depth1 == depth2 && depth1 != h1 && depth2 != h2)
+                {
+                    System.out.println(node1.childrenBlock2.get(index).getSuperClass());
+                    node1.childrenBlock2.set(index, newNode);
+                    System.out.println(node1.childrenBlock2.get(index).getSuperClass());
+                    break;
+                }
+
+            } else if (node1.child != null) {
+                int depth1 = height(node1.child);
+                int depth2 = height(node2);
+                Node newNode = node2;
+                if (depth1 == depth2 && depth1 != h1 && depth2 != h2)
+                {
+                    System.out.println(node1.child.getSuperClass());
+                    node1.child = newNode;
+                    System.out.println(node1.child.getSuperClass());
+                    break;
+                }
             }
             counter += 1;
             if ( counter % Math.max(h1,h2) == 0)
@@ -91,10 +114,6 @@ public class Individual {
             {
                 System.out.println("PROGRAM NOT CROSSED");
             }
-            System.out.println("\nParent1 height: " + heightNode1);
-            System.out.println("Parent2 height: " + heightNode2);
-            System.out.println("\nParent1 node: " + node1.getSuperClass());
-            System.out.println("Parent2 node: " + node2.getSuperClass());
         }
         return this;
     }
