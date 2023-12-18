@@ -5,6 +5,7 @@ import java.util.*;
 import static java.lang.Math.min;
 
 import GrammarNodes.*;
+import Interpreter.Extensions.BoolStatement;
 import Interpreter.InterpreterInterface;
 
 
@@ -36,6 +37,10 @@ public class Individual {
     // TODO: Dodac możliwość wysyłania prgramu prosto do interpretera i pobieranie z interpretera wyniku działania programu
 
     public Individual crossover(Individual parent2){
+        ArrayList<String> commands = new ArrayList<>(List.of("Loop", "IfStatement", "Expression", "VariableAssign", "Output"));
+        ArrayList<String> expression = new ArrayList<>(List.of("Input", "Variable"));
+
+
         int h1 = height(this.programHead);
         int h2 = height(parent2.programHead);
         int counter = 0;
@@ -45,28 +50,39 @@ public class Individual {
 
         while( counter < limit)
         {
-            for (int i=0; i<random.nextInt(0, h1); i++)
+            for (int i=0; i<random.nextInt(0, h1) + 1; i++)
             {
                 node1 = getRandomNode(node1);
             }
-            for (int i=0; i<random.nextInt(0, h1); i++)
+            for (int i=0; i<random.nextInt(0, h2) + 1; i++)
             {
                 node2 = getRandomNode(node2);
             }
             int heightNode1 = height(node1);
             int heightNode2 = height(node2);
 
-            if ( node1.getSuperClass().equals(node2.getSuperClass()) && heightNode1 != 0 && heightNode2 != 0
-                && h1 != heightNode1 && h2 != heightNode2)
+            if (    (   (  commands.contains(node1.getSuperClass()) && commands.contains(node2.getSuperClass()) ) ||
+                        (  expression.contains(node1.getSuperClass()) && expression.contains(node2.getSuperClass()) ) ||
+                        (  node1.getSuperClass().equals("BoolStatement") && node2.getSuperClass().equals("BoolStatement") ) ||
+                        (  node1.getSuperClass().equals("ComparisonOperator") && node2.getSuperClass().equals("ComparisonOperator") ) ||
+                        (  node1.getSuperClass().equals("LogicalOperator") && node2.getSuperClass().equals("LogicalOperator") ) ||
+                        (  node1.getSuperClass().equals("ProgramNode") && node2.getSuperClass().equals("ProgramNode") )
+                    ) && heightNode1 != 0 && heightNode2 != 0
+                    && h1 != heightNode1 && h2 != heightNode2)
             {
                 System.out.println("\nParent1 height: " + heightNode1);
                 System.out.println("Parent2 height: " + heightNode2);
                 System.out.println("\nParent1 node: " + node1.getSuperClass());
                 System.out.println("Parent2 node: " + node2.getSuperClass());
+                node1 = node2;
+                node1.child = node2.child;
+                node1.children = node2.children;
+                node1.childrenBlock1 = node2.childrenBlock1;
+                node1.childrenBlock2 = node2.childrenBlock2;
                 break;
             }
             counter += 1;
-            if ( counter % 100 == 0)
+            if ( counter % Math.max(h1,h2) == 0)
             {
                 node1 = this.programHead;
                 node2 = parent2.programHead;
@@ -75,11 +91,11 @@ public class Individual {
             {
                 System.out.println("PROGRAM NOT CROSSED");
             }
+            System.out.println("\nParent1 height: " + heightNode1);
+            System.out.println("Parent2 height: " + heightNode2);
+            System.out.println("\nParent1 node: " + node1.getSuperClass());
+            System.out.println("Parent2 node: " + node2.getSuperClass());
         }
-        node1.child = node2.child;
-        node1.children = node2.children;
-        node1.childrenBlock1 = node2.childrenBlock1;
-        node1.childrenBlock2 = node2.childrenBlock2;
         return this;
     }
 
