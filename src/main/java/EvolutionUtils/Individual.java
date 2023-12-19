@@ -120,11 +120,11 @@ public class Individual {
 
     public Node getRandomNode(Node myNode) {
         if ( !myNode.children.isEmpty() ) {
-            if(random.nextInt(0, 2) != 0)
-            {
-                int newNodeId = random.nextInt(0, myNode.children.size());
-                return myNode.children.get(newNodeId);
-            }
+//            if(random.nextInt(0, 2) != 0)
+//            {
+//                int newNodeId = random.nextInt(0, myNode.children.size());
+//                return myNode.children.get(newNodeId);
+//            }
 
         } else if ( !myNode.childrenBlock1.isEmpty() || !myNode.childrenBlock2.isEmpty()) {
             if(random.nextInt(0, 2) != 0 && !myNode.childrenBlock1.isEmpty())
@@ -144,33 +144,66 @@ public class Individual {
         return myNode;
     }
 
-//    public void mutate(Node root){
-//        if (root.children_ == null){
-//            return;
-//        }
-//        for (Node child : root.children_){
-//            if (random.nextInt(1, 101) <= (MUTATION_PER_NODE * 100)){
-//                if (child.expression_ != Expression.VARIABLE) {
-//                    Expression[] enumValues = Expression.values();
-//                    Expression randomExpression = enumValues[random.nextInt(enumValues.length)];
-//                    switch (randomExpression) {
-//                        case MUL -> child.expression_ = Expression.MUL;
-//                        case DIV -> child.expression_ = Expression.DIV;
-//                        case ADD -> child.expression_ = Expression.ADD;
-//                        case SUB -> child.expression_ = Expression.SUB;
-////                        case VARIABLE -> {
-////                            child.value_ = random.nextInt(MIN_RANDOM_VALUE, MAX_RANDOM_VALUE);
-////                            child.children_ = null;
-////                        }
-//                    }
-//                }
-//                else{
-//                    child.value_ = random.nextInt(MIN_RANDOM_VALUE, MAX_RANDOM_VALUE);
-//                }
-//            }
-//            mutate(child);
-//        }
-//    }
+    public void mutate(){
+        while (true){
+            Node node = this.getRandomNode(this.programHead);
+
+// get random child
+            if (!node.children.isEmpty())
+            {
+                int index = random.nextInt(node.children.size());
+                int depth = height(node);
+                Node newNode = Program.generateCommand(depth);
+                if (newNode != null)
+                {
+
+                    System.out.println(node.children.get(index).getSuperClass());
+                    System.out.println(depth);
+                    node.children.set(index, newNode);
+                    break;
+                }
+
+            } else if (!node.childrenBlock1.isEmpty()) {
+                int index = random.nextInt(node.childrenBlock1.size());
+                int depth = height(node);
+                Node newNode = Program.generateCommand(depth);
+                if (newNode != null)
+                {
+
+                    System.out.println(node.childrenBlock1.get(index).getSuperClass());
+                    System.out.println(depth);
+                    node.childrenBlock1.set(index, newNode);
+                    break;
+                }
+
+            } else if (!node.childrenBlock2.isEmpty()) {
+                int index = random.nextInt(node.childrenBlock2.size());
+                int depth = height(node);
+                Node newNode = Program.generateCommand(depth);
+                if (newNode != null)
+                {
+
+                    System.out.println(node.childrenBlock2.get(index).getSuperClass());
+                    System.out.println(depth);
+                    node.childrenBlock2.set(index, newNode);
+                    break;
+                }
+
+            } else if (node.child != null) {
+                int depth = height(node);
+                Node newNode = Program.generateCommand(depth);
+                if (newNode != null)
+                {
+
+                    System.out.println(node.child.getSuperClass());
+                    System.out.println(depth);
+                    node.child = newNode;
+                    break;
+                }
+            }
+        }
+    }
+
 
 //    public void print(Node node){
 //        if (node.parent_ == null) {

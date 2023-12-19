@@ -20,7 +20,7 @@ public class Program {
         return new ProgramNode(children);
     }
 
-    private static Node generateCommand(int depth){
+    public static Node generateCommand(int depth){
         if (depth == 0) return null;
 
         Commands[] commandsValues = Commands.values();
