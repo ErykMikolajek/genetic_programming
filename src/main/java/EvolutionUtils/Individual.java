@@ -1,12 +1,16 @@
 package EvolutionUtils;
 
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.Writer;
 import java.util.*;
 
 import static java.lang.Math.min;
 
 import GrammarNodes.*;
-import Interpreter.Extensions.BoolStatement;
 import Interpreter.InterpreterInterface;
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 
 
 public class Individual {
@@ -332,6 +336,34 @@ public class Individual {
         } else {
             return 0;
         }
+    }
+
+    public void serialize(String filePath) {
+        try{
+            Gson gson = new GsonBuilder()
+                    .registerTypeAdapter(Node.class,
+                            new IndividualDesSer()).setPrettyPrinting().create();
+            Writer writer = new FileWriter(filePath);
+            gson.toJson(this, writer);
+            writer.flush(); //flush data to file   <---
+            writer.close(); //close write          <---
+        }catch(Exception e){
+            e.printStackTrace();
+        }
+    }
+
+    public static Individual deserialize(String filePath) {
+        try{
+            Gson gson = new GsonBuilder()
+                    .registerTypeAdapter(Node.class,
+                            new IndividualDesSer()).setPrettyPrinting().create();
+
+            return gson.fromJson(new FileReader(filePath), Individual.class);
+        }catch(Exception e){
+            e.printStackTrace();
+            System.out.println("Incorrect file!!!");
+        }
+        return null;
     }
 //
 //    public static ArrayList<ProgramNode.Node> getNodesAtLevel(ProgramNode.Node root, int level) {
