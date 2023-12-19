@@ -9,6 +9,7 @@ public class VariablesTable {
         savedVariables.put(varName, value);
     }
     public static int getVariableValue(String varName){
-        return savedVariables.get(varName) == null ? -999 : savedVariables.get(varName);
+        if (savedVariables.get(varName) == null) throw new RuntimeException("Accessing variable before initialization");
+        else return savedVariables.get(varName);
     }
 }

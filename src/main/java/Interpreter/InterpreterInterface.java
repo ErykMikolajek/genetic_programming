@@ -8,31 +8,26 @@ import java.io.FileWriter;
 import org.antlr.v4.runtime.tree.ParseTreeWalker;
 
 import java.io.IOException;
+import java.lang.reflect.Array;
+import java.util.ArrayList;
 
 import static org.antlr.v4.runtime.CharStreams.fromString;
 
 public class InterpreterInterface {
 
     private final int maxOperationCount;
+    public boolean didProgramFail;
     public InterpreterInterface(int maxOperationCount){
         this.maxOperationCount = maxOperationCount;
+        this.didProgramFail = false;
     }
 
-    public String evaluateProgram(String program, String inputFileName, String outputFileName){
+    public ArrayList<Integer> evaluateProgram(String program, String inputFileName){
         MiniGPLangParser parser = getParser(program);
         ParseTree antlrAST = parser.prog();
         AntlrProgram programVisitor = new AntlrProgram(inputFileName, maxOperationCount);
         programVisitor.visit(antlrAST);
-
-        try {
-            FileWriter outputFile = new FileWriter("target/" + outputFileName);
-            outputFile.write(AntlrProgram.programOutput);
-            outputFile.close();
-        } catch (IOException e) {
-            // TODO: Throw an error when accessing a variable before initialization 
-            System.out.println("An error occurred.");
-            return "";
-        }
+        this.didProgramFail = AntlrProgram.didProgramFail;
 
         return AntlrProgram.programOutput;
     }

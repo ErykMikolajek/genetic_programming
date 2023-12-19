@@ -5,18 +5,22 @@ import Interpreter.MiniGPLangBaseVisitor;
 import Interpreter.MiniGPLangParser;
 
 import java.io.FileNotFoundException;
+import java.util.ArrayList;
 import java.util.Scanner;
 import java.io.File;
 
 public class AntlrProgram extends MiniGPLangBaseVisitor<Program> {
 
-    public static String programOutput = "";
+    public static ArrayList<Integer> programOutput = new ArrayList<>();
+    public static boolean didProgramFail = false;
     public static Scanner inputFile;
     static int maxOperationCount;
 
     public AntlrProgram(String inputFileName, int maxCount){
-        programOutput = "";
         maxOperationCount = maxCount;
+        programOutput = new ArrayList<>();
+        didProgramFail = false;
+
         File inFile = new File("target/" + inputFileName);
         try {
             inputFile = new Scanner(inFile);
@@ -32,16 +36,13 @@ public class AntlrProgram extends MiniGPLangBaseVisitor<Program> {
             try {
                 commandVisitor.visit(ctx.getChild(i));
             } catch (RuntimeException exception) {
-                System.out.println("Program went into some trouble");
+//                System.out.println("Program couldn't evaluate");
+                didProgramFail = true;
                 break;
             }
         }
 
         inputFile.close();
-//        System.out.println("\nZmienne:");
-//        for (String ss : VariablesTable.savedVariables.keySet())
-//            System.out.println(ss + ": " + VariablesTable.getVariableValue(ss));
-
         return null;
     }
 }

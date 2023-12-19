@@ -12,9 +12,10 @@ import Interpreter.InterpreterInterface;
 public class Individual {
     Node programHead;
     int MAX_RANDOM_VALUE = 100;
-    int MIN_RANDOM_VALUE = 0;
-    double MUTATION_PER_NODE = 0.05;
+    public String inputFileName = "inputFile.txt";
     int individualDepth;
+    public boolean isFailed = false;
+    public double fitness;
     static Random random = new Random();
     public Individual(Node root){
         programHead = root;
@@ -23,18 +24,17 @@ public class Individual {
 
     public void generate(int depth){
         individualDepth = depth;
-        this.programHead = Program.generateProgram(depth);
+        this.programHead = Program.generateProgram(depth, MAX_RANDOM_VALUE);
     }
     public String plot() {
         return this.programHead.plot();
     }
-    public String eval(int maxOperations){
-        InterpreterInterface interpreter = new InterpreterInterface(individualDepth * 10);
-
-        return interpreter.evaluateProgram(this.plot(), "inputFile.txt", "output1.txt");
+    public ArrayList<Integer> eval(int maxOperations){
+        InterpreterInterface interpreter = new InterpreterInterface(maxOperations);
+        ArrayList<Integer> returnArray = interpreter.evaluateProgram(this.plot(), inputFileName);
+        this.isFailed = interpreter.didProgramFail;
+        return returnArray;
     }
-    // TODO: Naprawic crossover, mutate, serializacje i deserializacje
-    // TODO: Dodac możliwość wysyłania prgramu prosto do interpretera i pobieranie z interpretera wyniku działania programu
 
     public Individual crossover(Individual parent2){
         int h1 = height(this.programHead);
