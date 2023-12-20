@@ -22,15 +22,15 @@ public class IfStatement extends Node{
     }
 
     public String plot(){
-        StringBuilder output = new StringBuilder("\nif (" + childBoolStatement.plot() + ") {\n");
+        StringBuilder output = new StringBuilder("if (" + childBoolStatement.plot() + ") { ");
         for (Node n : childrenBlock1)
-            output.append("\t").append(n.plot());
-        output.append("\n}\n");
+            output.append(n.plot());
+        output.append(" } ");
         if (hasElse) {
-            output.append("\nelse {\n");
+            output.append("else { ");
             for (Node n : childrenBlock2)
-                output.append("\t").append(n.plot());
-            output.append("\n}\n");
+                output.append(n.plot());
+            output.append(" } ");
         }
         return output.toString();
     }

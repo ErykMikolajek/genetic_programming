@@ -16,9 +16,10 @@ import com.google.gson.GsonBuilder;
 public class Individual {
     Node programHead;
     int MAX_RANDOM_VALUE = 100;
-    int MIN_RANDOM_VALUE = 0;
-    double MUTATION_PER_NODE = 0.05;
+    public String inputFileName = "inputFile.txt";
     int individualDepth;
+    public boolean isFailed = false;
+    public double fitness;
     static Random random = new Random();
     public Individual(Node root){
         programHead = root;
@@ -27,20 +28,27 @@ public class Individual {
 
     public void generate(int depth){
         individualDepth = depth;
-        this.programHead = Program.generateProgram(depth);
+        this.programHead = Program.generateProgram(depth, MAX_RANDOM_VALUE);
     }
     public String plot() {
         return this.programHead.plot();
     }
-    public String eval(int maxOperations){
-        InterpreterInterface interpreter = new InterpreterInterface(individualDepth * 10);
+    public ArrayList<Integer> eval(int maxOperations){
+        InterpreterInterface interpreter = new InterpreterInterface(maxOperations);
 
-        return interpreter.evaluateProgram(this.plot(), "inputFile.txt", "output1.txt");
+//        ArrayList<Integer> returnArray = interpreter.evaluateProgram(program, inputFileName);
+        ArrayList<Integer> returnArray = interpreter.evaluateProgram(this.plot(), inputFileName);
+        this.isFailed = interpreter.didProgramFail;
+        return returnArray;
     }
-    // TODO: Naprawic crossover, mutate, serializacje i deserializacje
-    // TODO: Dodac możliwość wysyłania prgramu prosto do interpretera i pobieranie z interpretera wyniku działania programu
 
     public Individual crossover(Individual parent2){
+        ArrayList<String> commands = new ArrayList<String>(List.of("IfStatement", "Expression", "VariableAssignment", "Output", "Loop"));
+        ArrayList<String> Variable = new ArrayList<String>(List.of("Variable", "Input"));
+        ArrayList<String> BoolStatement = new ArrayList<String>(List.of("BoolStatement"));
+        ArrayList<String> ComparisonOperator = new ArrayList<String>(List.of("ComparisonOperator"));
+        ArrayList<String> LogicalOperator = new ArrayList<String>(List.of("LogicalOperator"));
+        ArrayList<String> ProgramNode = new ArrayList<String>(List.of("ProgramNode"));
         int h1 = height(this.programHead);
         int h2 = height(parent2.programHead);
         int counter = 0;
@@ -64,11 +72,18 @@ public class Individual {
                 int depth1 = height(node1.children.get(index));
                 int depth2 = height(node2);
                 Node newNode = node2;
-                if (depth1 == depth2 && depth1 != h1 && depth2 != h2)
+                if (depth1 == depth2 && depth1 != h1 && depth2 != h2 &&
+                        (
+                                (   commands.contains(node1.children.get(index).getSuperClass()) && commands.contains(newNode.getSuperClass())  ) ||
+                                        (   Variable.contains(node1.children.get(index).getSuperClass()) && Variable.contains(newNode.getSuperClass())  ) ||
+                                        (   BoolStatement.contains(node1.children.get(index).getSuperClass()) && BoolStatement.contains(newNode.getSuperClass())  ) ||
+                                        (   ComparisonOperator.contains(node1.children.get(index).getSuperClass()) && ComparisonOperator.contains(newNode.getSuperClass())  ) ||
+                                        (   LogicalOperator.contains(node1.children.get(index).getSuperClass()) && LogicalOperator.contains(newNode.getSuperClass())  ) ||
+                                        (   ProgramNode.contains(node1.children.get(index).getSuperClass()) && ProgramNode.contains(newNode.getSuperClass())  )  ))
                 {
-                    System.out.println(node1.children.get(index).getSuperClass());
+//                    System.out.println(node1.children.get(index).getSuperClass());
                     node1.children.set(index, newNode);
-                    System.out.println(node1.children.get(index).getSuperClass());
+//                    System.out.println(node1.children.get(index).getSuperClass());
                     break;
                 }
             } else if (!node1.childrenBlock1.isEmpty()) {
@@ -76,11 +91,18 @@ public class Individual {
                 int depth1 = height(node1.childrenBlock1.get(index));
                 int depth2 = height(node2);
                 Node newNode = node2;
-                if (depth1 == depth2 && depth1 != h1 && depth2 != h2)
+                if (depth1 == depth2 && depth1 != h1 && depth2 != h2 &&
+                        (
+                                (   commands.contains(node1.childrenBlock1.get(index).getSuperClass()) && commands.contains(newNode.getSuperClass())  ) ||
+                                        (   Variable.contains(node1.childrenBlock1.get(index).getSuperClass()) && Variable.contains(newNode.getSuperClass())  ) ||
+                                        (   BoolStatement.contains(node1.childrenBlock1.get(index).getSuperClass()) && BoolStatement.contains(newNode.getSuperClass())  ) ||
+                                        (   ComparisonOperator.contains(node1.childrenBlock1.get(index).getSuperClass()) && ComparisonOperator.contains(newNode.getSuperClass())  ) ||
+                                        (   LogicalOperator.contains(node1.childrenBlock1.get(index).getSuperClass()) && LogicalOperator.contains(newNode.getSuperClass())  ) ||
+                                        (   ProgramNode.contains(node1.childrenBlock1.get(index).getSuperClass()) && ProgramNode.contains(newNode.getSuperClass())  )  ))
                 {
-                    System.out.println(node1.childrenBlock1.get(index).getSuperClass());
+//                    System.out.println(node1.childrenBlock1.get(index).getSuperClass());
                     node1.childrenBlock1.set(index, newNode);
-                    System.out.println(node1.childrenBlock1.get(index).getSuperClass());
+//                    System.out.println(node1.childrenBlock1.get(index).getSuperClass());
                     break;
                 }
             } else if (!node1.childrenBlock2.isEmpty()) {
@@ -88,11 +110,18 @@ public class Individual {
                 int depth1 = height(node1.childrenBlock2.get(index));
                 int depth2 = height(node2);
                 Node newNode = node2;
-                if (depth1 == depth2 && depth1 != h1 && depth2 != h2)
+                if (depth1 == depth2 && depth1 != h1 && depth2 != h2 &&
+                        (
+                                (   commands.contains(node1.childrenBlock2.get(index).getSuperClass()) && commands.contains(newNode.getSuperClass())  ) ||
+                                        (   Variable.contains(node1.childrenBlock2.get(index).getSuperClass()) && Variable.contains(newNode.getSuperClass())  ) ||
+                                        (   BoolStatement.contains(node1.childrenBlock2.get(index).getSuperClass()) && BoolStatement.contains(newNode.getSuperClass())  ) ||
+                                        (   ComparisonOperator.contains(node1.childrenBlock2.get(index).getSuperClass()) && ComparisonOperator.contains(newNode.getSuperClass())  ) ||
+                                        (   LogicalOperator.contains(node1.childrenBlock2.get(index).getSuperClass()) && LogicalOperator.contains(newNode.getSuperClass())  ) ||
+                                        (   ProgramNode.contains(node1.childrenBlock2.get(index).getSuperClass()) && ProgramNode.contains(newNode.getSuperClass())  )  ))
                 {
-                    System.out.println(node1.childrenBlock2.get(index).getSuperClass());
+//                    System.out.println(node1.childrenBlock2.get(index).getSuperClass());
                     node1.childrenBlock2.set(index, newNode);
-                    System.out.println(node1.childrenBlock2.get(index).getSuperClass());
+//                    System.out.println(node1.childrenBlock2.get(index).getSuperClass());
                     break;
                 }
 
@@ -100,11 +129,17 @@ public class Individual {
                 int depth1 = height(node1.child);
                 int depth2 = height(node2);
                 Node newNode = node2;
-                if (depth1 == depth2 && depth1 != h1 && depth2 != h2)
+                if (depth1 == depth2 && depth1 != h1 && depth2 != h2 &&
+                        (   (   commands.contains(node1.child.getSuperClass()) && commands.contains(newNode.getSuperClass())  ) ||
+                                        (   Variable.contains(node1.child.getSuperClass()) && Variable.contains(newNode.getSuperClass())  ) ||
+                                        (   BoolStatement.contains(node1.child.getSuperClass()) && BoolStatement.contains(newNode.getSuperClass())  ) ||
+                                        (   ComparisonOperator.contains(node1.child.getSuperClass()) && ComparisonOperator.contains(newNode.getSuperClass())  ) ||
+                                        (   LogicalOperator.contains(node1.child.getSuperClass()) && LogicalOperator.contains(newNode.getSuperClass())  ) ||
+                                        (   ProgramNode.contains(node1.child.getSuperClass()) && ProgramNode.contains(newNode.getSuperClass())  )  ))
                 {
-                    System.out.println(node1.child.getSuperClass());
+//                    System.out.println(node1.child.getSuperClass());
                     node1.child = newNode;
-                    System.out.println(node1.child.getSuperClass());
+//                    System.out.println(node1.child.getSuperClass());
                     break;
                 }
             }
@@ -124,11 +159,11 @@ public class Individual {
 
     public Node getRandomNode(Node myNode) {
         if ( !myNode.children.isEmpty() ) {
-//            if(random.nextInt(0, 2) != 0)
-//            {
-//                int newNodeId = random.nextInt(0, myNode.children.size());
-//                return myNode.children.get(newNodeId);
-//            }
+            if(random.nextInt(0, 2) != 0)
+            {
+                int newNodeId = random.nextInt(0, myNode.children.size());
+                return myNode.children.get(newNodeId);
+            }
 
         } else if ( !myNode.childrenBlock1.isEmpty() || !myNode.childrenBlock2.isEmpty()) {
             if(random.nextInt(0, 2) != 0 && !myNode.childrenBlock1.isEmpty())
@@ -151,6 +186,12 @@ public class Individual {
     public void mutate(){
         while (true){
             Node node = this.getRandomNode(this.programHead);
+            ArrayList<String> commands = new ArrayList<String>(List.of("IfStatement", "Expression", "VariableAssignment", "Output", "Loop"));
+            ArrayList<String> Variable = new ArrayList<String>(List.of("Variable", "Input"));
+            ArrayList<String> BoolStatement = new ArrayList<String>(List.of("BoolStatement"));
+            ArrayList<String> ComparisonOperator = new ArrayList<String>(List.of("ComparisonOperator"));
+            ArrayList<String> LogicalOperator = new ArrayList<String>(List.of("LogicalOperator"));
+            ArrayList<String> ProgramNode = new ArrayList<String>(List.of("ProgramNode"));
 
 // get random child
             if (!node.children.isEmpty())
@@ -158,11 +199,19 @@ public class Individual {
                 int index = random.nextInt(node.children.size());
                 int depth = height(node);
                 Node newNode = Program.generateCommand(depth);
-                if (newNode != null)
+
+                if (newNode != null && (
+                    (   commands.contains(node.children.get(index).getSuperClass()) && commands.contains(newNode.getSuperClass())  ) ||
+                    (   Variable.contains(node.children.get(index).getSuperClass()) && Variable.contains(newNode.getSuperClass())  ) ||
+                    (   BoolStatement.contains(node.children.get(index).getSuperClass()) && BoolStatement.contains(newNode.getSuperClass())  ) ||
+                    (   ComparisonOperator.contains(node.children.get(index).getSuperClass()) && ComparisonOperator.contains(newNode.getSuperClass())  ) ||
+                    (   LogicalOperator.contains(node.children.get(index).getSuperClass()) && LogicalOperator.contains(newNode.getSuperClass())  ) ||
+                    (   ProgramNode.contains(node.children.get(index).getSuperClass()) && ProgramNode.contains(newNode.getSuperClass())  )  )
+                )
                 {
 
-                    System.out.println(node.children.get(index).getSuperClass());
-                    System.out.println(depth);
+//                    System.out.println(node.children.get(index).getSuperClass());
+//                    System.out.println(depth);
                     node.children.set(index, newNode);
                     break;
                 }
@@ -171,11 +220,18 @@ public class Individual {
                 int index = random.nextInt(node.childrenBlock1.size());
                 int depth = height(node);
                 Node newNode = Program.generateCommand(depth);
-                if (newNode != null)
+                if (newNode != null && (
+                        (   commands.contains(node.childrenBlock1.get(index).getSuperClass()) && commands.contains(newNode.getSuperClass())  ) ||
+                                (   Variable.contains(node.childrenBlock1.get(index).getSuperClass()) && Variable.contains(newNode.getSuperClass())  ) ||
+                                (   BoolStatement.contains(node.childrenBlock1.get(index).getSuperClass()) && BoolStatement.contains(newNode.getSuperClass())  ) ||
+                                (   ComparisonOperator.contains(node.childrenBlock1.get(index).getSuperClass()) && ComparisonOperator.contains(newNode.getSuperClass())  ) ||
+                                (   LogicalOperator.contains(node.childrenBlock1.get(index).getSuperClass()) && LogicalOperator.contains(newNode.getSuperClass())  ) ||
+                                (   ProgramNode.contains(node.childrenBlock1.get(index).getSuperClass()) && ProgramNode.contains(newNode.getSuperClass())  )  )
+                )
                 {
 
-                    System.out.println(node.childrenBlock1.get(index).getSuperClass());
-                    System.out.println(depth);
+//                    System.out.println(node.childrenBlock1.get(index).getSuperClass());
+//                    System.out.println(depth);
                     node.childrenBlock1.set(index, newNode);
                     break;
                 }
@@ -184,11 +240,18 @@ public class Individual {
                 int index = random.nextInt(node.childrenBlock2.size());
                 int depth = height(node);
                 Node newNode = Program.generateCommand(depth);
-                if (newNode != null)
+                if (newNode != null && (
+                        (   commands.contains(node.childrenBlock2.get(index).getSuperClass()) && commands.contains(newNode.getSuperClass())  ) ||
+                                (   Variable.contains(node.childrenBlock2.get(index).getSuperClass()) && Variable.contains(newNode.getSuperClass())  ) ||
+                                (   BoolStatement.contains(node.childrenBlock2.get(index).getSuperClass()) && BoolStatement.contains(newNode.getSuperClass())  ) ||
+                                (   ComparisonOperator.contains(node.childrenBlock2.get(index).getSuperClass()) && ComparisonOperator.contains(newNode.getSuperClass())  ) ||
+                                (   LogicalOperator.contains(node.childrenBlock2.get(index).getSuperClass()) && LogicalOperator.contains(newNode.getSuperClass())  ) ||
+                                (   ProgramNode.contains(node.childrenBlock2.get(index).getSuperClass()) && ProgramNode.contains(newNode.getSuperClass())  )  )
+                )
                 {
 
-                    System.out.println(node.childrenBlock2.get(index).getSuperClass());
-                    System.out.println(depth);
+//                    System.out.println(node.childrenBlock2.get(index).getSuperClass());
+//                    System.out.println(depth);
                     node.childrenBlock2.set(index, newNode);
                     break;
                 }
@@ -196,11 +259,18 @@ public class Individual {
             } else if (node.child != null) {
                 int depth = height(node);
                 Node newNode = Program.generateCommand(depth);
-                if (newNode != null)
+                if (newNode != null && (
+                        (   commands.contains(node.child.getSuperClass()) && commands.contains(newNode.getSuperClass())  ) ||
+                                (   Variable.contains(node.child.getSuperClass()) && Variable.contains(newNode.getSuperClass())  ) ||
+                                (   BoolStatement.contains(node.child.getSuperClass()) && BoolStatement.contains(newNode.getSuperClass())  ) ||
+                                (   ComparisonOperator.contains(node.child.getSuperClass()) && ComparisonOperator.contains(newNode.getSuperClass())  ) ||
+                                (   LogicalOperator.contains(node.child.getSuperClass()) && LogicalOperator.contains(newNode.getSuperClass())  ) ||
+                                (   ProgramNode.contains(node.child.getSuperClass()) && ProgramNode.contains(newNode.getSuperClass())  )  )
+                )
                 {
 
-                    System.out.println(node.child.getSuperClass());
-                    System.out.println(depth);
+//                    System.out.println(node.child.getSuperClass());
+//                    System.out.println(depth);
                     node.child = newNode;
                     break;
                 }
