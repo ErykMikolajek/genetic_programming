@@ -49,9 +49,6 @@ public class Population {
         for (int i = 0; i < populationSize; i++){
             Individual newIndividual = new Individual();
             newIndividual.generate(this.PROGRAMS_DEPTH);
-//            System.out.println("---------- Gen: " + generation + " ----------");
-//            System.out.println(newIndividual.plot());
-//            System.out.println("------------------------------------");
             population.add(newIndividual);
         }
     }
@@ -66,15 +63,9 @@ public class Population {
 
             Individual crossoverIndividual = bestIndividuals.get(program1).crossover(bestIndividuals.get(program2));
             crossoverIndividual.mutate();
-//            System.out.println("---------- Gen: " + generation + " ----------");
-//            System.out.println(crossoverIndividual.plot());
-//            System.out.println("------------------------------------");
             newIndividuals.add(crossoverIndividual);
             Individual randomIndividual = new Individual();
             randomIndividual.generate(this.PROGRAMS_DEPTH);
-//            System.out.println("---------- Gen: " + generation + " ----------");
-//            System.out.println(randomIndividual.plot());
-//            System.out.println("------------------------------------");
             newIndividuals.add(randomIndividual);
         }
         this.population = newIndividuals;
@@ -83,20 +74,14 @@ public class Population {
     public void updatePopulationFitness(){
         double avgFitness = 0;
         for (Individual individual : this.population){
-//            double programFitness = 0;
-//            programFitness += abs(this.outputTemplateVector.size() - programOutput.size()) * 100;
-//            if (individual.isFailed) programFitness += 500;
             int[] generatedVector = individual.eval(PROGRAMS_MAX_OPERATIONS).stream().mapToInt(i -> i).toArray();
             int[] targetVector = outputTemplateVector.stream().mapToInt(i -> i).toArray();
 
             double similarityRatio = calculateSimilarity(targetVector, generatedVector);
             double grammaticalScore = individual.isFailed ? 0.0 : 1 + GRAMMATICAL_WEIGHT;
             similarityRatio *= grammaticalScore;
-
-//            individual.fitness = (SIMILARITY_WEIGHT * similarityRatio) + ((1 - SIMILARITY_WEIGHT) * (1 - differenceLength)) + grammaticalScore;
             individual.fitness = similarityRatio;
 
-//            individual.fitness = programFitness;
             avgFitness += individual.fitness;
 //            if (individual.fitness <= FIT_THRESHOLD){
 ////                System.out.println("Individual fitness: " + individual.fitness);
@@ -143,10 +128,6 @@ public class Population {
 //        System.out.println("Length difference: " + lengthDifference);
 //        System.out.println("Similarity: " + similarity);
         return similarity;
-    }
-
-    private static int costOfSubstitution(int a, int b) {
-        return a == b ? 0 : 1;
     }
 
 
