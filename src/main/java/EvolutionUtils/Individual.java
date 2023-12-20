@@ -21,6 +21,20 @@ public class Individual {
     public boolean isFailed = false;
     public double fitness;
     static Random random = new Random();
+    private ArrayList<String> commands = new ArrayList<String>(List.of("IfStatement", "Loop", "VariableAssignment", "Output"));
+    private ArrayList<String> Variable = new ArrayList<String>(List.of("Variable", "Input"));
+    private ArrayList<String> BoolStatement = new ArrayList<String>(List.of("BoolStatement"));
+    private ArrayList<String> ComparisonOperator = new ArrayList<String>(List.of("ComparisonOperator"));
+    private ArrayList<String> LogicalOperator = new ArrayList<String>(List.of("LogicalOperator"));
+    private ArrayList<String> ProgramNode = new ArrayList<String>(List.of("ProgramNode"));
+    private ArrayList<String> Expression = new ArrayList<String>(List.of("Expression"));
+//    private ArrayList<String> commands = new ArrayList<>();
+//    private ArrayList<String> BoolStatement = new ArrayList<>();
+//    private ArrayList<String> ComparisonOperator = new ArrayList<>();
+//    private ArrayList<String> LogicalOperator = new ArrayList<>();
+//    private ArrayList<String> ProgramNode = new ArrayList<>();
+
+
     public Individual(Node root){
         programHead = root;
     }
@@ -43,12 +57,6 @@ public class Individual {
     }
 
     public Individual crossover(Individual parent2){
-        ArrayList<String> commands = new ArrayList<String>(List.of("IfStatement", "Expression", "VariableAssignment", "Output", "Loop"));
-        ArrayList<String> Variable = new ArrayList<String>(List.of("Variable", "Input"));
-        ArrayList<String> BoolStatement = new ArrayList<String>(List.of("BoolStatement"));
-        ArrayList<String> ComparisonOperator = new ArrayList<String>(List.of("ComparisonOperator"));
-        ArrayList<String> LogicalOperator = new ArrayList<String>(List.of("LogicalOperator"));
-        ArrayList<String> ProgramNode = new ArrayList<String>(List.of("ProgramNode"));
         int h1 = height(this.programHead);
         int h2 = height(parent2.programHead);
         int counter = 0;
@@ -79,7 +87,8 @@ public class Individual {
                                         (   BoolStatement.contains(node1.children.get(index).getSuperClass()) && BoolStatement.contains(newNode.getSuperClass())  ) ||
                                         (   ComparisonOperator.contains(node1.children.get(index).getSuperClass()) && ComparisonOperator.contains(newNode.getSuperClass())  ) ||
                                         (   LogicalOperator.contains(node1.children.get(index).getSuperClass()) && LogicalOperator.contains(newNode.getSuperClass())  ) ||
-                                        (   ProgramNode.contains(node1.children.get(index).getSuperClass()) && ProgramNode.contains(newNode.getSuperClass())  )  ))
+                                        (   ProgramNode.contains(node1.children.get(index).getSuperClass()) && ProgramNode.contains(newNode.getSuperClass())  )||
+                                        (   Expression.contains(node1.children.get(index).getSuperClass()) && Expression.contains(newNode.getSuperClass())  )  ))
                 {
 //                    System.out.println(node1.children.get(index).getSuperClass());
                     node1.children.set(index, newNode);
@@ -98,7 +107,8 @@ public class Individual {
                                         (   BoolStatement.contains(node1.childrenBlock1.get(index).getSuperClass()) && BoolStatement.contains(newNode.getSuperClass())  ) ||
                                         (   ComparisonOperator.contains(node1.childrenBlock1.get(index).getSuperClass()) && ComparisonOperator.contains(newNode.getSuperClass())  ) ||
                                         (   LogicalOperator.contains(node1.childrenBlock1.get(index).getSuperClass()) && LogicalOperator.contains(newNode.getSuperClass())  ) ||
-                                        (   ProgramNode.contains(node1.childrenBlock1.get(index).getSuperClass()) && ProgramNode.contains(newNode.getSuperClass())  )  ))
+                                        (   ProgramNode.contains(node1.childrenBlock1.get(index).getSuperClass()) && ProgramNode.contains(newNode.getSuperClass()))||
+                                        (   Expression.contains(node1.childrenBlock1.get(index).getSuperClass()) && Expression.contains(newNode.getSuperClass())  )  ))
                 {
 //                    System.out.println(node1.childrenBlock1.get(index).getSuperClass());
                     node1.childrenBlock1.set(index, newNode);
@@ -117,7 +127,8 @@ public class Individual {
                                         (   BoolStatement.contains(node1.childrenBlock2.get(index).getSuperClass()) && BoolStatement.contains(newNode.getSuperClass())  ) ||
                                         (   ComparisonOperator.contains(node1.childrenBlock2.get(index).getSuperClass()) && ComparisonOperator.contains(newNode.getSuperClass())  ) ||
                                         (   LogicalOperator.contains(node1.childrenBlock2.get(index).getSuperClass()) && LogicalOperator.contains(newNode.getSuperClass())  ) ||
-                                        (   ProgramNode.contains(node1.childrenBlock2.get(index).getSuperClass()) && ProgramNode.contains(newNode.getSuperClass())  )  ))
+                                        (   ProgramNode.contains(node1.childrenBlock2.get(index).getSuperClass()) && ProgramNode.contains(newNode.getSuperClass()))||
+                                        (   Expression.contains(node1.childrenBlock2.get(index).getSuperClass()) && Expression.contains(newNode.getSuperClass())  )  ))
                 {
 //                    System.out.println(node1.childrenBlock2.get(index).getSuperClass());
                     node1.childrenBlock2.set(index, newNode);
@@ -135,7 +146,8 @@ public class Individual {
                                         (   BoolStatement.contains(node1.child.getSuperClass()) && BoolStatement.contains(newNode.getSuperClass())  ) ||
                                         (   ComparisonOperator.contains(node1.child.getSuperClass()) && ComparisonOperator.contains(newNode.getSuperClass())  ) ||
                                         (   LogicalOperator.contains(node1.child.getSuperClass()) && LogicalOperator.contains(newNode.getSuperClass())  ) ||
-                                        (   ProgramNode.contains(node1.child.getSuperClass()) && ProgramNode.contains(newNode.getSuperClass())  )  ))
+                                        (   ProgramNode.contains(node1.child.getSuperClass()) && ProgramNode.contains(newNode.getSuperClass())  )||
+                                        (   Expression.contains(node1.child.getSuperClass()) && Expression.contains(newNode.getSuperClass())  )  ))
                 {
 //                    System.out.println(node1.child.getSuperClass());
                     node1.child = newNode;
@@ -186,12 +198,6 @@ public class Individual {
     public void mutate(){
         while (true){
             Node node = this.getRandomNode(this.programHead);
-            ArrayList<String> commands = new ArrayList<String>(List.of("IfStatement", "Expression", "VariableAssignment", "Output", "Loop"));
-            ArrayList<String> Variable = new ArrayList<String>(List.of("Variable", "Input"));
-            ArrayList<String> BoolStatement = new ArrayList<String>(List.of("BoolStatement"));
-            ArrayList<String> ComparisonOperator = new ArrayList<String>(List.of("ComparisonOperator"));
-            ArrayList<String> LogicalOperator = new ArrayList<String>(List.of("LogicalOperator"));
-            ArrayList<String> ProgramNode = new ArrayList<String>(List.of("ProgramNode"));
 
 // get random child
             if (!node.children.isEmpty())
@@ -206,7 +212,8 @@ public class Individual {
                     (   BoolStatement.contains(node.children.get(index).getSuperClass()) && BoolStatement.contains(newNode.getSuperClass())  ) ||
                     (   ComparisonOperator.contains(node.children.get(index).getSuperClass()) && ComparisonOperator.contains(newNode.getSuperClass())  ) ||
                     (   LogicalOperator.contains(node.children.get(index).getSuperClass()) && LogicalOperator.contains(newNode.getSuperClass())  ) ||
-                    (   ProgramNode.contains(node.children.get(index).getSuperClass()) && ProgramNode.contains(newNode.getSuperClass())  )  )
+                    (   ProgramNode.contains(node.children.get(index).getSuperClass()) && ProgramNode.contains(newNode.getSuperClass())  )  ||
+                    (   Expression.contains(node.children.get(index).getSuperClass()) && Expression.contains(newNode.getSuperClass())  )  )
                 )
                 {
 
@@ -226,7 +233,8 @@ public class Individual {
                                 (   BoolStatement.contains(node.childrenBlock1.get(index).getSuperClass()) && BoolStatement.contains(newNode.getSuperClass())  ) ||
                                 (   ComparisonOperator.contains(node.childrenBlock1.get(index).getSuperClass()) && ComparisonOperator.contains(newNode.getSuperClass())  ) ||
                                 (   LogicalOperator.contains(node.childrenBlock1.get(index).getSuperClass()) && LogicalOperator.contains(newNode.getSuperClass())  ) ||
-                                (   ProgramNode.contains(node.childrenBlock1.get(index).getSuperClass()) && ProgramNode.contains(newNode.getSuperClass())  )  )
+                                (   ProgramNode.contains(node.childrenBlock1.get(index).getSuperClass()) && ProgramNode.contains(newNode.getSuperClass())  )||
+                                (   Expression.contains(node.childrenBlock1.get(index).getSuperClass()) && Expression.contains(newNode.getSuperClass())  )  )
                 )
                 {
 
@@ -246,7 +254,8 @@ public class Individual {
                                 (   BoolStatement.contains(node.childrenBlock2.get(index).getSuperClass()) && BoolStatement.contains(newNode.getSuperClass())  ) ||
                                 (   ComparisonOperator.contains(node.childrenBlock2.get(index).getSuperClass()) && ComparisonOperator.contains(newNode.getSuperClass())  ) ||
                                 (   LogicalOperator.contains(node.childrenBlock2.get(index).getSuperClass()) && LogicalOperator.contains(newNode.getSuperClass())  ) ||
-                                (   ProgramNode.contains(node.childrenBlock2.get(index).getSuperClass()) && ProgramNode.contains(newNode.getSuperClass())  )  )
+                                (   ProgramNode.contains(node.childrenBlock2.get(index).getSuperClass()) && ProgramNode.contains(newNode.getSuperClass())  )||
+                                (   Expression.contains(node.childrenBlock2.get(index).getSuperClass()) && Expression.contains(newNode.getSuperClass())  )  )
                 )
                 {
 
@@ -265,7 +274,8 @@ public class Individual {
                                 (   BoolStatement.contains(node.child.getSuperClass()) && BoolStatement.contains(newNode.getSuperClass())  ) ||
                                 (   ComparisonOperator.contains(node.child.getSuperClass()) && ComparisonOperator.contains(newNode.getSuperClass())  ) ||
                                 (   LogicalOperator.contains(node.child.getSuperClass()) && LogicalOperator.contains(newNode.getSuperClass())  ) ||
-                                (   ProgramNode.contains(node.child.getSuperClass()) && ProgramNode.contains(newNode.getSuperClass())  )  )
+                                (   ProgramNode.contains(node.child.getSuperClass()) && ProgramNode.contains(newNode.getSuperClass())  )||
+                                (   Expression.contains(node.child.getSuperClass()) && Expression.contains(newNode.getSuperClass())  )  )
                 )
                 {
 
