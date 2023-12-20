@@ -9,7 +9,7 @@ public class VariableAssignment extends Node{
     }
 
     public String plot(){
-        return "\n" + variableName + " = " + child.plot() + "\n";
+        return variableName + " = " + child.plot() + " ";
     }
 
     @Override

@@ -31,6 +31,8 @@ public class Individual {
     }
     public ArrayList<Integer> eval(int maxOperations){
         InterpreterInterface interpreter = new InterpreterInterface(maxOperations);
+
+//        ArrayList<Integer> returnArray = interpreter.evaluateProgram(program, inputFileName);
         ArrayList<Integer> returnArray = interpreter.evaluateProgram(this.plot(), inputFileName);
         this.isFailed = interpreter.didProgramFail;
         return returnArray;

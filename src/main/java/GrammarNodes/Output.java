@@ -7,7 +7,7 @@ public class Output extends Node{
     }
 
     public String plot(){
-        return "\noutput " + child.plot();
+        return "output " + child.plot();
     }
 
     @Override

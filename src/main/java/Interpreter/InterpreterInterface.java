@@ -25,10 +25,13 @@ public class InterpreterInterface {
     }
 
     public ArrayList<Integer> evaluateProgram(String program, String inputFileName){
-        ANTLRErrorListener errorListener = new BaseErrorListener();
+//        ANTLRErrorListener errorListener = new BaseErrorListener();
         MiniGPLangParser parser = getParser(program);
-        parser.addErrorListener(errorListener);
+//        parser.addErrorListener(errorListener);
         ParseTree antlrAST = parser.prog();
+//        System.out.println("------------- Program: -------------");
+//        System.out.println(program);
+//        System.out.println("------------------------------------");
         AntlrProgram programVisitor = new AntlrProgram(inputFileName, maxOperationCount);
         programVisitor.visit(antlrAST);
         this.didProgramFail = AntlrProgram.didProgramFail;
@@ -42,8 +45,10 @@ public class InterpreterInterface {
         MiniGPLangParser parser;
         CharStream stream = fromString(program);
         MiniGPLangLexer lexer = new MiniGPLangLexer(stream);
+        lexer.addErrorListener(lexer.getErrorListenerDispatch());
         CommonTokenStream tokens = new CommonTokenStream(lexer);
         parser = new MiniGPLangParser(tokens);
+//        parser.addErrorListener();
         return parser;
     }
 }

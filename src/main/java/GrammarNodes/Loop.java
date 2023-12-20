@@ -18,12 +18,12 @@ public class Loop extends Node {
     public String plot(){
         StringBuilder output = new StringBuilder();
         switch (rule){
-            case FOR -> output.append("\nfor (").append(statementExpressionChild.plot()).append(") {\n");
-            case WHILE -> output.append("\nwhile (").append(statementExpressionChild.plot()).append(") {\n");
+            case FOR -> output.append("for (").append(statementExpressionChild.plot()).append(") { ");
+            case WHILE -> output.append("while (").append(statementExpressionChild.plot()).append(") { ");
         }
         for (Node n : children)
-            output.append("\t").append(n.plot());
-        output.append("\n}\n");
+            output.append(n.plot());
+        output.append(" } ");
         return output.toString();
     }
 
