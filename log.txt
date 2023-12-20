@@ -1,4007 +1,4017 @@
-if (input ) { input  } 
-var1 = 84 
-var1
-
-if (input  / input ) { var0 = input  output var0 } 
-56
+input  / input  + var1 * 92
+output 52
 input 
 
-var0 = 49 + 83 
-var1 = 66 
-input 
-
-for (62) { if (input ) { 79 } 7 * input  } 
-output 28 + 90
-input 
-
-for (58 - input ) { input  - input for (35) { input  }  } 
-var1 = 16 
-84
-
-while (input ) { while (input ) { 80 } while (75) { 65 }  } 
-var0 = 45 / 11 
-input 
-
-while (input  - input ) { var0 = 61 output var0 } 
-if (41) { 6 } 
-input 
-
-output input 
-output input 
-47
-
-while (input  == input ) { 57 * input  } 
-var0 = 18 
-var0
-
-input 
-for (29) { input  } 
-input 
-
-output 57
-var0 = input  
-input 
-
-var0 / input  / input 
-11 / 66
-48
-
-output input  / input 
-var0 = 16 
-input 
-
-if (input  && input ) { if (37) { input  } var0 = 45  } 
-var1 = input  
-input 
-
-output 43
-var0 = 83 
-input 
-
+output 73
 input  + input 
-64 * 59
 input 
 
-output input  * 61
-var0 = input  
-input 
-
-if (96 < input ) { output input  } else { while (56) { input  } output 63 } 
-var0 = input  + 63 
-5
-
-output 61
-75 * input 
-input 
-
-while (26 - 11) { var1 = input  output var1 } 
-var0 = 35 
-input 
-
-var1 = var0 
-77 / input 
-input 
-
-if (input  - 59) { 48 - 61output input  } 
-var0 = input  
-input 
-
-input 
-var0 = input  
-input 
-
-for (input ) { var0 = input  if (input ) { 89 } else { input  }  } 
-for (12) { while (88) { 10 }  } 
-var0
-
-var0 = 32 - input  
-for (53) { 48 } 
-input 
-
-output 67 - 71
-if (77) { input  } 
-24
-
-var0 = input  
-if (input ) { 46 } 
-input 
-
-while (input ) { 90 } 
-for (input ) { input  } 
-var0
-
-output 53 + input 
-output 29
-input 
-
-if (input ) { output 19var1 = var0  } else { output 74var0 = 78  } 
-if (input ) { input  } 
-input 
-
-if (24 || 17) { var0 = input  if (98) { 49 } else { var0 }  } else { output input  } 
-input  - input 
-input 
-
-output 83
-if (input ) { 84 } 
-input 
-
-while (57 || input ) { if (24) { 40 } if (88) { 99 }  } 
-if (input  || var0) { if (49) { input  } while (72) { var1 }  } 
-74
-
-input  - input  / 36 + 61
-if (input  && input ) { var1 = var0 if (input ) { input  } else { 0 }  } else { var2 = input  var3 = input   } 
-80
-
-var0 = input  
+input  + 21 + if (54) { 66 } 
 output input 
-input 
-
-var0 = 23 * input  
-var0 = 63 
-input 
-
-if (input  && input ) { input  - input  } 
-input  + 9
-95
-
-output input  / 84
-if (input ) { 32 } else { input  } 
-input 
-
-if (input ) { input  } 
-if (7) { input  } 
-input 
-
-if (input  == input ) { output 58if (input ) { 82 }  } 
-var0 = 87 - input  
-var0
-
-if (input  - input ) { input  + 12 } 
-while (input ) { var0 } 
-input 
-
-while (input  > input ) { for (22) { 92 }  } 
-for (69) { 69 } 
-input 
-
-if (input  * input ) { var0 = 64  } else { if (input ) { var0 } else { input  }  } 
-while (44) { var0 } 
-input 
-
-var0 = input  * input  
-for (49) { 6 } 
-input 
-
-input  * var0
-input 
-input 
-
-output 80 + input 
-var0 = 35 
-input 
-
-if (var0) { input  } 
-if (input ) { input  } else { input  } 
-input 
-
-var0 = input  - 56 
-while (input ) { 81 } 
-input 
-
-for (input ) { if (input ) { input  } output input  } 
-while (input ) { var0 } 
-input 
-
-if (input  || input ) { for (input ) { input  }  } 
-while (input ) { 9 } 
-19
-
-var0 = input  - 10 
-var1 = 94 
-input 
-
-var0 = input  * input  
-if (67) { 35 } 
-var0
-
-var0 = input  * input  
-for (input ) { input  } 
-var0
-
-4
-input 
-input 
-
-var0 = input  + input  
-9 * input 
-30
-
-for (46) { var0 = 92 output input  } 
-if (input  == 58) { for (input ) { input  } if (var0) { input  }  } else { output var0input  + 55 } 
-input 
-
-output input 
-var0 = input  
-61
-
-61 * input  / input  * 70
-for (95) { input  } 
-11
-
-if (input  && input ) { output input  } else { while (var0) { input  }  } 
-var1 = input  
-26
-
-var0 = input  / 97 
-output input 
-var0
-
-var0 = input  
-while (input ) { input  } 
-48
-
-output 68
-if (19) { 82 } else { 6 } 
-input 
-
-output 17
-2 + input 
-17
-
-while (42 > input ) { if (input ) { input  }  } 
-while (var0) { input  } 
-22
-
-output input  / 47
-input  * 59
-input 
-
-for (6 * 16) { var1 = 41  } 
-6 / 94
-80
-
-78
-output input 
-input 
-
-input  * input 
-if (input ) { input  } else { input  } 
-input 
-
-while (input  - input ) { 4916 - input  } 
-output 61
-input 
-
-var0 = 9 
-if (var0) { var0 } else { input  } 
-var0
-
-output 0 * 52
-output 40
-input 
-
-67 * 86 * 99 * 51
-for (var0 + input ) { if (input ) { input  } else { 11 }  } 
-input 
-
-for (71 - 91) { 79 + 7252 } 
-while (input  > input ) { var1 = var0 input  - var0 } 
-input 
-
-output 31
-var0 = var0 
-input 
-
-while (46 || 23) { output 40for (input ) { input  }  } 
-output 45
-input 
-
-if (69 < input ) { for (var0) { input  }  } else { for (input ) { input  } var0 + var0 } 
-input  - var0
-input 
-
-if (var0) { 83 } 
-var1 = var0 
-input 
-
-output 72
-if (input ) { 81 } else { input  } 
-input 
-
-var1 = input  / var0 
-while (9) { 93 } 
-98
-
-if (85 - 48) { for (input ) { 12 }  } 
-var1 = input  / var0 
-input 
-
-var0 = 12 - 63 
-if (input ) { 58 } else { 27 } 
-20
-
-output input 
-var0 = 1 
-79
-
-54
-if (12) { input  } 
-0
-
-while (input  || input ) { output 56if (99) { 56 } else { 47 }  } 
-13
-input 
-
-input  / 45
-input  / input 
-84
-
-while (74 && 2) { while (78) { input  } output 30 } 
-input  + input 
-43
-
-var0 = input  
-4 / input 
-input 
-
-while (input ) { 3 } 
-92
-61
-
-input 
-var0 = input  
-input 
-
-while (input  - 70) { var0 = input  if (21) { input  }  } 
-for (input  * 31) { input  - 76 } 
-input 
-
-for (input ) { 95 } 
-output input 
-99
-
-var0 = input  - input  
-output input 
-input 
-
-18
-output input 
-var1
-
-var0 = 34 * 70 
-output 25
-input 
-
-if (54) { input  } else { input  } 
-var1 = input  
-var0
-
-while (input  * input ) { output 52 } 
-input  + input 
-82
-
-var0 = 62 
-var0
-16
-
-for (59 / 20) { for (input ) { input  }  } 
-output input  * input 
-input 
-
-output input 
-if (69) { 69 } 
-input 
-
-18 / input  - 22 / 44
-if (input ) { 12 } 
-input 
-
-output 13 / input 
-for (input ) { 3 } 
-67
-
-var0 = input  
-output 71
-62
-
-if (input  == input ) { var0 = 33  } 
-var1 = 34 
-input 
-
-input  - input  - 30 + 71
-var1 = 18 
-44
-
-output input 
-output 46
-82
-
-59 / input  + input  - 33
-var2 = input  
-input 
-
-var0 = input  + 75 
-while (input ) { input  } 
-27
-
-if (input  == input ) { output 2450 } else { input  - 53var0 = 74  } 
-var1 = input  
-var1
-
-while (input ) { var0 = 51 if (2) { input  } else { input  }  } 
-output input 
-input 
-
-var0 = input  + input  
-var1 = input  
-var1
-
-input  / input 
-if (input ) { 59 } 
-1
-
-input 
-while (63) { var0 } 
-18
-
-var0 = input  / 57 
-var0 = input  
-input 
-
-input  / input  * input  - 45
-output 1 * input 
 55
 
-var1 = var0 
-var1 = input  
-input 
-
-input  + input  + 73
-var2 = input  
-14
-
-if (68 * 64) { var0 = input   } else { for (1) { var0 } var1 = input   } 
-for (input  / 40) { while (48) { input  } if (input ) { input  } else { input  }  } 
-79
-
-input 
-var0 = 61 
-input 
-
-if (37 || input ) { output input while (input ) { 66 }  } else { var0 = 89  } 
-for (var0 - 71) { while (input ) { input  } var1 = input   } 
-input 
-
-input 
-for (input ) { input  } 
-25
-
-while (87 || input ) { input  - input output input  } 
-25 + input 
-24
-
-if (input ) { output var0 } 
-58 * input 
-37
-
-50
-if (input ) { input  } else { input  } 
-6
-
-if (input ) { input  * input for (15) { 74 }  } 
-65 / input 
-74
-
-if (input  - 31) { while (72) { 45 }  } 
-output input 
-68
-
-output input  - input 
-while (input ) { 8 } 
-input 
-
-if (input  < input ) { output input while (input ) { 39 }  } else { var0 = input   } 
-output input 
-input 
-
-output 70 - 88
-if (var0) { 83 } else { input  } 
-40
-
-var0 = input  + input  
-var0 = input  
-input 
-
-var0 = 16 / input  
-input  * input 
-input 
-
-if (input  && input ) { input while (input ) { input  }  } else { while (input ) { input  } if (var0) { var0 } else { var0 }  } 
-output 65
-input 
-
-output 85 / 47
-input 
-var1
-
-output input 
-if (input ) { input  } else { input  } 
-var0
-
-var1 = 99 
-input 
-var0
-
-96 * 6
-if (input ) { input  } else { input  } 
-input 
-
-output input 
-output 58
-19
-
-if (99 == input ) { var1 = var0  } else { for (input ) { input  } 20 } 
-output input 
-50
-
-var0 = input  
-55 / 33
-81
-
-if (input  < 86) { var0 = 71  } else { output var0while (input ) { 17 }  } 
-output 14
-input 
-
-if (99 > 55) { input  + input var0 = input   } 
-var1 = input  
-var1
-
-var1 = var0 
-while (27) { input  } 
-54
-
-input 
-var0 = input  
-input 
-
-78 * 27 / 34
-output input 
-37
-
-for (input  * 51) { output 45output input  } 
-var0 = 78 
-var0
-
-if (87 - input ) { output input  } 
-if (input  * var0) { if (input ) { input  }  } else { 64 * input  } 
-input 
-
-input  - 0 - input  / input 
-for (42) { 11 } 
-94
-
-var0 = input   * input  + 53
-var0 = input  
-var0
-
-while (98) { 99 } 
-36
-input 
-
-if (input ) { input  } 
-8 * 60
-61
-
-var1 = input  
-input  + 55
-38
-
-input  - 86 + input  / 77
-var0 = input  
-64
-
-output input  / input 
-if (input ) { input  } 
-91
-
-while (input  && input ) { output 55 } 
-if (97) { 63 } else { 49 } 
-94
-
-for (54) { for (input ) { input  }  } 
-while (var2 && 78) { if (input ) { input  } else { var2 }  } 
-input 
-
-while (86 == input ) { var1 = input   } 
-for (93) { 74 } 
-input 
-
-43
-var0 = input  
-input 
-
-if (input  / input ) { while (18) { 41 }  } else { input 97 - 80 } 
-var0 = input  
-input 
-
-output input 
-output 74
-input 
-
-output var0
-var0 = 62 
-var0
-
-while (44 || 95) { if (input ) { 52 } else { 24 } if (input ) { 80 }  } 
-if (input ) { input  } else { 64 } 
-input 
-
-input  / 28
-input  + var0
-input 
-
-for (30 / input ) { 56 } 
-var0 = input  
-input 
-
-for (input ) { input  } 
-var0 = 67 
-input 
-
-82
-output 56
-52
-
-output input 
-if (input ) { input  } 
-input 
-
-output input  + 9
-input  - input 
-var0
-
-if (input  && 23) { var0 = 62 var1 = var0  } else { var2 = input   } 
-if (3) { 69 } else { input  } 
-52
-
-while (7 && 34) { input  - 94 } 
-52 / 31 * input  - input 
-60
-
-output input  - input 
-while (input ) { input  } 
-input 
-
-if (input  > input ) { input  / 21while (57) { input  }  } else { for (input ) { 42 } var0 = input   } 
-input  - var0
-input 
-
-output 51 * input 
-if (39) { 56 } 
-52
-
-var2 = input  
-var1 = var0 
-10
-
-if (39 < input ) { for (8) { input  }  } else { if (input ) { input  }  } 
-for (input ) { 24 } 
-93
-
-while (input  + 14) { for (input ) { input  }  } 
-if (input  < input ) { output 75 } else { 34 / 29while (input ) { 85 }  } 
-input 
-
-while (input  / input ) { output 6 } 
-if (input  > 87) { var1 = input  output input  } else { if (input ) { input  } else { var1 }  } 
-input 
-
-if (6 || input ) { if (22) { 70 } else { 79 }  } 
-if (input ) { input  } else { 59 } 
-76
-
-output input 
-50
-input 
-
-if (input ) { 0 } else { input  } 
-if (input ) { input  } else { input  } 
-input 
-
-var0 = input  * 53 
-output input 
-var0
-
-if (input  > input ) { var0 = 80  } else { input  - input for (12) { input  }  } 
-var1 = input  
-input 
-
-var0 = 4 
-input 
-input 
-
-if (input  == 11) { var0 = input  var1 = input   } 
-if (input  > var0) { for (input ) { input  }  } else { var1 = input  while (98) { input  }  } 
-var0
-
-for (2 * 97) { while (input ) { input  } 64 - 80 } 
-var0 = 55 
-var0
-
-if (53 * input ) { output 99for (input ) { input  }  } 
-var0 = input  
-input 
-
-input  / var0 - input 
-input 
-var0
-
-if (input  || 1) { output input  } 
-output input 
-input 
-
-var0 = input  + 60 
-input  / var1
-input 
-
-if (input  == input ) { output input if (19) { 74 }  } 
-var0 = input  
-var0
-
-output input  + input 
-input  - input 
-input 
-
-if (37) { input  } 
-72 * var0
-var0
-
-if (19 + 11) { var0 = 68 output var0 } 
-var1 = input  
-var1
-
-var0 = 76 
-if (input ) { input  } 
-input 
-
-var0 = 40 - input  
-output input 
-input 
-
-for (72) { input  } 
-var0 = input  
-input 
-
-var0 = input  
-47 / input 
-input 
-
-for (77 / 94) { var0 = 68  } 
-for (21 / input ) { while (input ) { var0 }  } 
-input 
-
-output 37
-var0 = input  
-78
-
-output 67 - input 
-input  + 60
-65
-
-input 
-input  - 99
-input 
-
-76 - 42 - input  - input 
-var1 = 90 / var0 
-input 
-
-output input  - 18
-output 80
-input 
-
-6 * input 
-if (input ) { input  } 
-var0
-
-var0 = input  - input  
-while (input ) { input  } 
-24
-
-input  - 16
-var0 = input  
-input 
-
-while (86 && input ) { output 047 } 
-if (input  == input ) { if (input ) { var0 }  } else { 98 * var0 } 
-47
-
-input  / while (var0) { input  } 
-output 58
-input 
-
-line 1:9 mismatched input 'while' expecting {'input', VARNAME, NUMBER}
-output input  - input 
-var0 = var1 
-80
-
-10
-35 * 18
-33
-
-while (0 && input ) { output 66 } 
-var1 = input  
-2
-
-var0 = input  
-var1 = var0 
-input 
-
-if (input ) { var1 } 
-while (input ) { 21 } 
-input 
-
-if (input ) { if (input ) { input  } if (45) { 78 } else { 32 }  } 
-while (56) { 71 } 
-84
-
-if (input  && input ) { var0 = 42 while (9) { var0 }  } 
-for (var0) { input  } 
-input 
-
-for (18) { if (var0) { input  }  } 
-input  * 87
-44
-
-while (46 == 3) { input if (input ) { input  } else { var0 }  } 
-input 
-input 
-
-output 38 * input 
-var1 = input  
-input 
-
-for (input  * input ) { output input if (input ) { 60 }  } 
-output 51
-49
-
-output 91
-var0 = 25 
-input 
-
-output input 
-input  / var0
-59
-
-62
-var0 = input  
-input 
-
-if (input  / input ) { if (input ) { input  } else { input  } 12 } else { input  + 7 } 
-for (input ) { 99 } 
-input 
-
-while (32 > input ) { var0 = 26  } 
-var1 = input  / var0 
-input 
-
-output input  / input 
-for (input ) { input  } 
-input 
-
-var0 = input  
-for (input ) { input  } 
-input 
-
-while (input ) { 77 } 
-if (input ) { 42 } 
-input 
-
-for (input  + input ) { input  + 85while (input ) { input  }  } 
-for (49) { input  } 
-input 
-
-var0 = 14 * 15 
-for (input ) { 37 } 
-var1
-
-83 + 69 - input  - input 
-while (8) { input  } 
-1
-
-for (input ) { input  } 
-var0
-input 
-
-output input  + input 
-81 + input 
-input 
-
-input  / input  / 49
-var0 = input  
-var0
-
-if (38 && 58) { output var0 } else { 96 * input  } 
-if (input ) { 67 } else { input  } 
-input 
-
-if (input  == input ) { if (input ) { input  } else { 53 } if (input ) { input  }  } 
-41 + input 
-36
-
-while (20 || input ) { if (62) { input  } else { 47 } if (75) { 59 }  } 
-if (24) { input  } 
-12
-
-output 85
-for (input ) { input  } 
-12
-
-if (input ) { if (input ) { input  } input  } else { output 65output input  } 
-output input  - input 
-55
-
-if (input  && input ) { if (76) { input  }  } else { output input if (39) { 86 }  } 
-var0 = input  
-input 
-
-output 55 / input 
-if (input ) { input  } 
-input 
-
-var0 = 66 
-if (4) { 80 } 
-90
-
-if (input ) { 81 } 
-while (input ) { input  } 
-input 
-
-if (52 * 84) { if (input ) { input  } 88 } else { output 15 } 
-output 38
-input 
-
-var0 = 5 
-var0 = 69 
-input 
-
-if (input  == 45) { for (input ) { 44 } output input  } 
-var0 = input  
-var0
-
-79
-for (76) { input  } 
-input 
-
-var0 = input  * 7 
-for (input ) { 78 } 
-9
-
-if (input  || 57) { output 24output 3 } else { if (41) { 61 } for (input ) { 16 }  } 
-var0 = input  
-input 
-
-output input  + 7
-var0 = 83 
-var0
-
-if (16 && input ) { for (31) { 31 } var1 = var0  } else { output input  } 
-for (43) { input  } 
-input 
-
-var0 = var0 
-var0
-89
-
-output input  - 29
-while (input ) { 10 } 
-35
-
-var0 = 8 
-var0
-var0
-
-var1 = input  
-if (input ) { input  } else { input  } 
-74
-
-var0 = 35 - input  
-if (93) { input  } 
-95
-
-4 + input  * 99
-var0 = input  
-var0
-
-while (input  * input ) { for (6) { input  }  } 
-var0 = var1 
-var0
-
-var0 = input  
-var1 = input  
-input 
-
-var0 = 37 
-for (31) { var0 } 
-86
-
-while (input  && input ) { output 36input  + 88 } 
-output input 
-39
-
-while (9 || input ) { input output input  } 
-for (20) { 17 } 
-10
-
-input 
-83
-5
-
-var0 = 4 - input  
-output 65
-var0
-
-44 / input 
-var1 = input  
-input 
-
-var0 = 29 
-var0
-input 
-
-input  / 71 + 13 * 60
-output 96
-input 
-
-if (input  && 83) { for (input ) { input  }  } else { var0 = input  if (input ) { input  }  } 
-while (input ) { input  } 
-input 
-
-99 * input  + input 
-if (input ) { 44 } else { input  } 
-input 
-
-70 - 73 / input  - 73
-while (input ) { 45 } 
-76
-
-output input  + input 
-input  + input 
-78
-
-output input  / input 
-output input 
-4
-
-7 * output input 
-var0 = input  
-var0
-
-line 1:4 extraneous input 'output' expecting {'input', VARNAME, NUMBER}
-while (var1) { input  } 
-var1 = 17 
-input 
-
-output input  / input 
-var0 = 48 
-input 
-
-var1 = input  
-if (input ) { 4 } else { input  } 
-input 
-
-var0 = 79 - input  
-input  + input 
-30
-
-if (input  && input ) { var0 = input   } else { output input output 18 } 
-output 11 + input 
-var0
-
-while (var0) { var0 }  * 93 / 17
-input 
-input 
-
-line 1:23 extraneous input '*' expecting {<EOF>, 'for', 'while', 'if', 'output', 'input', VARNAME, NUMBER, EOL}
-input  * input  * 4
-input  - 51
-input 
-
-if (input  / input ) { var0 = 17 var0 } else { if (var0) { var0 } else { input  }  } 
-var1 = input  
-28
-
-for (input ) { 1 } 
-for (input ) { 7 } 
-input 
-
-output 94 + input 
-var0 = input  
-input 
-
-while (88 < input ) { var0 = input  var1 = var0  } 
-output 41
-input 
-
-if (10 || 45) { while (input ) { input  } var0 = 70  } else { for (input ) { 64 } for (var0) { input  }  } 
-var1 = input  
-input 
-
-if (input  || 7) { var0 = input   } else { input if (input ) { input  } else { input  }  } 
-var1 = input  + input  
-input 
-
-if (input ) { input  } 
-input 
-input 
-
-var0 = input  - 24 
-if (input ) { input  } else { 45 } 
-91
-
-4 / input  - 76 * 54
-for (78) { 19 } 
-input 
-
-98 - input 
-input 
-15
-
-var0 = 21 
-var1 = 32 
-var1
-
-output 41
-output 67
-input 
-
-output input  - input 
-if (input ) { var0 } else { input  } 
-input 
-
-7
-input  / 20
-80
-
-1 / input 
-while (53) { input  } 
-input 
-
-var0 = input  
-var0 = 59 
-var0
-
-var0 = input  
-output 55
-input 
-
-8 + input  / input 
-output input 
-input 
-
-while (40 - input ) { while (41) { input  } if (37) { input  } else { input  }  } 
-0 + input  + var0
-input 
-
-84
-output 59
-input 
-
-21 / input 
-output 54
-55
-
-output var0 * 75
-57 + input 
-input 
-
-if (input ) { 19output 24 } else { if (13) { input  } else { 87 } if (49) { input  }  } 
-input 
-input 
-
-var0 = input  
-var1 = input  
-89
-
-if (input  || input ) { while (input ) { 93 }  } 
-var0 = 95 
-input 
-
-output 31 + input 
-if (input ) { 10 } 
-88
-
-output input  * input 
-for (input ) { var0 } 
-input 
-
-37 - input  - 60
-if (40) { 39 } 
-input 
-
-for (73) { for (36) { input  } var0 = input   } 
-if (74) { input  } else { input  } 
-85
-
-var0 = input  - 85 
-var0 = 56 
-input 
-
-for (76 + 38) { var0 = 68 if (input ) { var0 } else { input  }  } 
-for (input ) { for (input ) { 14 } while (input ) { input  }  } 
-16
-
-output 27
-var0 = input  
-input 
-
-for (input ) { input if (input ) { input  } else { input  }  } 
-81
-81
-
-95
-var0 = var0 
-var0
-
-if (input  || input ) { output input  } 
-for (input ) { 69 } 
-input 
-
-output input  * 63
-var0 = 21 
-input 
-
-if (input  && 21) { while (26) { 96 } var0 = 30  } 
-output 99
-86
-
-while (35) { input  } 
-var1 = input  
-40
-
-output input  + input 
-output input 
-input 
-
-var0 = 99 
-37 - 40
-47
-
-var0 = 9 - input  
-if (44) { input  } 
-99
-
-15 / input  + 78
-var1 = var0 - input  
-input 
-
-if (input  * 41) { 98 / 5while (input ) { 35 }  } else { output 78while (input ) { input  }  } 
-for (input ) { 15if (55) { 34 }  } 
-var0
-
-54
-var2 = input  
-17
-
-while (input  > input ) { output input 98 * 99 } 
-if (input ) { 21 } else { input  } 
-19
-
-input 
-8
-input 
-
-var0 = input  + 75 
-if (input ) { 34 } else { input  } 
-input 
-
-var0 = 92 + input  
-if (var0) { input  } else { 46 } 
-var0
-
-input  / 50
-var0 = input  
-input 
-
-60 / input 
-var3 = input  
-input 
-
-if (83 / 58) { while (var0) { input  }  } else { for (input ) { var0 }  } 
-var1 = input  
-var0
-
-if (77 == input ) { while (49) { var0 } input  } 
-if (input ) { input  } 
-97
-
-while (input  == input ) { output input  } 
-for (input ) { 45 } 
-input 
-
-var0 = 96 * 74 
-input  / input 
-32
-
-output input  - 51
-var1 = var0 
-44
-
-51 / input 
-38 / input 
-input 
-
-output 76
-while (var0) { input  } 
-var0
-
-var0 = 67 - 4 
-var1 = 34 
-input 
-
-output 43 * 44
-output input 
-86
-
-output 54
-var0
-input 
-
-for (input ) { while (input ) { input  }  } 
-while (96) { input  } 
-input 
-
-output input 
-input 
-input 
-
-if (3 && 54) { input  + input  } 
-if (16) { input  } 
-input 
-
-input  / input 
-if (input ) { 86 } else { 35 } 
-73
-
-if (input  + input ) { var0 = input  53 / 29 } 
-var1 = 22 
-var1
-
-for (input ) { input input  } 
-25
-94
-
-if (18 * 75) { for (input ) { 59 } while (input ) { input  }  } else { output input if (29) { input  } else { input  }  } 
-input 
-20
-
-output input  * 89
-input  + input 
-7
-
-while (44 || input ) { 66 * 96var0 = input   } 
-for (input ) { input  } 
-input 
-
-95 - input  / 32
-input  / 60 + 6
-22
-
-if (input ) { output var0var1 = var0  } 
-if (input ) { 89 } else { 83 } 
-4
-
-if (60 < input ) { if (98) { 61 } else { 44 } output 75 } else { 20 / 67var0 = 21  } 
-var1 = 25 
-input 
-
-output 20 + input 
-output 75
-input 
-
-if (1 < 19) { var0 = 81  } else { for (input ) { 90 } var1 = 11  } 
-if (input  * 54) { while (input ) { var0 } while (input ) { input  }  } else { output 40 } 
-input 
-
-34
-var0 = input  
-input 
-
-var0 = input  
-if (94) { var0 } else { input  } 
-input 
-
-for (var2) { 97 } 
-36 + 27
-input 
-
-output input  / input 
-var0 = input  
-10
-
-for (input  - 23) { var0 = 98 if (var0) { 16 }  } 
-var0 = 36 
-input 
-
-output input  + input 
-97 * input 
-input 
-
-var0 = 83 
-output input 
-input 
-
-if (input  && 90) { for (input ) { 98 }  } 
-output 61
-input 
-
-var0 = input  + input  
-if (var0) { 0 } else { input  } 
-84
-
-if (input  < 77) { for (input ) { input  } var0 = 36  } else { while (input ) { var0 } if (var0) { var0 }  } 
-60 + 25
-var0
-
-output 4 * input 
-if (input ) { 28 } 
-92
-
-while (input  || input ) { for (input ) { 5 } var0 = input   } 
-var0 = 33 * 10 
-75
-
-var0 = input  + input  
-while (var0) { input  } 
-87
-
-if (76 > input ) { var0 = 42  } 
-if (input ) { input  } else { input  } 
-50
-
-17 + input  - input 
-var0 = input  
-input 
-
-for (51 - input ) { if (input ) { input  } if (6) { input  } else { 61 }  } 
-var0 = 15 
-input 
-
-input 
-var0 = 30 
-58
-
-var0 = input  
-while (input ) { input  } 
-var0
-
-output 45
-while (var0) { var0 } 
-var0
-
-if (input  < 27) { input  - 30input  } 
-if (input ) { input  } else { input  } 
-67
-
-var1 = 93 
-while (input ) { input  } 
-59
-
-input 
-var0 = 9 
-input 
-
-if (input  + input ) { while (46) { input  } output input  } else { while (12) { input  } var0 = input   } 
-var0 + var0
-var0
-
-output 28 / 61
-if (input ) { 58 } 
-input 
-
-61
-if (52) { 91 } else { input  } 
-56
-
-output 3
-for (input ) { input  } 
-input 
-
-var0 = 79  / input  + 30
-86 + 50
-26
-
-if (input  > 29) { 11 * 5input  } else { for (52) { input  } 46 - input  } 
-input  - 9 / 61 + 38
-input 
-
-var0 = 55 - 58 
-var0 = input  
-input 
-
-while (62 < input ) { 75 * input input  + 34 } 
-var0 = input  
-input 
-
-output 30
-if (input ) { 33 } 
-89
-
-42 / input 
-86
-input 
-
-output 45
-for (input ) { 25 } 
-53
-
-var0 = 73 + 78 
-if (57) { input  } else { input  } 
-input 
-
-7 - 48
-15
-input 
-
-while (input  * 64) { input  * 34 } 
-var0 = 67 
-var0
-
-if (input  || 10) { 55 * input  } 
-output 68
-4
-
-var0 = 67 - input  
-for (2) { input  } 
-var0
-
-input  * 28
-if (79) { 64 } else { 91 } 
-input 
-
-var0 = input  
-for (65) { 55 } 
-var0
-
-output 37 + 97
-if (84) { 48 } else { 29 } 
-78
-
-68 / input 
-var1 = input  
-79
-
-82 + for (input ) { input  } 
-input  + input 
-input 
-
-line 1:5 mismatched input 'for' expecting {'input', VARNAME, NUMBER}
-if (input  > input ) { while (input ) { input  } if (92) { input  }  } else { 19 } 
-if (input ) { 22 } 
+line 1:14 mismatched input 'if' expecting {'input', VARNAME, NUMBER}
+input  + 0 / input 
+if (63) { input  } else { input  } 
 42
 
-output input 
-var2 = input  
-22
-
-if (input ) { 21 } 
-if (input ) { input  } 
-27
-
-var0 = input  
-var0 = input  
-92
-
-if (input  && 97) { 71 - 62var0 = input   } else { while (input ) { input  }  } 
-if (input  > var0) { input  / 87output var0 } 
-input 
-
-98 + 71
-var1 = input  
-var0
-
-if (75) { while (50) { 47 } if (input ) { 21 }  } 
-for (25) { output input  } 
-34
-
-for (32 + 77) { output input var0 = input   } 
-output var0
-97
-
-31 / input  + input 
-var0 = input  
-input 
-
-51 / 48 - input 
-if (input ) { input  } else { input  } 
-input 
-
-30 + 63 + input  / 64
-var0 + 45
-72
-
-while (55 / 51) { var0 = input   } 
-var0 / input 
-var0
-
-if (47 > 44) { while (63) { 63 }  } 
-while (26 || input ) { input  + input while (input ) { 69 }  } 
-input 
-
-output 10
-48 * input 
-37
-
-if (96 < input ) { for (input ) { input  }  } 
-output input 
-input 
-
-output input 
-output input 
-input 
-
-if (input  == 88) { var0 = input  input  } else { if (input ) { var0 } else { 19 } var1 = 93  } 
-if (input  == input ) { input output 38 } else { var0 = input  output input  } 
-input 
-
-var2 = var0 
-input 
-0
-
-for (input ) { output input if (input ) { input  } else { input  }  } 
-var0 = 43 
-input 
-
-var0 = input  / 77 
-for (31) { 72 } 
-input 
-
-for (input ) { if (input ) { input  } else { input  } 30 / 33 } 
-input  - input 
-input 
-
-if (26 == input ) { var0 = input   } 
-if (var0) { input  } 
-input 
-
-if (input  < input ) { if (input ) { input  }  } else { output input output 35 } 
-input  - 86
-input 
-
-output input 
-if (input ) { 31 } else { 74 } 
-input 
-
-var0 = input  * input  
-output input 
-var0
-
-while (input ) { var0 = 16  } 
-73
-39
-
-if (70 < 27) { output input output 2 } else { input for (input ) { input  }  } 
-output input 
-input 
-
-var0 = 14 
-if (input ) { input  } else { input  } 
-input 
-
-for (var0) { input  } 
-var0 = input  
-41
-
-var0 = input  
-var1 = var0 
-var0
-
-while (var0) { input  - input  } 
-var2 = input  
-input 
-
-output input  * 23
-if (2) { input  } 
-input 
-
-input  / input  - 32 * input 
-while (input ) { input  } 
-input 
-
-for (input ) { output 339 * input  } 
-while (input ) { input  } 
-68
-
-while (90 || 12) { 96 * 75 } 
-var2 = input  
-input 
-
-67
-if (input ) { 58 } else { input  } 
-55
-
-output input 
-for (input ) { input  } 
-76
-
-if (77 || 72) { var0 = 2  } 
-if (input ) { input  } 
-4
-
-input  / if (input ) { input  } else { input  } 
-input  * 81
-6
-
-if (input  && input ) { var0 = 51 if (input ) { 50 } else { input  }  } 
-output 81
-var0
-
-if (input ) { 54 } else { 95 } 
-if (97) { 42 } 
-input 
-
-while (input ) { for (input ) { 99 } var0 = input   } 
-if (input ) { 79 } else { input  } 
-input 
-
-line 1:9 mismatched input 'if' expecting {'input', VARNAME, NUMBER}
-if (72 == 67) { output input output input  } 
-for (73) { 79 } 
-input 
-
-39
-while (input ) { input  } 
-input 
-
-var0 = input  + input  
-while (var0) { input  } 
-input 
-
-while (59 && input ) { var0 = input  for (var0) { input  }  } 
-output input 
-input 
-
-output 10
-48 / 52
-input 
-
-if (input ) { input  } 
-output 72
-input 
-
-input 
-for (input ) { input  } 
-48
-
-var0 = 59 
+while (input  + input ) { output 57output 2 } 
 output var0
 input 
+
+for (99) { var0 = 96 output input  } 
+output 96
+var0
+
+for (3) { input  } 
+while (input ) { input  } 
+98
 
 output input  - input 
-5
+if (83) { var0 } 
 input 
 
-if (input ) { for (input ) { 25 } output 11 } else { 99 - input for (14) { input  }  } 
-output 41
-1
-
-if (8 || input ) { if (input ) { var0 }  } else { for (input ) { 25 }  } 
-for (84) { 96 } 
+if (input  / 81) { while (21) { 52 } for (59) { 82 }  } else { output input  } 
+while (var0 && input ) { if (input ) { input  } else { 81 }  } 
 input 
 
-if (97 && 11) { var0 = 52  } 
-var0
-var0
-
-if (7 * 23) { input  * input  } 
-var1 = input  * input  
-28
-
-var0 = input  - 6 
-if (input ) { 31 } else { input  } 
-97
-
-if (input  - 33) { if (input ) { 48 }  } 
-for (71 + 16) { var1 = input  for (var1) { input  }  } 
-62
-
-var0 = 13 
-var1 = var0 
-90
-
-5 / input 
-var0 * var0
-65
-
-if (input  || 61) { var0 = input  for (input ) { 34 }  } else { var0 / input  } 
-if (32) { 80 } else { input  } 
-16
-
-while (input  == 91) { var0 = input   } 
-output 89
-37
-
-var1 = input  
-input 
-input 
-
-input  * 52 / 30
-var1 = input  * input  
-input 
-
-var0 = 3 - 72 
-output input 
-input 
-
-input 
-output var0
-84
-
-for (input ) { for (76) { input  } output 18 } 
-var0 = input  
-var0
-
-output input  + 95
-for (input ) { 69 } 
-input 
-
-var0 = input  
-output input 
-var0
-
-if (78 || input ) { for (19) { 21 }  } 
-if (55) { 53 } else { input  } 
-92
-
-input  * 93 - input  + 68
-output 18
-input 
-
-if (99 || input ) { var1 = var0  } else { for (input ) { input  }  } 
-output input 
-input 
-
-if (input  * 71) { output 16 } else { for (1) { input  }  } 
-while (input ) { input  } 
-input 
-
-var0 = 79 * 37 
-output input 
-52
-
-if (input  && 54) { output 50for (41) { input  }  } else { input while (17) { 81 }  } 
-for (input ) { var1 } 
-input 
-
-49 / 92 + 11 - 24
-if (input ) { input  } 
-input 
-
-63 - 62 * 10
-37 + input 
-40
-
-var0 = 45 
-output 9
-input 
-
-if (input ) { for (input ) { 12 } output 85 } else { 90 * 40if (70) { input  }  } 
-var0 = 16 
-var0
-
-if (input  < 55) { while (53) { input  } 47 * input  } 
-while (input  / input ) { output 84for (50) { input  }  } 
-94
-
-var0 = input  + 80 
-var1 = input  
-input 
-
-if (input  - 40) { for (input ) { 49 }  } 
-for (input ) { 37 } 
-93
-
-var0 = input  - input  
-var1 = input  
-38
-
-if (62) { 7 } 
-while (74) { input  } 
-input 
-
-99
-output 68
-input 
-
-22 + 53 * input  + input 
-var0 = input  
-46
-
-output 70
-if (input ) { input  } else { 31 } 
-89
-
-output input 
-output 40
-input 
-
-for (85 - 45) { input  + 92 } 
-input  / input 
-input 
-
-var0 = 95 / 97 
-if (var0) { 55 } 
-input 
-
-if (input  > var0) { if (var0) { var1 } else { var1 } var2 = input   } else { output 9253 / 76 } 
-input 
-input 
-
-output input 
-var1 = input  
-input 
-
-if (var0) { input  } 
-if (var0) { 5 } else { input  } 
-input 
-
-var0 = 45 + 71 
-if (var0) { input  } 
-var0
-
-77
-var1 = input  
-input 
-
-for (89 / input ) { output input output 6 } 
-input  - 75
-98
-
-if (input  < 51) { if (36) { 20 } else { 59 }  } 
-var0 = 66 
-94
-
-var0 = 94 
-if (input ) { 20 } 
-input 
-
-var0 = 71  + input  * input 
-while (input ) { 27 } 
-40
-
-72 * input  / input  + input 
-while (99) { 2 } 
-58
-
-if (65 < 10) { var0 = 83 input  + 63 } 
-if (25) { input  } 
-32
-
-21 * 59 - input 
-input 
-12
-
-if (input  || 58) { output 94var0 = input   } else { var0 } 
-for (38) { input  } 
-input 
-
-if (34 * 82) { for (input ) { input  }  } 
-3 - input  + 80
-input 
-
-if (input  == input ) { if (input ) { var0 } var0 = input   } else { if (input ) { input  }  } 
-output input 
-input 
-
-if (input  || 97) { if (input ) { input  } var0 = input   } else { if (var0) { 97 } else { 6 }  } 
-var1 = input  
-input 
-
-output 85 / 94
-while (input ) { 28 } 
-input 
-
-var0 = input  
-var1 = var0 
-86
-
-output 48
-1 - 93
-61
-
-output input  + input 
-17 * input 
-40
-
-output input 
-output 38
-input 
-
-if (64 || input ) { for (input ) { input  } input  + input  } else { while (input ) { 70 }  } 
-while (input  > 7) { if (35) { 53 } output 19 } 
-14
-
-input  * input  + 47
-if (var0 || 5) { if (input ) { input  } else { 23 } input  - var0 } 
-input 
-
-var0 = input  - 1 
-output var0
-input 
-
-var1 = 48 
-if (input ) { var0 } else { input  } 
-input 
-
-if (67 || input ) { if (input ) { 21 } else { 12 }  } else { 66 } 
-if (2) { input  } 
-input 
-
-for (8) { var0 = input  if (var0) { 83 } else { var0 }  } 
-input  + input  / input 
-input 
-
-while (46 && input ) { if (81) { 62 } else { input  } for (input ) { input  }  } 
-input  / 85 - 84 * input 
-16
-
-output input  + 15
-output input 
-input 
-
-var0 = input  * 77 
-if (var0) { input  } else { 77 } 
-87
-
-var0 = 58 / input  
-output 67
-86
-
-while (88 && input ) { output input 93 * 99 } 
-62 - var0
-83
-
-41 / input 
-65
-input 
-
-var0 = 2 
-output input 
-input 
-
-while (input  || input ) { for (input ) { input  } if (17) { 14 }  } 
-var0 = input  
-72
-
-var0 = input  
-output input 
-28
-
-for (input ) { var0 = input  output 91 } 
-if (53) { 66 } else { 50 } 
-71
-
-input  - 50 - 32
-if (16) { input  } else { 57 } 
+var0 = 3 / 44 
+input  + 36
+66
+
+if (87 < 12) { input  } else { output input  } 
+if (0 && 27) { 15 + 81 } else { var0 = 62  } 
 79
 
-var1 = input  
-for (81) { input  } 
-input 
+while (14 > 86) { 2 } 
+input  - 79
+0
 
-var0 = 90 
-98
-input 
+output input 
+var0 = 40 
+41
 
-var0 = 77 * 65 
-if (input ) { input  } 
+output input 
+var0 = 92 
 97
 
-if (15 == input ) { output 76var0 = input   } else { output input var0 / 34 } 
-if (44) { 88 } else { input  } 
-input 
-
-var1 = input  
-if (39) { 32 } else { 30 } 
-59
-
-while (85 > input ) { var1 = input  var0 = input   } 
-output input 
-input 
-
-78
-output input 
-36
-
-for (input  * input ) { input  - 10 } 
-var0 = input  
-input 
-
-2 / 30 * input 
-if (input ) { input  } 
-input 
-
-output 75 * 20
-output var0
-input 
-
-input  / 56 - input  * 18
-for (input ) { input  } 
-input 
-
-var0 = input  * 88 
-var0 = 40 
-87
-
-var0 = 19 + input  
-if (input ) { 10 } 
-input 
-
-if (input  == input ) { while (input ) { 0 }  } else { input  * input  } 
-output 89
-81
-
-for (8 + input ) { output 26input  - 76 } 
-var0 = 15 
-95
-
-if (23 / 85) { if (66) { input  } while (input ) { 77 }  } else { while (38) { input  } var0 = 3  } 
-var1 = 72 
-var1
-
-var0 = 3 
-var1 = var0 
-48
-
-if (input  > 54) { output 12 } 
-var0 = 26 
-33
-
-for (input  - 78) { if (98) { input  }  } 
-while (input ) { input  } 
-input 
-
-output 3 + 73
-input  / 51
-81
-
-output 84
-22 - input 
-input 
-
-output input 
-var0 = 3 
-input 
-
-output 51 * input 
-input  - input 
-input 
-
-for (99 / 30) { var0 = input   } 
-5 - input 
-input 
-
-while (input  || input ) { var0 = input   } 
-for (61) { input  } 
-input 
-
-output input 
-for (78) { 32 } 
-input 
-
-var0 = 15 * input  
-var1 = input  
-var0
-
-var0 = 40 
-var1 = var0 
-9
-
-output input 
-input 
-27
-
-output input 
-for (input ) { 79 } 
+var0 = input  / input  
+input  / 14
 input 
 
 input 
-output 98
-input 
-
-var0 = 30 
-if (18) { input  } else { var0 } 
-input 
-
-input  + input 
-if (input ) { input  } 
-var0
-
-for (57) { for (input ) { input  }  } 
-output input 
-44
-
-var0 = 51 
-while (var0) { var0 } 
-67
-
-output input  - 89
-for (93) { 14 } 
-input 
-
-if (18 < input ) { 69 / 56 } else { var1 = input   } 
-output input 
-input 
-
-var0 = 77 + input  
-output 86
-32
-
-for (93) { if (input ) { var0 }  } 
-if (input ) { input  } 
-15
-
-input  - var0
-output 87
-var0
-
-output input 
-if (input ) { input  } 
-input 
-
-output 43 + 81
-if (var0) { var0 } else { 10 } 
-input 
-
-66 + input  - 16 * 41
-35
-43
-
-while (input  || 49) { output input  } 
-var2 = 25 + 95 
-input 
-
-input  * input  * input 
-if (input ) { 22 } else { input  } 
+input  / 5
 88
 
-var0 = 28 * input  
-output input 
-49
-
-if (31 || 22) { if (45) { 40 }  } 
-output 67
-21
-
-if (25 && 43) { var0 = input  input  * input  } 
-while (62 > 33) { var0 = input   } 
-65
-
-while (input  && 54) { var0 = input   } 
-input  + input 
+var0 = 36 * 47 
+input 
 input 
 
-if (input  < 58) { var0 = 90 26 } 
-if (var0) { 68 } 
-input 
-
-input  * 46
-for (4) { input  } 
-input 
-
-while (input ) { output input  } 
-if (input  > var0) { for (var0) { var0 }  } else { output input  } 
+for (24 * 39) { for (59) { input  }  } 
+while (input  || input ) { while (var0) { input  }  } 
 var0
 
 var0 = input  
-output var1
-input 
-
-while (65 || input ) { for (98) { input  } if (input ) { 66 }  } 
-var0 = 63 
-95
-
-while (56 || 19) { input  } 
-if (input ) { 23 } else { input  } 
-input 
-
-var0 = input  + 86 
-output 30
-input 
-
-var0 = 79 
-output 6
-36
-
-if (25) { 44 } else { 61 } 
-output input 
-var0
-
-for (76 + 15) { input  - input  } 
-output var0
-var0
-
-var0 = input  / 98 
-if (73) { 8 } 
-var0
-
-if (19) { output input  } else { var0 = input   } 
-output 26 * 59
-input 
-
-output input 
-if (input ) { var0 } else { 76 } 
-92
-
-while (73 || input ) { while (84) { input  }  } 
-for (84 / input ) { if (input ) { input  } else { 81 }  } 
-49
-
-while (var0) { var0 } 
-while (24) { input  } 
-input 
-
-var0 = 16 
-78 - 17
-input 
-
-output input  * input 
-if (input ) { 74 } 
-input 
-
-if (input  || input ) { var0 } 
-var1 = 95 
-input 
-
-output input  * input 
-output 27
-95
-
-output input 
-var0 = input  
-var0
-
-if (78) { 60 } else { input  } 
-output 61
-38
-
-output 91
-if (97) { 13 } else { input  } 
-input 
-
-17 * 94 + input  + 10
-for (input ) { var3 = 40 var1 } 
-input 
-
-if (input ) { for (1) { 39 }  } else { for (6) { input  } for (46) { 18 }  } 
-var0 = 94 
-var0
-
-while (87 || 81) { while (88) { input  } output input  } 
-while (input ) { 56 } 
-input 
-
-while (12) { var0 = input   } 
-80 + 67 - input 
-89
-
-output 45
-while (75) { input  } 
-input 
-
-var0 = input  + 93 
-while (input ) { input  } 
-input 
-
-if (var0 * 45) { output var0 } 
-var0 = 11 
-input 
-
-if (78 == input ) { output input  } 
-var0 = 26 
-10
-
-var0 + 75
-while (input ) { input  } 
-input 
-
-output 29
-output input 
-input 
-
-var0 = input  + input  
-while (var0) { input  } 
-87
-
-output input  / 70
-if (25) { 93 } else { input  } 
-input 
-
-for (18) { input  } 
 input 
 input 
-
-while (input  || 8) { var0 = 8 output var0 } 
-if (input ) { input  } 
-input 
-
-if (input ) { while (input ) { 52 } var0 = input   } 
-for (var0) { input  } 
-var0
-
-if (76 - input ) { var0 = 98 if (input ) { 11 } else { var0 }  } 
-input  * input  / 58
-54
 
 output input  / 55
 output var0
-78
-
-41
-while (input ) { 4 } 
 input 
 
-output 62 + var0
-while (input ) { input  } 
-input 
+var0 = 4 * 49 
+output input 
+49
 
-var0 = input  
-for (28) { 26 } 
-input 
-
-var0 = 10 
-81 - input 
-97
-
-while (input ) { input  } 
-var0 = 13 
-input 
-
-while (input  == 2) { for (input ) { 48 } var0 = 47  } 
-for (59) { var0 = 79 input  * input  } 
-input 
-
-for (input ) { if (input ) { var0 }  } 
-if (var0) { input  } 
-var0
-
-while (5 || input ) { if (25) { 67 } else { 79 } output input  } 
-if (input ) { input  } else { var0 } 
+var0 = input  * 55 
+for (25) { input  } 
 30
 
-output 3 * input 
-for (input ) { input  } 
-94
+var2 = 98 
+if (input ) { var0 } else { var0 } 
+var0
 
-var0 = 90 
-input  * 37
+while (input ) { for (input ) { 2 } var0 = input   } 
+var1 = 26 
+input 
+
+var2 = input  
+while (46) { 0 } 
 14
 
-output 28
-output input 
+for (input ) { var0 = input  if (75) { 45 }  } 
+if (input ) { input  } else { input  } 
 input 
 
-output 62 - 48
-if (input ) { input  } 
-input 
+var0 = input  - 5 
+while (var0) { var0 } 
+var0
 
-output input 
-for (8) { 88 } 
-input 
+for (input ) { output 12 } 
+if (input ) { 79 } 
+13
 
-for (input ) { if (input ) { 11 }  } 
-if (25) { 68 } else { input  } 
-24
-
-if (32 * 20) { for (input ) { input  } var0 - var0 } 
-var1 = var0 
-input 
-
-while (input ) { while (42) { var0 }  } 
-51 * input 
-input 
-
-if (input  || 90) { while (input ) { 7 } for (input ) { 46 }  } 
-for (69 + var0) { var0 } 
-64
-
-output 30
-var0 = 9 
-input 
-
-var1 = var0 + input  
-92 * 4
-51
-
-for (input  + 52) { for (input ) { 28 } output input  } 
-48 / 44
-6
-
-for (input  / input ) { while (input ) { var0 } var1 = input   } 
-for (6) { 3 } 
-input 
-
-while (62 || 21) { for (input ) { input  }  } 
-var1 = 5 + input  
-15
-
-output input 
-if (42) { 94 } 
-5
-
-if (56 || 43) { if (input ) { input  } else { 56 } var0 = input   } 
-if (input ) { var2 = input   } 
-input 
-
-for (97) { input  * input var1 = 66  } 
-while (input ) { input  } 
-31
-
-while (input  + var0) { for (6) { input  }  } 
-80
-input 
-
-for (input  - input ) { while (28) { 14 } output input  } 
-for (7) { input  } 
-89
-
-var0 = 76 
-while (input ) { var0 } 
-input 
-
-var0 = 43 
-output input 
-input 
-
-while (49 > 4) { input  - 99 } 
-output 26 - var0
-input 
-
-var0 = 73 + 15 
-while (input ) { var1 } 
+for (input  / input ) { if (16) { 68 } else { 79 }  } 
+var0 = 11 
 78
 
-var0 = input  / 18 
-var1 = input  
+while (input  + input ) { input  * var0 } 
+output 41
 var0
 
-for (85 + input ) { 23 - input  } 
-output 99
-input 
-
-input 
-input 
-97
-
-if (input  || 90) { output input  } else { input  - 20 } 
-output input 
-60
-
-output 78
-var0 = 72 
-13
-
-output 15
-for (57) { 78 } 
-input 
-
-if (input  > input ) { if (64) { 41 }  } else { var0 = input   } 
-for (90) { var0 } 
-input 
-
-input  / 48 - 99
-output 67
-72
-
-var0 = input  
-input  - input 
-16
-
-output 30
-while (input ) { input  } 
-53
-
-10 + var0 / 58 * var0
-if (34) { 11 } 
-input 
-
-input  / 32
-for (input ) { var0 } 
-input 
-
-output input 
-input 
-input 
-
-for (input  + input ) { var0 = 53 for (input ) { input  }  } 
-var0 = input  / input  
-input 
-
-if (input  * 6) { if (input ) { 84 } else { input  }  } 
-if (12 || 34) { if (56) { input  }  } 
-18
-
-var0 = 93 / 26 
-while (input ) { 97 } 
-input 
-
-for (3 - 14) { while (var0) { 27 }  } 
-if (66) { input  } else { 34 } 
+var0 = input  + 71 
+output 8
 33
 
-output input  - input 
+var0 = input  - 96 
 output input 
 input 
 
-input  - 62
-output 89
-input 
-
-for (76 - input ) { if (47) { 42 } else { input  }  } 
-var0 = input  
-input 
-
-if (13 || input ) { var0 = 16 input  } 
-if (55) { input  } 
-input 
-
-input 
-input  - input 
-input 
-
-while (17 || input ) { 84 - input  } 
-15
-input 
-
-if (16 || input ) { input  * input if (86) { input  } else { input  }  } 
-if (input ) { 17 } 
-11
-
-input  * input  - input 
-var0 = input  
-var0
-
-for (17 * input ) { while (input ) { var0 }  } 
-output input 
-input 
-
-output input 
-output input 
-81
-
-output 0
-var0 = 92 
-23
-
-var0 = 40 / input  
-if (input ) { 66 } 
-var0
-
-if (11 > input ) { var0 = input   } else { var1 = var0  } 
-input 
-input 
-
-while (9 || input ) { var0 = 65  } 
-for (var0) { input  } 
-input 
-
-var0 = 80 * input  
-if (input ) { 41 } else { input  } 
-var0
-
-for (77 / 63) { input  * input input  } 
-var0 = input  
-input 
-
-if (input ) { input  } 
-while (82) { 14 } 
-57
-
-if (var1) { input  } else { var1 } 
-47
-2
-
-24 * input  / input 
-if (input  < 37) { while (input ) { input  } var0 = 97  } else { if (input ) { input  } else { input  }  } 
-53
-
-if (36 > input ) { if (56) { 89 } else { 86 }  } 
-var0 - input 
-input 
-
-var0 = 11 - input  
-if (var0) { input  } else { var0 } 
-21
-
-while (var1 / input ) { while (var0) { var0 }  } 
-input 
-94
-
-for (input  * input ) { output input  } 
-if (77) { 19 } else { input  } 
-input 
-
-output input  - 64
-output 56
-64
-
-while (input  - input ) { var0 = 41 if (12) { input  }  } 
-input 
-input 
-
-if (5 * input ) { 80 } 
-output 15
-85
-
-output 99 + input 
-if (input ) { 59 } else { input  } 
-input 
-
-output 24 - 99
-for (input ) { input  } 
-input 
-
-while (37) { input  } 
-if (var0) { input  } else { input  } 
-13
-
-output input 
-95 - 18
-66
-
-output 87 + 78
-43 - input 
-input 
-
-var0 = 91 + input  
-input  * 92
-26
-
-if (var2 && var0) { while (var0) { 79 }  } 
-output var0
-5
-
-if (16 == 21) { 67 + 97 } 
-output var0
-2
-
-var0 = input  * input  
-if (input ) { 15 } else { var0 } 
-input 
-
-output 38 * input 
-51 + input 
-52
-
-if (input  || input ) { if (29) { 50 } else { 40 } output 53 } 
-output input 
-7
-
-output input 
-for (60) { 84 } 
-61
-
-output 61
-output 98
-input 
-
-while (input  == 13) { for (93) { 88 }  } 
-var0 = 29 + 50 
-input 
-
-input  + 1 * 21 + 59
-var0 = input  + 37 
-input 
-
-if (input  > input ) { output 73 } else { output input output input  } 
-if (input ) { 99 } else { input  } 
-31
-
-var0 = 55 - input  
-output var0
-var0
-
-if (94 * input ) { if (input ) { 9 } else { var1 } input  + 32 } else { if (59) { input  } input  } 
-for (92) { 14 } 
-input 
-
-var0 = 13 - input  
-if (71) { var0 } else { input  } 
-47
-
-output 12
-output 83
-11
-
-var0 = 37 * 4 
-input  * var0
-var0
-
-input  / 3 + 83
-output input  / input 
-input 
-
-if (input  && input ) { input  - input  } 
-var0 = input  
-input 
-
-for (input ) { output input  } 
-var0 = input  
-var0
-
-62 / 11 / 33
-64 * input 
-input 
-
-if (65) { while (42) { input  }  } 
-2 + input  - var0 * input 
-65
-
-output 77 + input 
-output input 
-input 
-
-if (55 + 43) { 46 + 72 } 
-while (64) { input  } 
-36
-
-input 
-input  * 97
-6
-
-input  + input  * 66 + input 
-output input 
-input 
-
-while (var0) { input  } 
-var0 = 91 
-56
-
-var0 = 30 - 62 
-output input 
-6
-
-var3 = 87  * input 
-input 
-11
-
-for (input  + 78) { 35 + input  } 
-output 81
-44
-
-var0 = input  
-output input 
-input 
-
-89
-var1 = 4 
-16
-
-for (input ) { var0 = input  var1 = var0  } 
-if (27) { 74 } else { 19 } 
-var0
-
-if (input ) { for (var0) { input  }  } else { var0 = 2  } 
-68
-97
-
-var0 = 13 
-while (62) { input  } 
-50
-
-96
-output var0
-input 
-
-input  - 20 * 27
-for (66) { input  } 
-input 
-
-for (78 / 34) { if (94) { input  } else { input  } var0 = input   } 
-while (input  && 71) { var1 = 32  } 
-65
-
-78 / var0 * var0
-for (79) { 1 } 
-input 
-
-output input 
-while (input ) { 32 } 
-input 
-
-output input  * 12
-output 59
-input 
-
-53
-for (23) { var1 } 
-input 
-
-if (input ) { input  } 
-var1 = input  
-input 
-
-input  * 48 - 7
-input  * input 
-input 
-
-if (67 && 35) { var0 = 75  } 
-if (var0) { input  } else { input  } 
-input 
-
-var0 = 59 
-while (input ) { input  } 
-input 
-
-16
-4 + input 
-44
-
-var0 = 39 / input  
-output input 
-53
-
-while (57 > input ) { 44 * input  } 
-var0 = input  
-8
-
-if (input  < input ) { input  + input for (1) { 59 }  } 
-var1 = input  * input  
-input 
-
-var0 = 55 + input  
-if (5) { 33 } else { 7 } 
-input 
-
-output input 
-var0 = 14 
-input 
-
-for (input  / 44) { if (input ) { 44 } else { 22 } var0 = 74  } 
-if (var0 && input ) { if (input ) { input  } else { input  }  } else { for (input ) { var0 } output input  } 
-input 
-
-var0 = 68 - 19 
-for (input ) { input  } 
-var0
-
-var0 = 70 - 41 
-while (input ) { input  } 
-94
-
-for (input  + input ) { output input  } 
-36 - input 
-input 
-
-input  * input  + input  * input 
-output var0
-input 
-
-output 2
-while (57) { var0 } 
-input 
-
-if (26 > input ) { input  / 18 } else { if (input ) { 11 } output input  } 
-for (input ) { 80 } 
-input 
-
-if (input  > 82) { output var0var1 = var0  } else { while (79) { input  }  } 
-if (var0) { 85 } else { 32 } 
-var0
-
-var0
-var0 = input  
-input 
-
-output 83 / input 
-input 
-75
-
-var0 = 37 
-if (input ) { 89 } 
-input 
-
-while (25 || input ) { output input output input  } 
-if (input  - input ) { var0 - var2 } 
-input 
-
-if (input  == input ) { input  + input if (input ) { input  } else { input  }  } 
-var0 / var0 + input  - 80
-71
-
-for (input ) { output 58 } 
-var0 = input  
-55
-
-var0 = 6 
-if (5) { input  } else { input  } 
-var0
-
-output input  + input 
-if (input ) { 89 } 
-input 
-
-output 50
-if (23) { input  } 
-input 
-
-var0 = input  
-while (var0) { input  } 
-18
-
-for (21 * 22) { if (83) { input  }  } 
-var0 = 26 
-41
-
-for (input  * input ) { output input  } 
-output input 
-75
-
-for (input  / input ) { for (95) { input  }  } 
-if (input  && input ) { var2 = input   } 
-65
-
-var0 = 61 * 52 
-var1 = var0 
-input 
-
-output input 
-43 * 1
-88
-
-if (1 / 46) { while (73) { 39 }  } 
-var0 = input  
-75
-
-var0 = 67 
-for (var0) { var0 } 
+var0 = input  / 83 
+for (72) { 22 } 
 43
 
-var0 = input  
-output var0
-var0
+74
+if (86) { 45 } 
+71
 
-output 32 / 12
-while (input ) { var0 } 
-72
+var1 = var0 / input  
+for (5) { input  } 
+9
 
-if (91 == input ) { if (input ) { 91 } if (input ) { input  } else { input  }  } else { for (32) { 55 } var0 = 85  } 
-for (var0) { input  } 
-input 
-
-if (input  || 73) { for (input ) { 85 }  } else { while (91) { 9 }  } 
-while (36) { 21 } 
-input 
-
-output 23 / input 
-var0 = input  
-input 
-
-7 / 21 * 12
-var0 = 25 
-60
-
-var0 = input  * input  
-while (input ) { 58 } 
-var0
-
-if (7) { output 2input  * input  } else { var0 = 52  } 
-var1 = var2 
-var0
-
-input  + input  * input 
-var0 = input  
-36
-
-var0 = 91 - 77 
-if (input ) { input  } else { 35 } 
-input 
-
-39 * input 
-output 78
-var0
-
-input 
-for (input ) { input  } 
-68
-
-var0 = 84 / 5 
-output input 
-input 
-
-for (input ) { for (29) { 30 } while (input ) { input  }  } 
-output 64
-13
-
-var0 = input  
+var0 = 80 + input  
 var1 = input  
-input 
-
-if (input  == input ) { output input var0 = 10  } else { var1 = input  output var0 } 
-var0 - var0 - input  - var0
-var1
-
-if (74 / input ) { if (70) { 34 } input  - 78 } 
-if (input  - input ) { while (input ) { 38 } if (input ) { input  }  } else { 61 + input var0 = input   } 
-input 
-
-var0 = 75 - 40 
-if (15) { 89 } else { input  } 
-input 
-
-88
-output input 
-input 
-
-if (input  < input ) { if (input ) { 87 } else { 21 } for (input ) { input  }  } 
-output input 
-input 
-
-var0 = 40 / input  
-input  / input 
-10
-
-while (input  && 36) { 86 * input output input  } 
-output input 
-input 
-
-output input 
-input 
-10
-
-var0 = 86 + 10 
-output 81
 68
 
-while (input ) { output input  } 
-while (63) { 67 } 
-input 
-
-output 50 - 62
-for (18) { 96 } 
-27
-
-var2 = input  * input  
-var0 = 77 
-var0
-
-input 
-11
-var1
-
-for (var0) { input  } 
-while (input ) { input  } 
-48
-
-for (input  / 24) { input  } 
-if (input ) { input  } else { input  } 
 4
-
-var0 = 13 - 50 
-if (input ) { input  } else { input  } 
+while (input ) { 13 } 
 input 
 
-if (89 < input ) { var0 = 8 output input  } else { for (15) { input  } output var0 } 
-while (var0) { 85 } 
-var0
-
-output input 
-var0 = 41 
-var0
-
-output input 
-input  + 90
-89
-
+input 
 var0 = input  
-var0
-67
-
-output input 
-for (var0) { 93 } 
-input 
-
-input 
-var1 = var0 
-40
-
-for (input  - 85) { while (input ) { input  } var0 = input   } 
-if (input ) { var0 } else { input  } 
-var0
-
-var0 = 10 
-if (9) { input  } else { input  } 
 52
 
-output input 
-var0 = input  
-input 
-
-var0 = input  
-if (5) { 8 } 
-97
-
-output 0
-input 
-var0
-
-if (input  && input ) { output 21 } 
-var1 = input  / input  
-input 
-
-var0 = 14 - input  
-var1 = input  
-var0
-
-for (25 * input ) { var1 = input   } 
-for (input ) { input  } 
-input 
-
-var1 = input  - input  
-input  - input 
-input 
-
-output 94
-output input 
-input 
-
-input  * input  * input  / input 
-if (71) { 66 } else { input  } 
-input 
-
-input 
-var2 = input  
-input 
-
-output input 
-var1 = var0 
-input 
-
-output 13 / 14
-11 / input 
-6
-
-for (76) { 86 / input output input  } 
-while (input  > 40) { input  * 43if (input ) { input  } else { input  }  } 
-input 
-
-if (input  == 52) { while (6) { 69 } if (34) { 94 } else { input  }  } 
-output 78
-50
-
-while (input  || input ) { input  * input 63 - 23 } 
-46
-input 
-
-if (input ) { 32output 17 } 
-var1 = var0 + input  
-13
-
-if (92 - 54) { 93 } 
-var0 = 48 
-input 
-
-var2 = 41 
-while (68) { input  } 
-input 
-
-var1 = input  
-if (73) { input  } else { input  } 
-input 
-
-input  + var1 * 0 / input 
-while (51) { 89 } 
-input 
-
-for (input  / 78) { for (44) { input  } if (input ) { var0 }  } 
-input  - 2
-input 
-
-for (input ) { output input for (13) { input  }  } 
-for (input ) { input  } 
-52
-
-while (input ) { 65 } 
-54 + var0
-85
-
-while (36 < 52) { var0 = input  output 20 } 
-for (input  - input ) { if (var0) { input  }  } 
-var0
-
-for (48) { var0 = 12 if (input ) { var0 }  } 
-output 65 - 75
+output var1
+for (4) { 56 } 
 81
 
-var0 = 22 * input  
-if (var0) { input  } 
+var0 = 47 + 17 
+var1 = input  
+input 
+
+var1 = input  
+if (var0) { 71 } else { input  } 
+input 
+
+if (99) { input  } 
+45 * input 
+47
+
+output input 
+14 + 82
+input 
+
+var0 = 85 
+while (input ) { 53 } 
 var0
 
-output 95 + input 
-if (90) { 42 } else { 43 } 
+if (23) { input  }  + 75 * input 
+var0 = input  
+input 
+
+line 1:20 extraneous input '+' expecting {<EOF>, 'for', 'while', 'if', 'output', 'input', VARNAME, NUMBER, EOL}
+while (input  || input ) { var0 = 47  } 
+for (input ) { input  } 
+input 
+
+var0 = 97 / 22 
+output var0
 13
 
-var0 = 95 
-output input 
-var0
+69
+output var0
+88
 
-output input  / 54
-output input 
+while (76 == 43) { var0 = 99 output 45 } 
+while (input ) { 11 } 
 input 
 
-if (input  && 69) { var1 = 68  } 
-while (63) { input  } 
+if (input  < 98) { var2 = 37 if (var0) { var1 }  } 
+input 
+72
+
+for (input ) { input  } 
+22
+50
+
+var0 = 65 * input  
+5 + var0
 input 
 
-if (56) { while (39) { input  }  } 
-output input  + input 
-input 
-
-var0 = input  
-99
-61
-
-for (1) { output input if (input ) { 56 } else { 79 }  } 
-var0 = 76 
-input 
-
-var0 = 83 - input  
-output 62
-var0
-
-while (input  || input ) { if (41) { input  } else { input  } input  + input  } 
-output 29
-79
-
-for (49 + input ) { output input  } 
-while (67) { 59 } 
-input 
-
-output input 
-for (7) { input  } 
-input 
-
-if (5 > input ) { while (39) { 77 } output 74 } else { var0 = input   } 
-4 / 16 / input 
-input 
-
-input  - input  * input 
-var0 = input  
-input 
-
-while (82 < 20) { for (88) { input  }  } 
+while (93 || input ) { while (33) { 48 }  } 
 output 4
 input 
 
-for (input ) { input output input  } 
-61 + 3
+for (input  - input ) { var0 = 68  } 
+var1 = var0 
+1
+
+for (49 + input ) { if (input ) { 5 } else { input  } if (16) { 61 } else { input  }  } 
+output input  * input 
 input 
 
-20
-output input 
-7
-
-if (20 && 89) { 55 + 35 } 
-output input 
-29
-
-for (input ) { input if (76) { 10 } else { input  }  } 
-if (24 && 57) { for (input ) { 49 }  } else { input  * input 29 - input  } 
+if (23 * 64) { if (input ) { input  }  } else { if (21) { input  }  } 
+var0 = input  
 input 
 
-if (82 < input ) { output var0var0 = input   } 
-var1 = input  
+output input 
+for (input ) { input  } 
+input 
+
+input  * input  / 96
+output input 
+input 
+
+output 54
+for (input ) { input  } 
+59
+
+if (32) { input  } else { 95 } 
+input  - input 
+var0
+
+output 80 / var0
+64 / input 
 76
 
-output 48 + 37
-var0 = input  
-var0
-
-input  + 39 * input  + input 
-output input  + 24
-input 
-
-if (44 < 40) { 81 / input output input  } else { input  + input  } 
-input  - input 
-input 
-
-var0 * input 
-for (89) { 79 } 
-input 
-
-var0 = input  + 7 
-3
-53
-
-var0 = input  - input  
-var1 = input  
-var0
-
-output input  - 89
-if (input ) { input  } 
-77
-
-input  - input  / input 
-for (99) { input  } 
-input 
-
-output 8
-if (input ) { 91 } 
-input 
-
-46
-98 - input 
-input 
-
-output 24 * 52
+input  * input  * input 
 for (input ) { input  } 
 input 
 
-input  - 85 + 44
-while (input ) { 66 } 
-67
+if (69 + 90) { if (input ) { 57 } else { input  } var0 = input   } 
+while (input  > var0) { while (var0) { var0 }  } 
+input 
 
-output 48 * input 
-if (input ) { var0 } else { 52 } 
-37
+while (input  < input ) { 74 / 35 } 
+if (input ) { input  } 
+input 
+
+input  / 79 + input  * input 
+34 / input 
+input 
+
+var0 = 26 + 69 
+while (var0) { input  } 
+64
 
 output var0
-output input 
-input 
+if (input ) { 22 } 
+76
 
-output input 
-input  * 44
-var0
-
-for (74 / input ) { output input while (var0) { var0 }  } 
-if (80) { input  } else { 29 } 
-35
-
-while (input  || 20) { if (input ) { 8 }  } 
-output input 
-input 
-
-output input  - 68
-output input 
-input 
-
-var0 = input  * input  
+for (input  - 13) { if (input ) { input  } else { var0 } while (86) { 26 }  } 
 for (input ) { input  } 
 input 
 
-var0 = 5 * input  
+for (input ) { 40 - input if (50) { input  }  } 
+output 9
+input 
+
+if (input  < input ) { input  + input  } else { var0 = 63 var1 = var0  } 
+8
+input 
+
 if (input ) { input  } 
+var0 = 31 
 var0
 
-96
-input  - 55
+var0 = var0 
+var1 = var0 
 input 
 
-if (input ) { for (44) { 62 } 90 + var0 } 
-while (input ) { 68 } 
-input 
-
-output input  - var0
-var0 = 39 
-19
-
-output 72
-while (67) { 58 } 
-input 
-
-var1 = var0 + input  
-36
-63
-
-34
+while (66) { var0 } 
 output input 
+68
+
+for (5 + input ) { for (input ) { input  } if (input ) { input  } else { 30 }  } 
+for (input  + input ) { input var0 = input   } 
+69
+
+if (input ) { input  } 
+87 + 91
+46
+
+var1 = 62 
+var0 = input  
 input 
 
-output 71 + input 
-output 90
-var0
+for (input  - input ) { while (40) { 56 } if (var0) { input  } else { input  }  } 
+if (19) { 71 } else { input  } 
+0
 
-output 17
-74 + 43
-input 
-
-var0 = 78 - input  
-26 / var0
-28
-
-var1 = input  
-while (30) { var0 } 
-input 
-
-output 34 * input 
-while (input ) { input  } 
-input 
-
-var0 = 33 / input  
-var1 = input  
-var1
-
-if (98) { input  } 
-for (input ) { input  } 
-94
-
-var0 = input  * input  
-input  * 2
-input 
-
-input 
-34 / var0
-input 
-
-output input 
-while (input ) { 23 } 
-81
-
-output input  + 90
-output input 
-42
-
-input  / input  / input 
-var0 + 6
-input 
-
-if (62) { input  } 
-if (27) { 64 } 
-57
-
-if (97 * input ) { var0 = input  var1 = input   } 
-68 / input  + 67
-input 
-
-input 
-if (input ) { 26 } else { 21 } 
+output 22
 66
-
-output 35 / 45
-69 + 18
 input 
 
-var0 = input  * 87 
-output 15
+input  + 18 * output 31
+var0 = 91 
+56
+
+line 1:14 extraneous input 'output' expecting {'input', VARNAME, NUMBER}
+input  + 5 - 26 + input 
+if (input ) { 32 } 
 input 
 
-var1 = input  
-while (input ) { 74 } 
-80
-
-var0 = input  / 46 
-input  / var0
-input 
-
+output input  * 23
 for (input ) { input  } 
-if (input ) { 12 } 
-var0
-
-if (input ) { 68 } 
-input  / var0
 input 
 
-output 98
-if (input ) { input  } else { 62 } 
-71
-
-36
-while (input ) { 68 } 
-45
-
-output 97 * 61
-var0 = 2 
-var0
-
-71 / 93 + 16
-if (89) { var0 } 
-var0
-
-while (65) { if (input ) { input  } while (input ) { 81 }  } 
-if (99) { var0 } 
-15
-
-while (67 < 17) { while (input ) { 9 } 15 / input  } 
-if (input  > input ) { output input if (67) { 26 } else { 80 }  } 
-7
-
-while (48 == input ) { var0 = 44  } 
-output input 
-80
-
-while (input  && input ) { var0 = 10 if (var0) { var0 }  } 
-if (input  || 35) { if (48) { input  } 76 / input  } 
-var1
-
-if (97 || 37) { for (input ) { 26 } while (23) { input  }  } 
-output 24
-input 
-
-input  * 78 / input  * input 
-output 61
+while (22) { 38 } 
+for (var0) { 49 } 
 43
 
-if (input  > input ) { output 5 } 
-if (16) { input  } 
-11
+for (7 / 24) { if (var0) { var0 } else { 54 }  } 
+while (input ) { 40 } 
+input 
 
-var0 = input  / 61 
-var1 = var0 
+while (35) { input  } 
+26 * 61
+input 
+
+while (input  - input ) { for (73) { 47 } var0 = 80  } 
+if (input ) { input  } 
+input 
+
+var0 = 89 + input  
+if (var0) { var0 } else { 9 } 
+input 
+
+if (input  || 51) { for (input ) { input  }  } 
+output var3
+69
+
+if (input  > input ) { if (input ) { 96 } else { 56 }  } else { 49while (input ) { input  }  } 
+var0 = input  
 var0
 
-var0 = 79 
-if (input ) { input  } else { input  } 
+while (38 || input ) { while (input ) { input  } while (32) { 18 }  } 
+for (84) { input  } 
 input 
 
-var0 = 16 / 83 
-38 + var0
+var1 = input  * input  
+var1 = input  
+34
+
+input  + input  + 9 * 30
+if (44 < 40) { output input if (input ) { 67 }  } else { var0 = input  var1 = var0  } 
+input 
+
+var0 = 39 
+for (input ) { input  } 
 var0
 
+if (input  == 45) { while (input ) { 47 } if (49) { input  } else { 54 }  } 
+if (67) { var0 } 
+37
+
+if (input  || input ) { for (input ) { 44 }  } 
 var0 = input  
-if (var0) { 39 } else { input  } 
-66
-
-if (input ) { if (input ) { input  } var0 = 84  } else { if (input ) { input  }  } 
-while (input ) { input  } 
 input 
 
-input  * if (var1) { 9 } else { input  } 
-output 81
+output 83 + 58
+for (59) { 36 } 
+5
+
+input  / 43 + 96 - input 
+8 - input 
 input 
 
-output input  - input 
-while (82) { input  } 
-13
-
-line 1:9 mismatched input 'if' expecting {'input', VARNAME, NUMBER}
-input 
-input  * var1
-52
-
-var0 = 91 / 57 
-if (var0) { 11 } else { var0 } 
+var0 = input  * 74 
+output 13
 input 
 
-var0 = input  + 44 
-var1 = 44 
+output 53
+95
 input 
 
-while (input  || input ) { var0 = input   } 
-var0 = input  
-48
+output input 
+var1 = input  
+var1
 
-output input  + input 
-if (92) { input  } 
-input 
+var1 = input  
+for (34) { input  } 
+82
 
-var0 = input  
-36
-var0
-
-var0 = input  - input  
+if (input  && input ) { for (input ) { 81 } input  - 11 } 
 output input 
 input 
 
-for (22) { output input var0 = 78  } 
-while (input ) { 67 } 
-23
+var0 = 87 / input  
+if (input ) { 35 } 
+37
 
-for (88 / 42) { if (15) { 26 } else { input  } while (50) { input  }  } 
-52 * input 
+output 17 - 39
+for (83) { input  } 
+51
+
+84 * 64 * input 
+35 - input 
+87
+
+input  + input  - input 
+if (10 > input ) { for (86) { 18 } if (input ) { 47 }  } else { input  / input  } 
 input 
 
-while (input ) { output input while (82) { 97 }  } 
-if (input ) { 99 } 
-99
+var1 = input  
+output input 
+input 
 
-var0 = input  - input  
-var0 = 69 
+while (input ) { input  } 
+var1 = var0 
+input 
+
+if (9 || input ) { input  * input while (81) { 47 }  } 
+output var0
+input 
+
+output input  - 54
+for (21) { input  } 
+21
+
+input  * 83 * input 
+input  * input  / 51 + input 
+input 
+
+if (44) { if (var0) { input  } else { input  }  } else { input  + 48 } 
+var1 = 93 
+0
+
+if (72 || input ) { output input  } else { input  + 27var0 = input   } 
+var1 = 37 
+input 
+
+96 + input  - input 
+if (input ) { input  } else { input  } 
+98
+
+var0 = 42 - 70 
+var1 = input  
 input 
 
 var0 = input  / input  
-var2 = input  
-input 
-
-output input  + input 
-var0 = 49 
-51
-
-var0 = 79 
-output var0
-input 
-
-for (91 * input ) { output 3input  } 
-if (var0 || input ) { for (input ) { input  }  } else { var2 = 54  } 
-input 
-
-if (input ) { input  } else { input  } 
-while (60) { input  } 
-94
-
-input  - input  + 19
-output 40 / input 
-89
-
-if (input  * 18) { 67 / 59if (input ) { var0 } else { input  }  } 
-97
+23 - 71
 23
 
-for (26) { output input var0 = 49  } 
+output input 
+var0 = 93 
+input 
+
+for (45) { for (18) { input  } if (59) { input  }  } 
+if (23) { var0 } else { input  } 
+var0
+
+while (input  / 51) { var0 = 24 input  + var0 } 
 var1 = input  
 input 
 
-if (input  + 90) { if (83) { input  } output input  } else { output input var0 = 60  } 
-output 57
+95
+var2 = 5 
+49
+
+input  - input 
+input 
+0
+
+var2 = 5 + var1 
+output input 
+input 
+
+var0 = input  
+output input 
+var0
+
+46 * input 
+if (54) { var0 } 
+input 
+
+if (input  || 55) { input  - 86input  } else { if (59) { 47 }  } 
+10
+input 
+
+var0 = 4 
+var0 = 78 
+var0
+
+var0 = 67 
+if (input ) { 46 } 
+var0
+
+if (input  && input ) { output input  } 
+if (32) { 53 } else { input  } 
+input 
+
+input 
+for (input ) { input  } 
+57
+
+31 / input  + 41
+while (52) { input  } 
+33
+
+if (input  && 44) { if (86) { 48 } else { input  } if (input ) { input  }  } 
+var1 = 1 
 input 
 
 output input 
-while (90) { input  } 
+input 
+input 
+
+var0 = input  + 41 
+for (input ) { 31 } 
+input 
+
+if (var1) { var1 } 
+input 
+36
+
+if (input  || 88) { var0 = input   } else { output input var1 = input   } 
+14 / 20
+input 
+
+var0 = 12 * input  
+output 77
+input 
+
+for (91 * input ) { output input for (59) { 94 }  } 
+output 84
+input 
+
+var1 = input  
+output 78
+85
+
+2 * 83 * 91 * input 
+for (input  + input ) { var0 = 18  } 
+31
+
+var0 = input  
+while (input ) { input  } 
+67
+
+65 - 43
+output input 
+58
+
+if (18 || input ) { input  - input for (input ) { input  }  } 
+input 
+input 
+
+var0 = input  
+var1 = input  
+var1
+
+var0 = input  
+for (input ) { input  } 
 var0
 
-while (75 && input ) { input input  } 
-while (input ) { 73 } 
+var0 = input  
+for (97) { 55 } 
 input 
+
+output input  + input 
+11 + input 
+input 
+
+var0 = input  
+output 22
+input 
+
+output 97 / input 
+output input 
+58
+
+var0 = 5 + input  
+input  - input 
+43
+
+for (input ) { input  } 
+input 
+input 
+
+if (input  < 58) { 7 - 66output input  } 
+input  - 62 + var1 * 18
+41
+
+if (29 && input ) { var0 = input  while (input ) { input  }  } else { for (var0) { input  } for (input ) { input  }  } 
+output 51
+28
+
+output 63 + input 
+input  - input 
+input 
+
+25 * var1
+output input 
+52
+
+if (input ) { input  } else { 73 } 
+var0 = input  
+input 
+
+var0 = 23 - 22 
+input  - input 
+84
+
+input  / var0
+input 
+input 
+
+var0 = input  
+if (input ) { 97 } else { input  } 
+input 
+
+57
+59
+7
 
 output input  * input 
-80 - input 
+for (input ) { 82 } 
+32
+
+var0 = 96 
+if (var0) { input  } else { input  } 
 input 
 
-var0 = 81 
-if (input ) { input  } else { input  } 
+input  + input  + while (47) { 14 } 
+if (35) { 69 } else { input  } 
+31
+
+while (7 == 81) { input  / 45input  * input  } 
+if (52) { input  } else { 13 } 
+17
+
+output input  - input 
+for (input ) { input  } 
+14
+
+input  - input  / 93
+while (input  > input ) { if (input ) { input  } else { input  } output input  } 
+98
+
+if (var0) { input  } else { var0 } 
+output 18
 input 
 
-while (90 == input ) { var0 = input   } 
-var1 = input  * input  
+60
+var0 = 90 
 var0
 
-if (input  - 63) { for (67) { var1 }  } else { if (input ) { input  } if (22) { input  } else { input  }  } 
+while (input  && input ) { output 43 } 
+input  * 81
+56
+
+line 1:18 mismatched input 'while' expecting {'input', VARNAME, NUMBER}
+for (75 * 81) { input  + input output input  } 
+for (input  * 50) { if (87) { input  } else { input  }  } 
+16
+
+for (input  + input ) { if (62) { 62 }  } 
+while (69) { 66 } 
+input 
+
 output input 
-96
-
-input 
-while (80) { 64 } 
-39
-
-output 90 + input 
-var1 = 67 
+var0 = input  
 input 
 
-for (input  * input ) { for (2) { input  } var1 = input   } 
+58
+var0 = input  
+input 
+
+for (5 / 38) { if (15) { input  } else { 66 }  } 
+output input 
+74
+
+while (input ) { 56 / 7while (87) { 90 }  } 
+for (input ) { 39 / input  } 
+input 
+
+var0 = input  / input  
+output 76
+var0
+
+var0 = 27 * input  
+output input 
+input 
+
+var1 = input  
+input 
+var0
+
+var0 = input  / 51 
+while (29) { 13 } 
+input 
+
+while (input  > input ) { while (99) { 75 } var0 = input   } 
+input  * 50
+var0
+
+output input 
+31 + 60
+input 
+
+input  - 21 - 31
+var0 = input  
+21
+
+for (64 * 30) { input  - input 51 - 83 } 
+76 + input 
+input 
+
+input 
+if (48) { 65 } else { 5 } 
+input 
+
+input 
+var0 = input  
+8
+
+56
+if (66) { 17 } else { input  } 
+input 
+
+output 66
+output 97
+var0
+
+93
+var2 = input  
+80
+
+var3 = input  / var2 
+while (input ) { 7 } 
+51
+
+var0 = 4 + 91 
+var1 = input  
+input 
+
+23 - input  - 70 / 20
+for (input  - input ) { var0 = 44  } 
+84
+
+while (input  && input ) { 2 + 14 } 
+for (97) { input  } 
+input 
+
+var0 = 40 
+input  * var0
+22
+
+if (input  && input ) { while (input ) { input  } for (input ) { input  }  } else { if (84) { 53 } else { 93 } input  } 
+input  - 43
+91
+
+if (3) { input  } else { 55 } 
 while (input ) { input  } 
-26
+input 
 
-if (input  || 34) { if (input ) { input  } 0 } else { output input if (36) { 19 }  } 
-input  - input 
-35
+while (input  || 63) { output var1 } 
+if (70) { input  } else { 57 } 
+input 
 
-for (38 * 98) { while (input ) { 79 } if (6) { input  }  } 
-for (input ) { while (29) { 66 } for (65) { 36 }  } 
+for (input  / input ) { if (input ) { input  } else { input  } var2 = 36  } 
+var0 = input  
+20
+
+16 * 65
+output input 
+input 
+
+var0 = 4 - input  
+if (3) { 24 } 
+input 
+
+while (input  || 59) { input  * input output 51 } 
+var1 = var0 
+40
+
+if (input  < 5) { output 57for (input ) { 83 }  } 
+output input 
+input 
+
+output 99 / 92
+while (input ) { input  } 
 79
 
-output 33
 for (input ) { input  } 
-68
+input  - input 
+input 
 
-input  / input  / var0
+input  + input  + input 
+while (52) { input  } 
+13
+
+var0 = 33 * 5 
+input 
+input 
+
+if (79 && input ) { if (4) { 65 }  } 
+while (78 > 51) { for (input ) { input  } for (9) { 1 }  } 
+input 
+
 var0 = input  
-11
+while (input ) { input  } 
+36
+
+var0 = input  + input  
+var0 - input 
+input 
+
+if (input  && 97) { for (input ) { 84 }  } 
+input  + input 
+39
+
+while (input  && 31) { var0 = 78  } 
+var1 = 25 
+var0
+
+if (input  > input ) { if (1) { input  } else { input  }  } else { output 23var0 = input   } 
+output input 
+input 
+
+input  + input 
+var0 = 6 
+input 
+
+var0 = input  - input  
+while (input ) { 31 } 
+66
+
+if (55 < 77) { for (80) { input  }  } else { output input while (9) { input  }  } 
+output 76
+input 
+
+var0 = 44 
+input  + input 
+53
+
+if (48 < 62) { output input  } else { output input  } 
+var0 = input  
+70
+
+output input 
+input  * 56
+input 
+
+var2 = input  
+var1 = input  
+input 
+
+while (22 == var0) { var1 = input  while (input ) { var1 }  } 
+output input 
+63
+
+var0 = 40 
+output 52
+80
+
+if (83) { 93 * 65for (8) { input  }  } 
+while (54 || input ) { 65if (var2) { 28 } else { var1 }  } 
+16
+
+while (78 > input ) { output input 23 + input  } 
+var0 = 11 
+input 
+
+input  + 73 + input 
+if (input  / var0) { 37 / var0 } else { if (34) { var0 }  } 
+input 
+
+if (93 && input ) { var0 = 43 if (38) { input  } else { input  }  } 
+input  - 59
+input 
+
+if (25 == 44) { for (87) { input  }  } 
+if (input  > input ) { 0 - input  } 
+8
+
+for (47 * input ) { 34 - 54var0 = input   } 
+while (var0 || input ) { for (input ) { input  }  } 
+var0
+
+if (26 == input ) { output input var0 = 82  } else { 95 } 
+if (input  + input ) { input  + 57 } 
+input 
+
+for (input ) { 11 * var0 } 
+var0 = 92 
+22
+
+line 1:20 extraneous input '-' expecting {<EOF>, 'for', 'while', 'if', 'output', 'input', VARNAME, NUMBER, EOL}
+while (55) { output 3var0 = input   } 
+output 18
+2
+
+for (input ) { 9 }  - 14 / 30
+if (20) { 0 } else { input  } 
+72
+
+if (51) { for (input ) { input  }  } else { for (input ) { 39 }  } 
+var0 = input  
+97
+
+input  * input  * input 
+if (input ) { output input if (var0) { input  }  } 
+1
+
+output input 
+var0 = 68 
+var0
+
+if (13 || 34) { input  - 12 } else { for (1) { 33 } 67 } 
+var0 = input  
+var0
+
+49 + input  * input 
+var0 = 16 * input  
+input 
+
+for (56 + input ) { for (input ) { 23 }  } 
+var0 = 88 
+77
+
+output 76
+while (52) { 71 } 
+37
+
+var0 = 55 - 63 
+input 
+var0
+
+output input 
+if (88) { input  } 
+input 
+
+input 
+if (input ) { var0 } 
+input 
+
+89 - var0
+var1 = 8 
+input 
+
+output input 
+output 56
+28
+
+while (62 && 41) { if (38) { input  } output 25 } 
+output 40 / input 
+var0
+
+if (input  < 8) { for (58) { 60 }  } else { if (var0) { var0 } else { input  } input  - 8 } 
+var1 = input  
+var0
+
+if (23) { 51 } else { input  } 
+output var0
+4
+
+if (48) { var0 } else { input  } 
+input  - input 
+var0
+
+while (input  || input ) { var0 = input   } 
+output input  - var0
+input 
+
+28 * 96
+input  / 92
+input 
+
+while (input ) { 16 } 
+18
+input 
+
+output 37
+var0 = 64 
+input 
+
+25
+if (63) { input  } else { 24 } 
+90
+
+while (24 - input ) { if (input ) { input  } if (17) { 84 } else { 58 }  } 
+output input  - 6
+input 
+
+70
+91
+input 
+
+var3 = 22 - 54 
+if (var0) { var0 } 
+input 
+
+var0 = input   / 93
+var0 = input  
+30
+
+if (50) { input  } else { var0 } 
+if (input ) { input  } 
+56
+
+output 31
+output input 
+input 
+
+for (input ) { for (input ) { input  } var3 = 6  } 
+output input 
+54
+
+20 - 90 / input 
+var0 = input  
+98
+
+for (input ) { input  } 
+while (input ) { 55 } 
+input 
+
+79 * input  - input 
+var0 = 93 
+75
+
+input  - 88 / 82 * 38
+var1 = 39 
+var1
+
+var1 = var0 
+input 
+var0
+
+output var0 / 4
+var0 = input  
+input 
+
+for (63 / input ) { output input  } 
+40 * input  - input  / 28
+input 
+
+if (79 + 77) { output 28var0 = input   } else { var1 = input  if (0) { input  }  } 
+if (input ) { 43 } else { input  } 
+input 
+
+input  - 65 * 15 + 27
+while (input  + 47) { if (input ) { var0 } else { input  }  } 
+99
+
+while (input  == input ) { for (input ) { input  }  } 
+if (29 - 35) { if (input ) { 42 }  } else { 86 - 67 } 
+60
+
+if (input  + 98) { while (input ) { input  }  } else { var0 = input  output input  } 
+if (52 * 29) { while (input ) { input  } if (12) { input  }  } 
+input 
+
+var0 = input  * input  
+input  / input 
+input 
+
+if (77 * 57) { var0 = 40  } 
+var0 - var0
+var0
+
+var0 = 66 * 11 
+var0 - var0
+input 
+
+for (39) { input  } 
+77
+input 
+
+while (27 < 5) { if (input ) { 1 }  } 
+var0 = 87 
+input 
+
+output input  / input 
+output input 
+input 
+
+input 
+while (12) { input  } 
+input 
+
+var0 = 87 / input  
+while (input ) { input  } 
+19
+
+while (input  < input ) { while (var0) { input  } var1 = input   } 
+output input 
+input 
+
+var0 = 98 - 6 
+var0 = input  
+var0
+
+output input  / 31
+for (var1) { input  } 
+input 
+
+if (67 > input ) { if (input ) { input  } input  * input  } else { var0 = 34  } 
+if (4 < input ) { output 30 } else { var0 = input  input  + var0 } 
+70
+
+input  / 98 + output 79
+var0 = input  
+var0
+
+line 1:14 extraneous input 'output' expecting {'input', VARNAME, NUMBER}
+var0 = input  * input  
+if (62) { 86 } 
+input 
+
+var0 = input  * 71 
+output input 
+input 
+
+while (input  - input ) { if (input ) { 75 } else { input  }  } 
+if (input ) { input  } 
+58
+
+if (97 < input ) { if (59) { 82 } else { 68 }  } 
+output input 
+82
+
+var0 = 31 + 26 
+if (6) { input  } 
+var0
+
+if (input  || input ) { for (89) { input  }  } 
+output input  + 22
+10
+
+for (79) { var0 = 13 output 24 } 
+while (input ) { input  } 
+47
+
+while (input  * var0) { output 84var1 = 61  } 
+var1 = input  
+input 
+
+for (53) { output 47if (input ) { input  } else { 8 }  } 
+for (input ) { 24 } 
+89
+
+var0 = 25 
+input  * input 
+input 
+
+output 40 + input 
+input  * 0
+57
+
+0 / input  * 31 - input 
+while (90) { var0 } 
+input 
+
+if (input  || 24) { var0 = 0 while (34) { input  }  } else { while (var0) { 82 }  } 
+var0 = 35 
+40
+
+if (50 * input ) { 54 } 
+var0 = input  
+93
+
+output input  / input 
+output 68
+input 
 
 var0 = input  
 output input 
 input 
 
-for (84 / input ) { output input  } 
+for (92 / input ) { output input for (79) { input  }  } 
+2 - input 
+32
+
+var0 = 31 + input  
+62 + 30
+69
+
+var0 = 6 
+for (input ) { 54 } 
+99
+
+output 65
+var0 = input  
+var0
+
+if (input  && 90) { var0 = input  var1 = input   } 
+var0 = 37 
+21
+
+if (input  && input ) { for (input ) { 8 } output input  } else { output 162 } 
+output 13
+44
+
+for (34 * input ) { var1 = input   } 
+for (input ) { 10 } 
+input 
+
+output input  - 98
+var1 = 98 
+21
+
+var1 = input  / 65 
+output 62
+66
+
+output 70
+output var0
+7
+
+var0 = input  
+if (var0) { input  } else { input  } 
+input 
+
+if (1 < 15) { var0 = 50  } 
+while (34) { 21input  } 
+var0
+
+var0 = 46 + input  
+var1 = input  
+input 
+
+output input  / input 
+var0 = 62 
+input 
+
+var0 = input  
+var0 = 69 
+input 
+
+output input  * 14
+while (input ) { 11 } 
+63
+
+if (input  * 61) { var0 = input   } 
+var0
+input 
+
+while (input  < input ) { input for (input ) { input  }  } 
+var0 = input  - 51 
+90
+
+if (62 && input ) { if (input ) { 77 } 90 / input  } 
+while (var0 || input ) { if (input ) { 38 }  } 
+49
+
+output input  - input 
 if (input ) { input  } 
 input 
 
-if (11 || 57) { while (input ) { input  } input  * 22 } 
+for (input ) { var0 } 
+99
+input 
+
 output input 
+var0 = 85 
+96
+
+if (36 && input ) { var0 = input  while (28) { 59 }  } 
+if (36) { input  } 
+var1
+
+if (2 || 80) { var0 = input  if (var0) { 16 }  } else { if (input ) { input  }  } 
+var1 = var0 - var0 
+input 
+
+if (51 > input ) { if (input ) { 8 } else { input  }  } 
+while (99) { input  } 
+46
+
+for (38 / 71) { input  / 12 } 
+var0 = 95 - input  
+input 
+
+while (48) { 26 } 
+for (68) { 90 } 
+input 
+
+while (89 || 57) { output 42 } 
+output input  / input 
+input 
+
+if (input  - 40) { var1 = input  for (input ) { input  }  } else { for (input ) { input  }  } 
+if (input ) { input  } 
+input 
+
+44
+if (input ) { 15 } else { input  } 
+10
+
+if (28 < input ) { output 65 } else { input  + input if (69) { input  }  } 
+input  * input 
+input 
+
+var0 = 13 
+output input 
+input 
+
+output 72 * 61
+while (82) { var0 } 
+input 
+
+var0 - 72
+var0 = input  
+45
+
+29 * var0
+output input 
+78
+
+if (66 - 23) { var0 = 7 var0 = 92  } else { output var0 } 
+var1 = var0 
+input 
+
+output input  + 18
+input  + 82
+68
+
+if (var0 && var0) { if (71) { input  } 32 * 52 } else { for (input ) { input  } for (var1) { 93 }  } 
+for (var0) { 37 } 
+31
+
+while (input ) { if (68) { input  } else { input  } for (input ) { 76 }  } 
+var0 + input 
+13
+
+if (93) { var0 = 64  } else { 72 + 24 } 
+if (86) { 8 } 
+23
+
+var0 = input  
+input 
+input 
+
+if (32 == input ) { var0 } 
+if (input ) { input  } 
+input 
+
+output 56 * 33
+input  + input 
+input 
+
+for (19 - input ) { while (input ) { input  } input  * 7 } 
+var1 = input  
+input 
+
+input  + 7 + 61 / 6
+input 
+input 
+
+var1 = input  
+var0 = 95 
 61
 
-output 82
-if (3) { 91 } else { 95 } 
-97
-
-if (input  || 4) { if (55) { input  } else { 73 }  } 
-31 + input 
-38
-
-output 64 + input 
-output var0
-input 
-
-while (35 || input ) { 59input  / 39 } 
-16
-67
-
-for (66 + 42) { 67if (var0) { input  } else { input  }  } 
-input  / input 
-input 
-
-output input  + input 
-input  - var0
-input 
-
-output 6
-89 - 26
-input 
-
-37
-output var0
-62
-
-output 20
-output 10
-input 
-
-input  + 61 + 40
-var0 * input 
-input 
-
-while (86 && 87) { if (61) { 94 } else { input  } var0 = input   } 
-56 / input 
-var0
-
-var0 = 65 * 24 
-input  / 32
-28
-
-67
-output var0
-input 
-
-var0 = input  
-output var0
-var0
-
-if (86 == input ) { var0 = 93  } else { if (input ) { var0 }  } 
-while (input  < 83) { while (69) { var1 }  } 
-var0
-
-if (65 && 21) { var0 = 49 var1 = 95  } else { var1 = input   } 
-var0
-81
-
-while (19 > 41) { var0 = input   } 
-output var0 * 1
-input 
-
-var0 = input  / 17 
-var0 - 60
-input 
-
-if (input  || 75) { output 56 } else { output input output input  } 
-input 
-input 
-
-if (input  || input ) { if (input ) { 82 } else { 76 } for (input ) { input  }  } else { var0 = 90  } 
-var0 = input  + 53 
-input 
-
-output input 
-if (99) { input  } 
-var0
-
-var1 = 60 
-output 96
-line 1:23 extraneous input '*' expecting {<EOF>, 'for', 'while', 'if', 'output', 'input', VARNAME, NUMBER, EOL}
-94
-
-while (input ) { 73 }  * input  - 62
-var0 = 68 
-70
-
-while (3 || 19) { while (input ) { 57 }  } 
-var0 = input  
-input 
-
-if (input ) { input  } else { for (input ) { var0 } while (var0) { input  }  } 
-15 * input 
-30
-
-while (input  || input ) { output 2 } 
-output input 
-input 
-
-if (27 && input ) { while (input ) { 10 } var0 = input   } 
-output var0
-var0
-
-51 - input  - 31
-25 - var0
-input 
-
-for (input ) { input  } 
+output input  * 18
 var0 + input 
 input 
 
+while (input  - 17) { if (30) { 47 } 32 / 97 } 
 output input 
+input 
+
+55 + input  * 74
+if (var0 == 52) { if (input ) { input  } else { input  } output var1 } else { output var1while (var1) { var1 }  } 
+input 
+
+if (input  || 76) { output 89if (input ) { 98 }  } else { for (2) { input  }  } 
+if (input ) { input  } 
+75
+
+while (input  < 91) { input var0 = 45  } 
+output input 
+input 
+
+output 88
+while (48) { 13 } 
+input 
+
+input  - input  - input 
+output 93 - input 
+65
+
+output 42 - input 
+input  / input 
+80
+
+if (input  + 39) { var0 = 74  } 
+42 * 17
+40
+
+if (78 / input ) { if (input ) { input  } for (89) { 0 }  } else { 3 - 47while (28) { input  }  } 
+var0 = input  
+75
+
+output 58 - input 
+var0 = input  
+input 
+
+var0 = 5 
+10
+11
+
+if (49 && 90) { if (47) { var1 }  } else { var1 = 90  } 
+var0
+input 
+
+47 * 61 / for (84) { 82 } 
+var0 = 45 
+input 
+
+line 1:10 mismatched input 'for' expecting {'input', VARNAME, NUMBER}
+while (4 && 71) { if (input ) { input  }  } 
+if (40 > input ) { var0 = 77  } else { var1 = input   } 
+input 
+
+var0 = 44 
+output input 
+var0
+
+output 95
+output input 
+input 
+
+if (input  < input ) { var0 = 89  } 
+for (var0) { input  } 
+95
+
+output input  + 94
+output input 
+6
+
+var0 = 65 + input  
+if (var0) { input  } 
+input 
+
+output 71 / input  + 17
+var0 = input  
+input 
+
+var0 = input  + input  
+var0 = input  
+input 
+
+if (input  == 25) { input  } 
+output input 
+input 
+
+if (input  || input ) { while (input ) { input  } while (input ) { input  }  } 
+output 84
+input 
+
+var0 = input  
+var0 = 93 
+var0
+
+var0 = input  + 36 
+var1 = 69 
+input 
+
+output 62
+input  + input 
+13
+
+output input 
+var0 = 80 
+var0
+
+output input  + input 
+0 - 78
+input 
+
+for (input ) { while (92) { input  }  } 
+input  - 44
+input 
+
+if (94 && input ) { var0 = 61 input  } 
+while (59) { 98 } 
+75
+
+var0 = input  
+input 
+input 
+
+input  + 98
+if (input ) { input  } 
+input 
+
+for (36) { var0 = 69  } 
+output input  / input 
+var0
+
+if (38 && input ) { var0 = input   } else { 37 + input  } 
 if (input ) { input  } else { input  } 
 input 
 
-if (57 && 31) { for (21) { input  } input  / input  } else { while (input ) { input  } input  / input  } 
-90 / input 
-89
+input  + input 
+9 * 86
+var0
 
-var1 = input  
-var0 / var0
+var0 = 89 - input  
+for (input ) { input  } 
+2
+
+for (89) { output input for (66) { 94 }  } 
+var0 = 51 
+71
+
+25 / 9 + 9 - 35
+if (var2 * input ) { output var1 } 
+65
+
+while (input  + input ) { while (input ) { input  }  } 
+if (80) { 84 } else { 13 } 
 input 
 
-output input  * 18
-output 45
-38
-
-output 35 - input 
-while (48) { input  } 
-99
-
-output 82 - input 
-if (97) { var0 } 
-43
-
-for (97) { input  } 
-var1 = 47 
+output input 
+var0 = 50 
 input 
 
-output 47 / 15
-var0 = 0 
+while (11 && 71) { while (0) { 7 }  } 
+output 9
+58
+
+while (35 < 17) { output input  } 
+var1 = input  * var0 
+74
+
+var0 = 5 / input  
+if (input ) { 31 } else { input  } 
+var0
+
+if (input  == input ) { output 38for (1) { input  }  } 
+var0 = 91 
+var0
+
+72 - 24 - input 
+var0 = 34 / input  
+input 
+
+for (input  + input ) { input  + 19 } 
+input 
+var0
+
+output input 
+while (89) { input  } 
+54
+
+output 40 - 50
+if (55) { input  } else { 40 } 
+12
+
+while (input  && 6) { output input 46 + input  } 
+if (input ) { 18 } else { 31 } 
+36
+
+input  + 84 + 30 + 4
+output input 
+5
+
+if (9 && 78) { input output 1 } 
+input  - input 
+83
+
+while (7 > input ) { var1 = input   } 
+var0 = 57 
+var0
+
+input  * 80 + input 
+var0 = 60 / 74 
+input 
+
+var1 = 0 / input  
+25 / 86
+input 
+
+input 
+if (81) { var0 } 
+input 
+
+output input  * input 
+if (49) { 41 } else { input  } 
+73
+
+output input 
+for (19) { 62 } 
 57
 
-for (input ) { while (36) { 49 }  } 
+var0 = 68 
+22 / 72
+79
+
+var0 = 23 - 89 
+output input 
+input 
+
+output input 
+var1 = input  
+var0
+
+while (input  && var0) { output input if (61) { 26 }  } 
+if (84) { 71 } else { input  } 
+69
+
+while (input ) { output input  } 
+var0 = 97 
+input 
+
+var0 = input  * 18 
+while (input ) { input  } 
+input 
+
+90 / 81
+if (70) { 41 } else { input  } 
+input 
+
+for (input ) { input  } 
+while (62) { 74 } 
+8
+
+60 / input  / input 
+if (86) { input  } else { input  } 
+input 
+
+85 + input 
+output input 
+27
+
+output 19
+var1 = input  
+30
+
+var0 = 8 + input  
+83 + 39
+input 
+
+input  + input  - 46 - input 
+var0 = input  
+input 
+
+for (91 * input ) { output 35if (input ) { input  }  } 
+if (48 == 23) { 88 / input while (22) { 84 }  } else { input  - input  } 
+80
+
+var0 = 79 * input  
+for (input ) { input  } 
+input 
+
+var1 = var0 
+var0 = 74 
+var0
+
+output input  - input 
+if (input ) { var0 } 
+input 
+
+for (input ) { if (input ) { 62 } else { 78 } output var0 } 
+if (3) { input  } 
+61
+
+var1 = 98  - input  / input 
+if (98) { 10 } else { input  } 
+46
+
+if (input  < 87) { output var0for (input ) { 90 }  } else { var0 + input var1 = input   } 
+output 12
+input 
+
+if (input ) { var0 } else { input  } 
+15
+99
+
+var0 = input  
+95 * input 
+var0
+
+while (input  < input ) { for (48) { input  }  } 
+output input 
+var0
+
+input 
+output input 
+60
+
+var0 = 32 
+input 
+var0
+
+input 
+var0 = input  
+input 
+
+input  / input  + input  - input 
+output input 
+41
+
+for (44) { input  - input var0 = input   } 
+if (input ) { 61 } 
+var0
+
+if (input  == 25) { if (91) { 53 } else { input  } if (input ) { 89 }  } 
+output 99
+input 
+
+output input  * input 
+var0 = 83 
+input 
+
+input  + input  + if (input ) { input  } else { input  } 
+line 1:18 mismatched input 'if' expecting {'input', VARNAME, NUMBER}
+while (input ) { input  } 
+87
+
+for (44 * input ) { output input  } 
+if (input  > 11) { if (input ) { 39 } else { input  }  } else { if (88) { input  } else { input  } var0 = input   } 
+var0
+
+if (59 + 61) { for (input ) { input  } input  / 13 } 
+input  / input  - var0
+94
+
+output input 
+20 - 37
+input 
+
+while (91 * input ) { if (input ) { 24 } else { input  } input  + 79 } 
+output input  - input 
+85
+
+var1 = var0 
+output input 
+input 
+
+input 
+while (input ) { var0 } 
+input 
+
+while (44 < input ) { var0 = 23  } 
+if (85 && var0) { var1 = input   } 
+input 
+
+for (8) { input  } 
+output input 
+8
+
+if (input  / 72) { 15 / 91if (2) { input  }  } else { input  / input while (0) { input  }  } 
+if (input ) { input  } 
+39
+
+output input 
+if (81) { input  } else { input  } 
+92
+
+input 
+47
+input 
+
+if (input  && 48) { 53 - input 87 } 
+input  / input 
+input 
+
+while (input ) { 67 } 
+if (input ) { var0 } 
+var0
+
+for (43) { output input  } 
+var0 = 8 
+40
+
+for (input ) { var0 = 44  } 
+var0 = input  * input  
+90
+
+input 
+if (input ) { input  } else { input  } 
+input 
+
+var0 = 78 + input  
+if (68) { 79 } else { 25 } 
+var0
+
+if (80 && 52) { while (input ) { input  }  } 
+if (input ) { input  } else { input  } 
+input 
+
+while (78 / 58) { output input output input  } 
+for (input  * input ) { var0 = input  while (input ) { 56 }  } 
+49
+
+46
+input 
+var0
+
+var0 = input  - input  
+37
+input 
+
+var0 = input  + 51 
+while (69) { input  } 
+79
+
+output 46 * 8
 output input 
 67
 
-if (var0) { var0 } else { 2 } 
-if (var0) { input  } else { 56 } 
+while (98 / input ) { for (35) { 70 } output 79 } 
+var0 = var0 
 input 
 
-89
+while (input  < 49) { var0 = input  output input  } 
+while (input  + input ) { input  / input var1 = input   } 
+input 
+
+for (input ) { var0 } 
+if (64) { input  } else { input  } 
+input 
+
+var0 = input  
+if (65) { input  } 
+input 
+
+output 63 * 45
+if (input ) { input  } else { input  } 
+input 
+
+if (46) { input  } else { 81 } 
 output input 
+47
+
+if (input  * 28) { if (53) { 82 } input  + 67 } 
+if (var0 > var0) { if (input ) { var0 } else { input  } var1 = 2  } else { input output input  } 
 input 
 
-while (26 > 53) { input  * input 94 } 
-input  / input 
-8
+20
+while (47) { 6 } 
+32
 
-var0 = input  - input  
-for (input ) { input  } 
-87
+if (input ) { 72 } else { input  }  / input  * 20
+17
+input 
 
-output 87 + input 
-output 58
-87
+line 1:36 extraneous input '/' expecting {<EOF>, 'for', 'while', 'if', 'output', 'input', VARNAME, NUMBER, EOL}
+if (input  * var1) { if (input ) { input  }  } 
+var1 = input  
+input 
 
-if (var0) { var0 } 
+output 71 * 36
+var0
+var0
+
+if (input  < 4) { var0 = 78 output 9 } else { var1 = var0 while (input ) { input  }  } 
+if (40 == input ) { if (20) { input  }  } else { var0 = 58  } 
+var1
+
+16 - input  - input  + 11
+while (input ) { var0 = input   } 
+32
+
+var0 - 55 - var0
+var0 = input  
+70
+
+if (17) { 4 }  / 20
+output 51
+13
+
+line 1:15 extraneous input '/' expecting {<EOF>, 'for', 'while', 'if', 'output', 'input', VARNAME, NUMBER, EOL}
+var1 = var0 
+if (input ) { 31 } else { input  } 
+6
+
+var0 = 30 + 59 
+output 48
+88
+
+output input 
+var0 = 24 
+input 
+
+output input  * input 
+if (3) { 86 } 
+input 
+
+var0 = input  - 63 
+var0 = 93 
+input 
+
+for (47 + input ) { input  } 
+output input 
+16
+
+for (input ) { output input  } 
+for (input  + input ) { for (0) { 34 } for (input ) { input  }  } 
+92
+
+input  * input  - input  / input 
+for (49) { 94 } 
+4
+
+while (39 > input ) { var3 = 4  } 
+var0 = input  
+input 
+
+for (9 * 75) { var0 = input  if (41) { 35 }  } 
+while (input  / 68) { 92 + input if (35) { input  } else { 40 }  } 
+input 
+
+28 / 65 / input 
+output 80
+input 
+
+14 * input  / 31
+while (29 || input ) { input  * input var0 - input  } 
+var0
+
+if (input ) { input  } else { 48 }  + 94 - input 
+while (4) { 49 } 
+input 
+
+line 1:36 extraneous input '+' expecting {<EOF>, 'for', 'while', 'if', 'output', 'input', VARNAME, NUMBER, EOL}
+if (input  || 19) { if (input ) { 42 } input  } else { var0 = input   } 
 var0 = input  
 var0
 
-for (90) { input  } 
-if (19) { input  } 
-input 
+54 + 61 / input  * 37
+output 6
+98
 
+while (9 > 13) { 70if (input ) { input  }  } 
 var0 = input  
-var1 = 94 
+88
+
+var1 = 76 - input  
+for (input ) { 52 } 
 input 
 
-var0 = input  
-while (21) { input  } 
+input  * 58 * 86 + 63
+input  / 21
 input 
 
+output 3
+var0
+12
+
+17
+input  / input 
+55
+
+output input 
+var0
+input 
+
+var0 = input  + 38 
+var1 = input  
+input 
+
+18 * input  * 58 - input 
+var1 = input  - 58 
+input 
+
+output input  / input 
+for (input ) { 53 } 
+41
+
+while (input ) { input  } 
+89
+21
+
+var1 = var0  / input 
+74
+13
+
+98 * input  * 86
+output 47
+37
+
+49 - 7
+input  + 25
+input 
+
+if (15 && input ) { while (input ) { 90 } var0 = input   } 
+output input  * input 
+input 
+
+for (43) { output 89for (input ) { input  }  } 
+for (input ) { 47 } 
+input 
+
+output input  * 64
+output 99
+input 
+
+output input 
+while (input ) { input  } 
+54
+
+while (input  && input ) { while (input ) { input  } 80 + 17 } 
 if (input ) { input  } else { input  } 
-29
+12
+
+var0 = input  
+while (input ) { var0 } 
 input 
 
-while (input  < input ) { 80 / 4262 * 20 } 
-var0 = 80 
-51
+output input 
+59
+2
 
-var0 = input  + input  
+output 50 + input 
+var0 = input  
+47
+
+output input  + input 
+var0 = input  
+7
+
+if (89) { input  } else { input  }  / 61
+var0 = 17 
+var0
+
+line 1:36 extraneous input '/' expecting {<EOF>, 'for', 'while', 'if', 'output', 'input', VARNAME, NUMBER, EOL}
+output 67
+if (14) { input  } 
+71
+
+for (8 - input ) { 96 } 
+var0 = input  
+input 
+
+var0 = 44 
+var0
+input 
+
+45 * input  / input 
+output 62 / input 
+input 
+
+while (input ) { if (input ) { input  } output 71 } 
+for (51) { input  } 
+input 
+
+if (input  == input ) { while (53) { input  } if (80) { input  }  } 
+var0 = 92 
+input 
+
+for (input  / 75) { output input  } 
+for (input ) { 51 } 
+52
+
+output input  * 4
+output 43
+input 
+
+output input 
+for (88) { 61 } 
+12
+
+for (0 / input ) { if (input ) { 88 }  } 
+var0 = 29 
+input 
+
+var1 = var0 
+var0 = input  
+input 
+
+input  + input  * input  + 85
+for (var0 * input ) { var1 = var0 var2 = input   } 
+input 
+
+62 * 28 - 6
+while (89 == input ) { if (var0) { 89 } for (var0) { 13 }  } 
+input 
+
+var0 = 98 / input  
+while (99) { input  } 
+input 
+
+output 3
+while (9) { input  } 
+input 
+
+while (47 || input ) { if (input ) { 37 } else { input  }  } 
+var1 = 4 
+input 
+
+var1 = input  
+while (input ) { input  } 
+46
+
+91 + input 
+input 
+input 
+
+var1 = input  
+while (input ) { input  } 
+56
+
+input  + 1 + 37
+input  + input 
+input 
+
+var0 = 85 
 output input 
 input 
 
-if (input  > input ) { 27 * 90input  } 
-var0 = input  - 67 
+while (14 == 77) { output input for (1) { 2 }  } 
+output 16
+20
+
+var1 = 98 
+if (69) { input  } 
+53
+
+var0 = 41 + 40 
+if (input ) { input  } 
+input 
+
+input  / input  + input 
+while (input  * input ) { for (input ) { input  }  } 
+input 
+
+while (input  < 57) { output input output input  } 
+var0 = input  / 4 
+var0
+
+for (99) { var0 } 
+93 - 5
+input 
+
+output 39
+if (47) { input  } 
+input 
+
+80 / 90 + input 
+var0 = 45 
+input 
+
+var2 = var1 + input  
+45
+input 
+
+for (input  * 39) { if (input ) { input  }  } 
+output 25
+79
+
+while (input  + input ) { if (input ) { 48 } else { 84 } var0 = 62  } 
+if (33) { 18 } else { 98 } 
+input 
+
+var0 = 27 * input  
+for (input ) { input  } 
+input 
+
+input  + 30 / 72 - 44
+for (21) { input  } 
+47
+
+for (82 / 68) { input  * 53 } 
+output 41 + input 
+input 
+
+output input 
+for (2) { input  } 
+40
+
+for (input ) { output input if (input ) { input  } else { 52 }  } 
+for (input ) { var0 } 
+input 
+
+for (19 - input ) { var0 = input   } 
+if (input ) { input  } else { 82 } 
+input 
+
+62
+for (65) { input  } 
+input 
+
+if (98 == input ) { var0 = input  while (input ) { var0 }  } else { while (input ) { input  } if (57) { 3 } else { input  }  } 
+if (input ) { input  } 
+47
+
+output input 
+10 + input 
+7
+
+input  - var0 / input  + 54
+var1 = var0 
+var0
+
+68
+while (96) { 15 } 
+84
+
+output 89
+for (89) { var0 } 
+55
+
+for (input  - 8) { var0 = input   } 
+input 
+9
+
+for (8 * 87) { var0 = input   } 
+if (98) { 79 } else { 46 } 
+30
+
+for (13 / input ) { if (88) { 41 } output input  } 
+if (7) { input  } 
+80
+
+while (input  * input ) { for (input ) { input  }  } 
+var0 * 59
+input 
+
+output input 
+83 + 66
+12
+
+input 
+output 51
+input 
+
+if (47 > 86) { output 9input  } else { while (input ) { 29 }  } 
+if (input ) { input  } else { 93 } 
+45
+
+var0 = 65 + 64 
+output input 
+input 
+
+output input  - 2
+80 * input 
+input 
+
+if (18) { var1 = var0 var0 = 23  } else { var1 = var0 if (input ) { input  }  } 
+var2 = 95 
+input 
+
+var0 = 0 + 74 
+output input 
+input 
+
+for (87 / 12) { if (input ) { 26 } else { input  }  } 
+output input 
+72
+
+for (input  * input ) { output input if (input ) { 96 }  } 
+for (88) { 38 } 
+input 
+
+output input  - input 
+while (input ) { input  } 
+49
+
+input  - input  + input 
+while (21 + var0) { output var0var1 = 58  } 
+52
+
+output input  * 65
+for (var0) { var0 } 
+58
+
+for (input ) { 13 - 71 } 
+input 
+51
+
+var0 = 42 * input  
+for (9) { input  } 
+var0
+
+var0 = input  
+input  + 88
+var0
+
+if (input  / 11) { var1 = input  var0 = input   } 
+output input 
+var0
+
+var0 = input  - 52 
+var1 = 92 
+input 
+
+output 37 * 60
+var0 = 11 
+27
+
+if (62) { var0 } 
+input 
+input 
+
+var0 = 34 - 49 
+output 74
+var0
+
+var0 = var0 
+var1 = input  
+var0
+
+while (52 / 43) { var0 = input  for (91) { 93 }  } 
+output input 
+input 
+
+for (input  - input ) { output input  } 
+for (input ) { 38 } 
+input 
+
+var0 = input  + input  
+while (83) { input  } 
+62
+
+if (input  < 79) { var0 = 35  } else { input  / 4318 + input  } 
+if (62) { var0 } 
+var0
+
+while (input  || 19) { output 89 } 
+output input 
+input 
+
+output input  - 72
+if (input ) { var0 } 
+input 
+
+while (input ) { if (input ) { 31 }  } 
+var1 = input  + var0 
+input 
+
+var1 = var0 
+output 6
+input 
+
+output 19 / input 
+if (18) { var0 } else { input  } 
+input 
+
+output 48
+for (input ) { input  } 
+input 
+
+input  + var0 - var2 + 0
+for (54) { input  } 
+input 
+
+81 + input  * output input 
+line 1:14 extraneous input 'output' expecting {'input', VARNAME, NUMBER}
+output input 
+input 
+
+input  / 23 - 1
+output 96
+48
+
+output input  / input 
+input  - 17
+input 
+
+output 20 + 22
+for (99) { 68 } 
+98
+
+if (input  > input ) { var0 = 72 if (input ) { input  }  } 
+var1 = 21 / input  
+90
+
+if (2) { if (66) { input  }  } else { output input  } 
+while (input ) { 92 } 
+input 
+
+var0 = input  / 15 
+output input 
+var0
+
+if (input  > input ) { while (input ) { input  } for (48) { input  }  } 
+output 55 - 48
+input 
+
+for (input  - input ) { input  } 
+while (input ) { input  } 
+17
+
+var0 = input  / 64 
+output 83
+input 
+
+for (65) { var0 = input   } 
+if (2 > input ) { 26 / 37 } else { 92 * 61if (var0) { 99 }  } 
+input 
+
+if (input  > input ) { output input var1 } else { if (12) { input  } else { 96 }  } 
+output input 
+input 
+
+output 43
+output 36
+input 
+
+for (45 + 41) { var0 = input   } 
+if (25 + input ) { 8 * 8253 * 54 } 
+var0
+
+while (input  || input ) { for (83) { input  }  } 
+72 / input 
+input 
+
+while (input ) { input  - 698 / 23 } 
+if (input  < input ) { output 52 } 
+var0
+
+var0 = 95 - input  
+output var0
+var0
+
+var2 = 71 * input  
+24
+77
+
+var1 = input  
+input 
+28
+
+output input 
+output 10
+5
+
+if (input ) { 8 } else { input  } 
+output 69
+input 
+
+for (var0) { input  } 
+var1 = 40 
+input 
+
+for (76) { input  } 
+input 
+input 
+
+input  * 31 - input 
+if (input  || var0) { var1 = var0  } 
+7
+
+if (input  || 81) { for (var0) { var0 } output 57 } else { if (99) { input  }  } 
+if (9) { 22 } else { 11 } 
+input 
+
+if (var0) { input  } 
+if (input ) { input  } 
+0
+
+var0 = 46 * input  
+if (60) { input  } 
+input 
+
+while (91) { 29 } 
+output 42
+23
+
+var0 = input  + 42 
+output input 
+input 
+
+input  + input 
+input 
+47
+
+var0 = input  + input  
+if (input ) { input  } 
+var0
+
+var0 = 54 
+if (var0) { input  } 
+var0
+
+input  / var0
+var1 = 89 
+58
+
+while (input  < input ) { var0 = 76 for (89) { 84 }  } 
+var1 = input  
+input 
+
+for (input ) { 26 }  - input 
+while (input ) { 24 } 
+input 
+
+line 1:21 extraneous input '-' expecting {<EOF>, 'for', 'while', 'if', 'output', 'input', VARNAME, NUMBER, EOL}
+if (22) { output input var0 = 37  } 
+while (66) { input  } 
+var0
+
+while (input  && 52) { output 61 } 
+for (input ) { 31 } 
+85
+
+while (input  > 30) { for (input ) { input  } if (input ) { input  } else { input  }  } 
+for (input  + input ) { input  + var0 } 
+input 
+
+18 / 2 - 79 / input 
+output input 
+input 
+
+var0 = 32 / input  
+var1 = input  
+input 
+
+output 76
+for (55) { 93 } 
+65
+
+var0 = 8 / input  
+if (input ) { input  } else { input  } 
+var0
+
+output input 
+if (53) { input  } else { input  } 
+75
+
+while (92 || 36) { input  - input while (14) { input  }  } 
+input  - input 
+4
+
+while (input  || 57) { if (input ) { 0 } else { 23 } output input  } 
+23 / 86
+23
+
+output input  / input 
+var0 = input  
+48
+
+input  - 98
+for (89) { var0 } 
+var0
+
+var0 = 92 
+var0
+var0
+
+var0 = input  
+for (var0) { input  } 
+var0
+
+if (input  + input ) { output input var0 = input   } else { while (input ) { 28 } while (input ) { input  }  } 
+for (89) { 15 / input if (input ) { 53 }  } 
+var0
+
+while (input ) { if (78) { 99 } else { input  }  } 
+input  - input 
+var0
+
+if (input  == 10) { if (input ) { var0 }  } else { 79 - input  } 
+81 + 29
+input 
+
+var0 = 58 - input  
+input  * 21
+input 
+
+while (input  && input ) { while (input ) { input  }  } 
+output input 
+95
+
+var0 = 92 
+if (4) { var0 } 
+var0
+
+24
+for (14) { input  } 
+60
+
+output input  / input 
+var0 = 36 
+99
+
+while (input  && 91) { if (input ) { input  } else { var0 }  } 
+output input 
+input 
+
+var0 = 48 
+for (var0) { input  } 
+input 
+
+output input 
+var0 = input  
+input 
+
+var0 = input  + 72 
+while (input ) { input  } 
+15
+
+input  * input  / if (input ) { 95 } else { 31 } 
+while (98) { input  } 
+7
+
+line 1:18 mismatched input 'if' expecting {'input', VARNAME, NUMBER}
+if (48 * input ) { while (input ) { input  } while (29) { input  }  } else { var0 = input   } 
+output var0 * var0
+35
+
+var0 = input  / input  
+22
+input 
+
+while (83 && 96) { while (input ) { input  } if (40) { input  }  } 
+83 - 66 / input  * 30
+15
+
+while (76 + input ) { if (input ) { input  }  } 
+var1 = input  / var0 
+input 
+
+var0 = 7 
+input  + 62
+var0
+
+if (input  && 62) { var0 = 88 for (input ) { input  }  } 
+if (82 < 78) { var0 = 60 78 } else { input  + var0var1 = input   } 
+11
+
+output 30
+var0 = input  
+41
+
+output 83 / input 
+var1 = var0 
+6
+
+output 90 / input 
+while (46) { input  } 
+input 
+
+input 
+while (input ) { var0 } 
+88
+
+output input  + input 
+for (38) { input  } 
+input 
+
+output input  + 43
+while (input ) { 82 } 
+41
+
+var0 = input  
+while (input ) { input  } 
+input 
+
+83 - input 
+for (input ) { 16 } 
+87
+
+var0 = 65 
+for (91) { input  } 
+58
+
+input 
+if (input ) { input  } else { input  } 
+input 
+
+if (86) { input  } else { input  } 
+output 64
+input 
+
+output 27 * 81
+for (input ) { input  } 
+77
+
+output input 
+if (input ) { input  } 
+31
+
+if (12 < input ) { output input 57 * input  } 
+output input 
+input 
+
+for (input  + input ) { output input  } 
+output input 
+61
+
+var0 = 85 / 53 
+while (var0) { 49 } 
+var0
+
+if (25 + input ) { output input var0 = 81  } else { output input if (var0) { var0 } else { var0 }  } 
+output input 
+33
+
+var0 = input  + 62 
+for (input ) { 96 } 
+input 
+
+var0 = input   + 40
+if (input ) { input  } else { input  } 
+33
+
+for (input ) { output 56 } 
+for (87) { 18 } 
+87
+
+output 9 + 91
+for (input ) { input  } 
+input 
+
+if (8 - input ) { while (input ) { 85 }  } else { if (43) { 13 } else { 72 } for (input ) { input  }  } 
+if (input  + input ) { var0 = 33  } else { output input  } 
+19
+
+while (input  - input ) { output input input  } 
+output 12 + input 
+var0
+
+var0 = 62 + 80 
+output 18
+input 
+
+var2 = 1 
+if (56) { 79 } else { input  } 
+21
+
+var0 = 24 
+if (86) { var0 } else { input  } 
+69
+
+var0 = 52 / input  
+98 + 98
+input 
+
+var1 = input  
+var0 = input  
+58
+
+21 * input 
+var1 = input  
+input 
+
+var1 = input  
+input 
+var0
+
+var0 = input  / 39 
+input  / 11
+var1
+
+while (input  || 64) { output 27input  - input  } 
+var0 = 30 
+0
+
+output input 
+var0 = input  
+input 
+
+if (input  && 88) { if (input ) { 5 } output var0 } else { for (var0) { var0 } if (input ) { 1 } else { var0 }  } 
+for (var0) { input  } 
+4
+
+output input 
+while (input ) { input  } 
+76
+
+var0 = input  - 89 
+for (33) { input  } 
+54
+
+var0 = input  - input  
+var1 = var0 
+var0
+
+input 
+output var0
+66
+
+while (87) { var0 = input  input  * 45 } 
+while (15 < 20) { for (input ) { 26 }  } 
+var0
+
+if (input  || input ) { var0 = input  if (input ) { 59 } else { 91 }  } 
+6
+input 
+
+while (input  || 89) { output input  } 
+while (input ) { 18 } 
+input 
+
+var1 = input  
+var0 = 4 
+45
+
+if (input  == 32) { if (62) { 9 } else { 44 } if (input ) { input  }  } 
+output 40
+input 
+
+for (input ) { input  } 
+var0
+17
+
+output 44 / input 
+input  + 50
+input 
+
+64
+for (input ) { 74 } 
+59
+
+output 76
+output input 
+51
+
+if (3) { output input  } else { output 32 } 
+var0 = 7 
+input 
+
+13 - input 
+while (52) { 22 } 
+54
+
+input  + input  - 56
+if (42) { input  } else { input  } 
+27
+
+var0 = 7 + 79 
+for (input ) { input  } 
+38
+
+output input 
+var0 = input  
+var0
+
+var0 = 84 
+input  - input 
+input 
+
+var0 = 48 - input  
+if (input ) { 33 } else { input  } 
+6
+
+76 * 47 / input  - input 
+var0 = 32 
+32
+
+while (input  > input ) { output 92 } 
+if (64) { input  } else { input  } 
+66
+
+for (input  + 41) { for (50) { 23 }  } 
+48 + 9
+input 
+
+output input 
+19 + input 
+input 
+
+output input  / 60
+while (input ) { input  } 
+42
+
+if (0 / 44) { var0 = input  if (49) { 4 }  } 
+for (input ) { 96 } 
+67
+
+var0 = input  
+if (55) { 6 } else { input  } 
+var0
+
+var2 = 87 
+var0 = input  
+input 
+
+output 68 - 1
+output var0
+78
+
+var2 = 43 - input  
+while (7) { 9 } 
+input 
+
+29
+var0 / var0
+input 
+
+output 25 * input 
+var0 = 75 
+input 
+
+for (41 + input ) { 87while (67) { 9 }  } 
+var0 = input  
+input 
+
+while (41) { input  } 
+var1 = var0 
+input 
+
+var0 = input  + 55 
+while (input ) { input  } 
+input 
+
+if (36) { input  } 
+while (input ) { input  } 
+input 
+
+input  * input  - input 
+var0 = 40 
+input 
+
+output input 
+var0 = input  
+99
+
+for (var0) { 35 } 
+input 
+input 
+
+var0 = 79 / input  
+input  - 40
+76
+
+input  * input  - input 
+input 
+6
+
+output 0 - input 
+if (input ) { input  } 
+74
+
+input  / input  / input 
+if (input ) { input  } else { 96 } 
+input 
+
+output 16 - input 
+if (var0) { var0 } 
+29
+
+9 - 78 + 49
+input  - 5
+86
+
+input  - input 
+if (34) { input  } else { var0 } 
+input 
+
+var0 = input  * 68 
+input  * input 
+18
+
+var0 = input  
+if (10) { input  } else { 59 } 
+17
+
+var0 = 41 
+while (80) { input  } 
+30
+
+while (0) { if (27) { 36 } else { 11 } for (input ) { 61 }  } 
+89 * 92
+input 
+
+input 
+output input 
+85
+
+input  + input  - input 
+output input 
+27
+
+if (input  || 6) { if (input ) { 97 } else { 93 }  } 
+if (29) { input  } else { input  } 
+43
+
+var0 = 48 - 15 
+if (input ) { 81 } else { input  } 
+input 
+
+var0 = input  - 53 
+output 77
+input 
+
+while (input  < input ) { var0 = input  output var0 } 
+if (input ) { 31 } 
+input 
+
+if (61 > input ) { 23 - input for (input ) { var0 }  } 
+if (69) { var0 } else { input  } 
+input 
+
+var0 = input  - input  
+output input 
+input 
+
+for (99 - 81) { while (input ) { input  }  } 
+input  * input 
+input 
+
+5
+var1 = input  
+input 
+
+input 
+var0 = 10 
+41
+
+for (input ) { if (72) { input  } else { input  } var0 = input   } 
+var1 = input  
+19
+
+var0 = input  
+var1 = 45 
+16
+
+input  / input  + input  - 30
+for (1) { 18 } 
+28
+
+output 74 + 88
+while (20) { var0 } 
+input 
+
+var1 = 28 + var0 
+input 
+input 
+
+if (input ) { input  } else { input  } 
+for (input ) { input  } 
+input 
+
+if (input  > 23) { output input output input  } else { if (input ) { input  } else { input  } output 77 } 
+if (64 || input ) { output input while (71) { 77 }  } else { if (input ) { 51 } else { input  }  } 
+input 
+
+if (52 == input ) { for (88) { input  }  } 
+if (input ) { input  } 
+input 
+
+if (input  * input ) { var0 = 64  } else { 70 / 2 } 
+for (31 - input ) { input  - 56if (input ) { 79 }  } 
+2
+
+if (83 || input ) { for (85) { 50 } output 29 } else { output input  } 
+output input  - 83
+input 
+
+for (input  / 78) { output input  } 
+for (input  * input ) { 31 - 35input  } 
+71
+
+output input 
+if (88) { input  } else { input  } 
+var0
+
+var0 = 20 
+if (input ) { 54 } else { input  } 
+input 
+
+input 
+if (input ) { 2 } 
+84
+
+var0 = input  / input  
+input 
+var0
+
+var0 = input  
+input  / input 
+60
+
+if (input  || input ) { input var0 = 80  } else { var0 + input  } 
+input 
+41
+
+output input  * input 
+output input 
+input 
+
+input  + input 
+var1 = input  
+var1
+
+87
+var0 = input  
+var0
+
+input  - input  / 76 + 57
+var0 = 59 
+input 
+
+output input  + 48
+if (input ) { 89 } else { 55 } 
+input 
+
+output input 
+if (input ) { 36 } else { 45 } 
+input 
+
+while (input  == input ) { var0 = 42  } 
+var0 / input 
+var0
+
+input  / 60
+while (29) { 78 } 
+input 
+
+while (85 == input ) { input  + 95 } 
+if (input ) { input  } 
+input 
+
+output 51 / 10
+if (15) { 72 } else { input  } 
+var0
+
+output 38 * input 
+for (input ) { input  } 
+9
+
+output input  / input 
+if (var1) { var1 } else { var1 } 
+input 
+
+40 + 25 - input 
+for (input ) { 12 } 
+input 
+
+63 + input  + 9
+var0 = input  
+var0
+
+var0 = input  
+var1 = 76 
+64
+
+output input  - 31
+53
+89
+
+while (input  && input ) { input  + input  } 
+while (input ) { input  } 
+88
+
+if (9 || input ) { output input while (34) { input  }  } 
+output var0
+82
+
+22
+input 
+input 
+
+var1 = input  
+var0 = input  
+input 
+
+for (input  / 44) { output input  } 
+output var1 - input 
+input 
+
+input 
+if (input ) { 6 } 
+input 
+
+63 + input  / output var1
+line 1:14 extraneous input 'output' expecting {'input', VARNAME, NUMBER}
+input  + 37
+input 
+
+output 55 / input 
+if (input ) { input  } else { 23 } 
+input 
+
+input  / input  * 97 + 33
+output input  / 62
+input 
+
+if (input  * input ) { var0 = input  input  } 
+output input  - input 
+input 
+
+if (48 && input ) { input  - input  } else { input  * input var0 = 6  } 
+for (var3 * input ) { 67 * var2var4 = input   } 
+31
+
+output input  * 38
+if (input ) { 29 } 
+input 
+
+var0 = 7 
+output 70
+input 
+
+var0 = input  
+while (input ) { var0 } 
+input 
+
+output input  / input 
+output 44
+input 
+
+if (41 || input ) { for (81) { input  }  } else { var1 = 29 for (input ) { var0 }  } 
+var2 = input  
+input 
+
+if (input ) { input  } else { input  } 
+for (45) { 55 } 
+input 
+
+while (input  || input ) { while (input ) { input  }  } 
+if (68) { input  } else { input  } 
+90
+
+while (60 < input ) { output 63if (18) { 48 } else { 31 }  } 
+output 36
+6
+
+for (input  - input ) { output input  } 
+for (52) { input  } 
+1
+
+if (input  > input ) { 73 + input input  / input  } else { output input if (24) { 45 }  } 
+while (0) { input  } 
+19
+
+while (28 / input ) { var0 = 31  } 
+var0 * input  * 66 - var0
+58
+
+var0 = 0 + 80 
+while (var0) { var0 } 
+9
+
+var1 = input  - var0 
+var0 = 55 
+1
+
+output 58
+if (input ) { input  } else { input  } 
+82
+
+96
+output 68
+48
+
+output 89
+78 - input 
+4
+
+for (88) { while (input ) { input  }  } 
+if (var0) { var0 } else { input  } 
+input 
+
+output 73
+var0 * 4
+input 
+
+var0 = 9 - 9 
+output 49
+10
+
+for (input  - input ) { output input  } 
+output input 
+input 
+
+var0 = input  
+input  / input 
+input 
+
+output 43
+output 31
+95
+
+while (input  * 13) { var0 = input   } 
+var0 = 14 - input  
+input 
+
+while (51) { output input  } 
+while (15 || input ) { if (97) { input  } else { input  } var0 = 67  } 
+54
+
+if (input ) { output var0 } 
+output input 
+19
+
+for (input ) { input  } 
+var0 = input  
+var0
+
+48 + 87
+for (input ) { 33 } 
+10
+
+var0 = input  - input  
+var1 = input  
+var1
+
+var0 = input  / input  
+if (input ) { input  } 
+66
+
+var1 = input  
+output 51
+var0
+
+var0 = input  - input  
+output 83
+15
+
+84 / 12 + 60
+var0 = input  
+input 
+
+while (input  && input ) { input  } 
+while (93) { input  } 
+input 
+
+for (input  + 38) { var0 = 43  } 
+while (input ) { 22 } 
+24
+
+9
+if (81) { 6 } 
+59
+
+var0 = 65 + input  
+70 / input 
+input 
+
+output 56
+output input 
+90
+
+output input 
+var1 = var0 
+var0
+
+output input  + input 
+var0 = input  
+input 
+
+while (input  < input ) { var0 = input   } 
+if (45 < var0) { var0 / var0 } 
+19
+
+input 
+if (input ) { input  } else { input  } 
+input 
+
+var0 = input  + 65 
+if (input ) { 70 } else { 97 } 
+48
+
+77
+while (input ) { input  } 
+29
+
+for (var0) { input  + 15if (input ) { input  } else { input  }  } 
+input  / input 
+50
+
+output input 
+output 65
+var0
+
+input  / 20 - input 
+85 + input 
+input 
+
+output var0
+while (input ) { var0 } 
+input 
+
+if (input ) { 70 } else { output 184 * input  } 
+if (62 > input ) { output input output 31 } else { if (66) { input  } else { 35 } for (38) { 10 }  } 
+input 
+
+if (55 / 44) { input  / 74output input  } 
+output input 
+3
+
+if (84 || 42) { var0 = input   } else { var0 = 12  } 
+while (input ) { var0 } 
+input 
+
+output input 
+var0 = 3 
+var0
+
+output input  - 0
+for (84) { input  } 
+input 
+
+if (24 > input ) { while (input ) { input  } if (input ) { input  }  } else { while (input ) { input  } while (input ) { 87 }  } 
+if (96) { var0 } else { input  } 
+input 
+
+output input 
+if (input ) { 6 } 
+97
+
+output input  / 99
+for (input ) { input  } 
+6
+
+if (9 && 83) { if (input ) { 71 } else { 51 } var1 = var0  } 
+output 1
+var0
+
+for (input ) { var1 = input  while (15) { 0 }  } 
+input 
+input 
+
+while (input  + input ) { output 23output input  } 
+output input 
+41
+
+var3 = var0 * 75 
+for (var1) { 68 } 
+input 
+
+while (input  * input ) { if (input ) { 80 } else { 29 }  } 
+output 4
+input 
+
+output input  * input 
+for (input ) { 42 } 
+input 
+
+for (59) { var0 = input  if (input ) { var0 } else { input  }  } 
+var1 = 39 
+input 
+
+output input  * input 
+if (input ) { input  } 
+69
+
+output 54 / 91
+if (64) { input  } else { input  } 
+input 
+
+42 * input  * 43
+input  + input 
+input 
+
+output 3
+output input 
+input 
+
+44
+var0 = input  
+var0
+
+if (input  || 78) { while (86) { 32 } var0 = 27  } else { while (var0) { var0 } output 43 } 
+if (var0) { var0 } else { var0 } 
+input 
+
+if (input  * 75) { var0 = input   } else { var1 = var0 if (input ) { 37 }  } 
+var2 = input  
+6
+
+for (72) { input  / input  } 
+var0 = input  
+input 
+
+var0 = 42 + input  
+for (var0) { var0 } 
+var0
+
+if (59) { if (63) { 93 } else { 44 }  } 
+output input 
+88
+
+input 
+var1 = input  
+55
+
+while (input  * input ) { input  + 45input  } 
+for (2) { 4 } 
+input 
+
+var0 = 72 / 62 
+if (input ) { input  } 
+41
+
+var0 = input  / 73 
+input  - 99
+var0
+
+if (input  + 9) { var0 = input   } 
+if (input  == input ) { var1 = input   } 
+input 
+
+var0 = input  
+while (28) { var0 } 
+input 
+
+output input  * input 
+var0 = 63 
+input 
+
+for (48 / input ) { if (81) { 51 } else { input  } while (86) { input  }  } 
+var0 = 14 
+input 
+
+if (input  == input ) { for (26) { input  }  } else { var0 = 86  } 
+if (var0 || input ) { if (var1) { input  } else { input  } 95 - input  } else { output input  } 
+input 
+
+input 
+var0 = input  
+var0
+
+input  / input  + 8 - 27
+if (12) { 71 } else { input  } 
+input 
+
+input 
+output 29
+input 
+
+19
+var1 = input  
+83
+
+output 81
+var1 = input  
+var1
+
+if (input ) { 31 } 
+output input 
+input 
+
+while (35 + 76) { 3 } 
+if (95) { input  } else { input  } 
+input 
+
+while (6 - input ) { output 93 } 
+output input 
+66
+
+if (76) { var0 = 1 for (84) { 2 }  } 
+while (input ) { 39 } 
+input 
+
+if (input ) { input  } else { 75 } 
+if (var0) { 34 } else { var0 } 
+38
+
+input 
+for (78) { input  } 
+input 
+
+var0 = input  
+output input 
+input 
+
+11 - input  - 30
+var0 = 12 / 73 
+61
+
+for (input ) { while (input ) { input  } output 79 } 
+if (48) { 48 } 
+input 
+
+var0 = input  * 59 
+if (input ) { input  } 
+86
+
+if (input  * 40) { var0 = 57 var1 = input   } 
+input  / input 
+var0
+
+output var0
+if (var0) { input  } else { 20 } 
+var0
+
+var0 = 4 
+output input 
+input 
+
+for (input ) { 70 } 
+output input 
+81
+
+input 
+for (12) { input  } 
+input 
+
+input  / var1 * input  - 14
+output var0
+42
+
+input 
+var1 = var0 
+83
+
+var0 = input  
+output input 
+59
+
+output 79 * input 
+for (1) { 43 } 
+35
+
+output input 
+input 
+input 
+
+for (87) { 96 } 
+var1 = 6 
+var0
+
+60 / 4 * 24 - 68
+if (input  || 78) { input while (input ) { input  }  } 
+3
+
+output 12 * input 
+var0 = 46 
+19
+
+input  * 20 / input  - input 
+if (65 + 90) { if (input ) { 8 } var0 = 22  } 
+41
+
+var0 = input  - input  
+input  * 44
+input 
+
+var2 = input  / input  
+if (59) { 12 } 
+53
+
+while (6) { output var0if (input ) { 84 } else { 68 }  } 
+var0 = input  
+var0
+
+if (28 < 24) { if (input ) { 58 } else { input  }  } 
+if (input ) { input  } 
+input 
+
+output input  - input 
+92 * input 
+input 
+
+while (input  / 34) { if (58) { 90 }  } 
+if (73) { input  } else { input  } 
+8
+
+22 - input  - input 
+input 
+61
+
+if (input  == 22) { if (53) { input  } else { 6 } output input  } 
+input 
+67
+
+for (var0) { for (input ) { 82 } if (18) { var0 } else { input  }  } 
+50 * 33
+87
+
+for (input  * 67) { output input  } 
+output input  + input 
+70
+
+if (input ) { while (64) { var0 } if (23) { 81 }  } 
+if (64) { 90 } 
+input 
+
+for (input ) { if (92) { input  } else { 13 } 22 - 43 } 
+56 - input  - input  + input 
+input 
+
+if (66) { input  - 7while (29) { 89 }  } else { output input  } 
+for (input ) { input  } 
+input 
+
+while (input  && input ) { while (19) { 59 }  } 
+for (input ) { input  } 
+input 
+
+if (input  > input ) { while (input ) { input  }  } 
+output 69
+input 
+
+if (84) { while (input ) { input  } var0 = input   } 
+while (input ) { 15 } 
+75
+
+for (input ) { output input  } 
+98 - input  / input  + input 
+input 
+
+output 30 * var0
+if (13) { var0 } 
+input 
+
+while (76 && 81) { input  + var0 } 
+if (74) { input  } 
+input 
+
+output input  * 30
+for (input ) { input  } 
+input 
+
+var0 = input  
+if (input ) { input  } else { 96 } 
+input 
+
+var0 = input  
+input  / var0
+var0
+
+line 1:4 extraneous input 'output' expecting {'input', VARNAME, NUMBER}
+0 * output input 
+if (input ) { input  } 
+31
+
+var0 = 88 - 38 
+if (var0) { input  } else { 95 } 
+input 
+
+var0 = input  
+input  + var0
+input 
+
+while (input ) { output input 43 } 
+if (42) { 16 } 
+30
+
+for (input  / input ) { if (30) { input  }  } 
+output 94 / 55
+20
+
+if (22 || input ) { var0 = input   } 
+output 94 - 9
+input 
+
+var0 = 39 - 42 
+var1 = input  
+input 
+
+while (input  > input ) { for (var0) { input  } for (input ) { input  }  } 
+for (72) { 55 } 
+89
+
+output 0
+while (input ) { 2 } 
+input 
+
+while (30 && 11) { if (input ) { 37 } while (input ) { 23 }  } 
+output input 
+59
+
+if (35) { input  } else { input  } 
+if (input ) { input  } 
+input 
+
+if (21) { var0 } else { var0 } 
+var1 = input  
+input 
+
+46 - input  - input 
+for (91) { input  } 
+input 
+
+while (input ) { var1 - input  } 
+if (81) { 28 } 
+input 
+
+var0 = input  + input  
+if (input ) { 83 } 
+input 
+
+output var0
+var1 = 23 
+11
+
+for (input  + input ) { var0 = input   } 
+var0 = 41 
+input 
+
+if (input  || 37) { var0 = 87  } else { input  + input  } 
+output 76 + input 
+input 
+
+74 + 57
+if (input ) { 7 } else { input  } 
+input 
+
+var0 = 7 
+while (input ) { input  } 
+input 
+
+var0 = input  
+29 * input 
+24
+
+if (input  && 19) { for (input ) { 85 } input  } else { var0 = 83  } 
+var0 = 98 * 92 
+var0
+
+while (51) { for (input ) { 93 } var0 = 48  } 
+var0 = input  
+5
+
+output input 
+for (75) { input  } 
+input 
+
+while (67 || 65) { output 5 } 
+if (input ) { input  } else { 90 } 
+input 
+
+var0 = 67 
+output 5
+input 
+
+if (96 == 85) { var0 = input   } 
+while (input ) { input  } 
+62
+
+while (29 == input ) { output 0output input  } 
+output var0
+input 
+
+input  + input  - input 
+if (50) { input  } 
+27
+
+for (96) { 73 - 2if (79) { 34 }  } 
+for (input ) { 97 } 
+input 
+
+output input 
+var0 = 95 
+input 
+
+if (0 || 86) { while (input ) { var2 } while (input ) { input  }  } else { var3 = var2 output input  } 
+for (input ) { 82 } 
+input 
+
+while (input  * input ) { input 9 } 
+input 
+input 
+
+output input 
+if (input ) { input  } else { 29 } 
+input 
+
+input 
+input  + input 
+86
+
+for (input ) { input  } 
+input 
+46
+
+for (input  / input ) { var0 = input  var1 = 46  } 
+if (87 * var0) { input  * 95 } 
+input 
+
+while (input  == input ) { if (input ) { input  } else { 30 }  } 
+if (79) { var0 } 
+input 
+
+input  - input  + 7
+var0 = input  / input  
+62
+
+while (input  + input ) { 40 + input if (input ) { input  }  } 
+output 71
+54
+
+output input  - 27
+output 55
+62
+
+output 84 + 12
+64
+input 
+
+output 40 + input 
+var0 = input  
+78
+
+if (76 || input ) { for (17) { input  }  } else { var0 = input  output var0 } 
+for (51) { input  } 
+57
+
+var0 = 20 / 76 
+if (54) { input  } else { var0 } 
+input 
+
+if (input  && 99) { if (38) { 69 } input  + input  } else { if (input ) { 52 } if (input ) { input  } else { 47 }  } 
+output input  / input 
+input 
+
+var1 = 84 
+while (13) { input  } 
+32
+
+for (input ) { if (75) { 47 } else { input  } 4 } 
+for (var0 / input ) { var1 = input  if (var1) { 11 }  } 
+57
+
+while (input  && 22) { if (93) { input  }  } 
+input  + input 
+76
+
+output 56 + input 
+output input 
+48
+
+while (input ) { var0 = 78 for (1) { input  }  } 
+while (input ) { 11 } 
+76
+
+var0 = 57 / input  
+for (97) { var0 } 
+var1
+
+while (var0) { input  } 
+for (input ) { var0 } 
+37
+
+output input  / input 
+26 * input 
+60
+
+output var0
+for (39) { 55 } 
+41
+
+13
+10
+input 
+
+for (input ) { input  } 
+input  * var0
+input 
+
+while (input  || 79) { input  / 81 } 
+output 86
+input 
+
+output input 
+var1 = 35 
+input 
+
+while (81 && 24) { if (50) { 96 } else { 29 } input  * input  } 
+output input 
+input 
+
+var0 = input  
+while (46) { 24 } 
+39
+
+79
+for (input ) { input  } 
+84
+
+if (input  > input ) { var1 = input  var1 = var0  } 
+var2 = input  
+input 
+
+var0 = input  + 37 
+output input 
+input 
+
+88 * input  * input 
+output input 
+38
+
+output input 
+while (42) { input  } 
+var0
+
+var1 = var0 
+input  + input 
+input 
+
+for (19 / 49) { if (input ) { input  } else { 21 } var0 = 53  } 
+if (var0) { input  } else { input  } 
+var0
+
+input  * input  + input  + 0
+var0 * input  / input 
+43
+
+if (50 + 38) { 74if (27) { input  } else { 48 }  } 
+output input 
+input 
+
+76 + input  * 84
+var0 = input  
+input 
+
+var1 = input  
+output 58
+83
+
+46 * input  - input 
+while (input  && var0) { output 8var1 = input   } 
+input 
+
+var0 = 63 + input  
+while (input ) { input  } 
 input 
 
