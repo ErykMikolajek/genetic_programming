@@ -13,6 +13,9 @@ public class Population {
     public int PROGRAMS_DEPTH = 3;
     public int PROGRAMS_MAX_OPERATIONS = 20;
     public String outputFile = "output1.txt";
+    public boolean isProblemSolved;
+    public Individual solvedIndividual;
+    private int generation;
     static Random random = new Random();
     public ArrayList<Integer> outputTemplateVector;
 
@@ -20,6 +23,7 @@ public class Population {
     public Population(String outputFile){
         this.outputFile = outputFile;
         outputTemplateVector = new ArrayList<>();
+        this.isProblemSolved = false;
 
         try {
             File file = new File(outputFile);
@@ -37,30 +41,36 @@ public class Population {
     }
     public void createPopulation(int populationSize){
         this.population = new ArrayList<>(populationSize);
+        generation = 1;
         for (int i = 0; i < populationSize; i++){
             Individual newIndividual = new Individual();
             newIndividual.generate(this.PROGRAMS_DEPTH);
+            System.out.println("---------- Gen: " + generation + " ----------");
+            System.out.println(newIndividual.plot());
+            System.out.println("------------------------------------");
             population.add(newIndividual);
         }
     }
 
     public void generateNewPopulation(ArrayList<Individual> bestIndividuals){
         ArrayList<Individual> newIndividuals = new ArrayList<>();
+        generation++;
         for (int i = 0; i < population.size()/2; i++){
             int program1 = random.nextInt(bestIndividuals.size());
             int program2 = random.nextInt(bestIndividuals.size());
             while (program1 == program2) program2 = random.nextInt(bestIndividuals.size());
 
-            System.out.println(bestIndividuals.get(program1).plot());
-            System.out.println("----------------");
-            System.out.println(bestIndividuals.get(program2).plot());
             Individual crossoverIndividual = bestIndividuals.get(program1).crossover(bestIndividuals.get(program2));
-
-
             crossoverIndividual.mutate();
+            System.out.println("---------- Gen: " + generation + " ----------");
+            System.out.println(crossoverIndividual.plot());
+            System.out.println("------------------------------------");
             newIndividuals.add(crossoverIndividual);
             Individual randomIndividual = new Individual();
             randomIndividual.generate(this.PROGRAMS_DEPTH);
+            System.out.println("---------- Gen: " + generation + " ----------");
+            System.out.println(randomIndividual.plot());
+            System.out.println("------------------------------------");
             newIndividuals.add(randomIndividual);
         }
         this.population = newIndividuals;
@@ -76,8 +86,10 @@ public class Population {
 
             individual.fitness = programFitness;
             avgFitness += programFitness;
-//            System.out.println(programFitness);
-//            if (individual.fitness >= 2000.0) System.out.println(individual.plot());
+            if (programFitness == 0){
+                isProblemSolved = true;
+                solvedIndividual = individual;
+            }
         }
         System.out.println("Average fitness: " + avgFitness/this.population.size());
     }

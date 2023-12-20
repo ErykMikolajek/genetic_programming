@@ -14,6 +14,7 @@ public class Program {
 
     public static Node generateProgram(int depth, int maxRandomValue){
         MAX_VARIABLE_VALUE = maxRandomValue;
+        maxVariableId = 0;
         ArrayList<Node> children = new ArrayList<>();
         while (depth > 0){
             children.add(generateCommand(depth--));

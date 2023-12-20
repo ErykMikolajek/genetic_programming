@@ -12,4 +12,7 @@ public class VariablesTable {
         if (savedVariables.get(varName) == null) throw new RuntimeException("Accessing variable before initialization");
         else return savedVariables.get(varName);
     }
+    public static void reset(){
+        savedVariables.clear();
+    }
 }

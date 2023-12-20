@@ -1,6 +1,8 @@
 package Interpreter;
 
 import Interpreter.Extensions.AntlrProgram;
+import org.antlr.v4.runtime.ANTLRErrorListener;
+import org.antlr.v4.runtime.BaseErrorListener;
 import org.antlr.v4.runtime.CharStream;
 import org.antlr.v4.runtime.CommonTokenStream;
 import org.antlr.v4.runtime.tree.ParseTree;
@@ -23,7 +25,9 @@ public class InterpreterInterface {
     }
 
     public ArrayList<Integer> evaluateProgram(String program, String inputFileName){
+        ANTLRErrorListener errorListener = new BaseErrorListener();
         MiniGPLangParser parser = getParser(program);
+        parser.addErrorListener(errorListener);
         ParseTree antlrAST = parser.prog();
         AntlrProgram programVisitor = new AntlrProgram(inputFileName, maxOperationCount);
         programVisitor.visit(antlrAST);

@@ -19,6 +19,7 @@ public class AntlrProgram extends MiniGPLangBaseVisitor<Program> {
     public AntlrProgram(String inputFileName, int maxCount){
         maxOperationCount = maxCount;
         programOutput = new ArrayList<>();
+        VariablesTable.reset();
         didProgramFail = false;
 
         File inFile = new File("target/" + inputFileName);

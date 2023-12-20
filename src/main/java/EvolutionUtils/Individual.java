@@ -62,9 +62,9 @@ public class Individual {
                 Node newNode = node2;
                 if (depth1 == depth2 && depth1 != h1 && depth2 != h2)
                 {
-                    System.out.println(node1.children.get(index).getSuperClass());
+//                    System.out.println(node1.children.get(index).getSuperClass());
                     node1.children.set(index, newNode);
-                    System.out.println(node1.children.get(index).getSuperClass());
+//                    System.out.println(node1.children.get(index).getSuperClass());
                     break;
                 }
             } else if (!node1.childrenBlock1.isEmpty()) {
@@ -74,9 +74,9 @@ public class Individual {
                 Node newNode = node2;
                 if (depth1 == depth2 && depth1 != h1 && depth2 != h2)
                 {
-                    System.out.println(node1.childrenBlock1.get(index).getSuperClass());
+//                    System.out.println(node1.childrenBlock1.get(index).getSuperClass());
                     node1.childrenBlock1.set(index, newNode);
-                    System.out.println(node1.childrenBlock1.get(index).getSuperClass());
+//                    System.out.println(node1.childrenBlock1.get(index).getSuperClass());
                     break;
                 }
             } else if (!node1.childrenBlock2.isEmpty()) {
@@ -86,9 +86,9 @@ public class Individual {
                 Node newNode = node2;
                 if (depth1 == depth2 && depth1 != h1 && depth2 != h2)
                 {
-                    System.out.println(node1.childrenBlock2.get(index).getSuperClass());
+//                    System.out.println(node1.childrenBlock2.get(index).getSuperClass());
                     node1.childrenBlock2.set(index, newNode);
-                    System.out.println(node1.childrenBlock2.get(index).getSuperClass());
+//                    System.out.println(node1.childrenBlock2.get(index).getSuperClass());
                     break;
                 }
 
@@ -98,9 +98,9 @@ public class Individual {
                 Node newNode = node2;
                 if (depth1 == depth2 && depth1 != h1 && depth2 != h2)
                 {
-                    System.out.println(node1.child.getSuperClass());
+//                    System.out.println(node1.child.getSuperClass());
                     node1.child = newNode;
-                    System.out.println(node1.child.getSuperClass());
+//                    System.out.println(node1.child.getSuperClass());
                     break;
                 }
             }
@@ -120,11 +120,11 @@ public class Individual {
 
     public Node getRandomNode(Node myNode) {
         if ( !myNode.children.isEmpty() ) {
-//            if(random.nextInt(0, 2) != 0)
-//            {
-//                int newNodeId = random.nextInt(0, myNode.children.size());
-//                return myNode.children.get(newNodeId);
-//            }
+            if(random.nextInt(0, 2) != 0)
+            {
+                int newNodeId = random.nextInt(0, myNode.children.size());
+                return myNode.children.get(newNodeId);
+            }
 
         } else if ( !myNode.childrenBlock1.isEmpty() || !myNode.childrenBlock2.isEmpty()) {
             if(random.nextInt(0, 2) != 0 && !myNode.childrenBlock1.isEmpty())
@@ -157,8 +157,8 @@ public class Individual {
                 if (newNode != null)
                 {
 
-                    System.out.println(node.children.get(index).getSuperClass());
-                    System.out.println(depth);
+//                    System.out.println(node.children.get(index).getSuperClass());
+//                    System.out.println(depth);
                     node.children.set(index, newNode);
                     break;
                 }
@@ -170,8 +170,8 @@ public class Individual {
                 if (newNode != null)
                 {
 
-                    System.out.println(node.childrenBlock1.get(index).getSuperClass());
-                    System.out.println(depth);
+//                    System.out.println(node.childrenBlock1.get(index).getSuperClass());
+//                    System.out.println(depth);
                     node.childrenBlock1.set(index, newNode);
                     break;
                 }
@@ -183,8 +183,8 @@ public class Individual {
                 if (newNode != null)
                 {
 
-                    System.out.println(node.childrenBlock2.get(index).getSuperClass());
-                    System.out.println(depth);
+//                    System.out.println(node.childrenBlock2.get(index).getSuperClass());
+//                    System.out.println(depth);
                     node.childrenBlock2.set(index, newNode);
                     break;
                 }
@@ -195,8 +195,8 @@ public class Individual {
                 if (newNode != null)
                 {
 
-                    System.out.println(node.child.getSuperClass());
-                    System.out.println(depth);
+//                    System.out.println(node.child.getSuperClass());
+//                    System.out.println(depth);
                     node.child = newNode;
                     break;
                 }
