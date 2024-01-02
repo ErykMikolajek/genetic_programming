@@ -79,8 +79,8 @@ public class Population {
 
             double similarityRatio = calculateSimilarity(targetVector, generatedVector);
 //            double grammaticalScore = individual.isFailed ? 0.0 : 1 + GRAMMATICAL_WEIGHT;
-            double grammaticalScore = individual.isFailed ? 100.0 : 1.0;
-            similarityRatio *= grammaticalScore;
+            double grammaticalScore = individual.isFailed ? 100.0 : 0.0;
+            similarityRatio += grammaticalScore;
             individual.fitness = similarityRatio;
 
             avgFitness += individual.fitness;
