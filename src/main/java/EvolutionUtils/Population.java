@@ -11,11 +11,11 @@ import static java.lang.Math.abs;
 
 public class Population {
     public ArrayList<Individual> population;
-    public int PROGRAMS_DEPTH = 3;
+    public int PROGRAMS_DEPTH = 6;
     public int PROGRAMS_MAX_OPERATIONS = 10;
     private static final double SIMILARITY_WEIGHT = 0.7;
     private static final double GRAMMATICAL_WEIGHT = 0.3;
-    private static final double FIT_THRESHOLD = 0.01;
+    private static final double FIT_THRESHOLD = 10;
     public String outputFile = "output1.txt";
     public boolean isProblemSolved;
     public Individual solvedIndividual;
@@ -78,25 +78,26 @@ public class Population {
             int[] targetVector = outputTemplateVector.stream().mapToInt(i -> i).toArray();
 
             double similarityRatio = calculateSimilarity(targetVector, generatedVector);
-            double grammaticalScore = individual.isFailed ? 0.0 : 1 + GRAMMATICAL_WEIGHT;
+//            double grammaticalScore = individual.isFailed ? 0.0 : 1 + GRAMMATICAL_WEIGHT;
+            double grammaticalScore = individual.isFailed ? 100.0 : 1.0;
             similarityRatio *= grammaticalScore;
             individual.fitness = similarityRatio;
 
             avgFitness += individual.fitness;
-//            if (individual.fitness <= FIT_THRESHOLD){
-////                System.out.println("Individual fitness: " + individual.fitness);
-////                System.out.println("Generated vector: " + Arrays.toString(generatedVector));
-////                System.out.println("Target vector: " + Arrays.toString(targetVector));
-//                isProblemSolved = true;
-//                solvedIndividual = individual;
-//            }
-            if (Math.abs(targetVector.length - generatedVector.length) == 0 && !individual.isFailed){
+            if (individual.fitness <= FIT_THRESHOLD){
 //                System.out.println("Individual fitness: " + individual.fitness);
 //                System.out.println("Generated vector: " + Arrays.toString(generatedVector));
 //                System.out.println("Target vector: " + Arrays.toString(targetVector));
                 isProblemSolved = true;
                 solvedIndividual = individual;
             }
+//            if (Math.abs(targetVector.length - generatedVector.length) == 0 && !individual.isFailed){
+////                System.out.println("Individual fitness: " + individual.fitness);
+////                System.out.println("Generated vector: " + Arrays.toString(generatedVector));
+////                System.out.println("Target vector: " + Arrays.toString(targetVector));
+//                isProblemSolved = true;
+//                solvedIndividual = individual;
+//            }
 
         }
         System.out.println("Generation: " + generation + ", average fitness: " + avgFitness/this.population.size());
@@ -116,9 +117,12 @@ public class Population {
         int lengthDifference = Math.abs(targetVector.length - generatedVector.length);
         similarity += SIMILARITY_WEIGHT * (lengthDifference);
 
+        double difference = Math.abs(Arrays.stream(generatedVector).sum() - Arrays.stream(targetVector).sum());
+        similarity += difference;
+
         for (int i = 0; i < Math.min(targetVector.length, generatedVector.length); i++){
             if (targetVector[i] != generatedVector[i])
-                similarity += (double) Math.abs(targetVector[i] - generatedVector[i]) /Math.max(targetVector[i], generatedVector[i]);
+                similarity += (double) Math.abs(targetVector[i] - generatedVector[i]) / Math.abs(targetVector[i]);
         }
 
 //        return 1.0 - ((double) dp[targetVector.length][generatedVector.length] / Math.max(targetVector.length, generatedVector.length));
