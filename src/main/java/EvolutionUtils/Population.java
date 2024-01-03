@@ -15,7 +15,7 @@ public class Population {
     public int PROGRAMS_MAX_OPERATIONS = 10;
     private static final double SIMILARITY_WEIGHT = 0.7;
     private static final double GRAMMATICAL_WEIGHT = 0.3;
-    private static final double FIT_THRESHOLD = 0.01;
+    private static final double FIT_THRESHOLD = 0.001;
     public String inputFile;
     public boolean isProblemSolved;
     public Individual solvedIndividual;
@@ -51,8 +51,31 @@ public class Population {
         } catch (FileNotFoundException e) {
             throw new RuntimeException(e);
         }
-
     }
+
+    public Population(int[][] inputMatrix){
+        inputVector = new ArrayList<>();
+        targetOutputVector = new ArrayList<>();
+        this.isProblemSolved = false;
+
+        testCases = inputMatrix[0][0];
+        int inputNumbers = inputMatrix[0][1];
+        int outputNumbers = inputMatrix[0][2];
+
+        for (int i = 0; i < testCases; i++){
+            int[] inputValues = new int[inputNumbers];
+            System.arraycopy(inputMatrix[i + 1], 0, inputValues, 0, inputNumbers);
+            inputVector.add(inputValues);
+
+            int[] outputValues = new int[outputNumbers];
+            System.arraycopy(inputMatrix[i + 1], outputNumbers - 1, outputValues, 0, outputNumbers);
+            targetOutputVector.add(outputValues);
+
+            System.out.println(inputVector);
+            System.out.println(targetOutputVector);
+        }
+    }
+
     public void createPopulation(int populationSize){
         this.population = new ArrayList<>(populationSize);
         generation = 1;

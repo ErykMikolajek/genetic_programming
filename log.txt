@@ -1,11 +1,69 @@
-Generation: 1, average fitness: 119562.99532931176
+Generation: 1, average fitness: 72162.11960476806
+Generation: 2, average fitness: 2109.5484952381826
+Generation: 3, average fitness: 840.9080085713521
+Generation: 4, average fitness: 2079.1467614289304
+Generation: 5, average fitness: 1062.1593699997259
+Generation: 6, average fitness: 592.2450928570612
+Generation: 7, average fitness: 6683.403157620149
+Generation: 8, average fitness: 2070.9814133334085
+Generation: 9, average fitness: 3144.6693880952967
+Generation: 10, average fitness: 6922.605183334307
+Generation: 11, average fitness: 1492.6474695234792
+Generation: 12, average fitness: 1257.8775766664714
+Generation: 13, average fitness: 25981.924680473465
+Generation: 14, average fitness: 358669.7194190331
+Generation: 15, average fitness: 1112.248519999707
+Generation: 16, average fitness: 15465.801333327621
+Generation: 17, average fitness: 6126.901470953646
+Generation: 18, average fitness: 1061.7093680950754
+Generation: 19, average fitness: 15616.797771904918
+Generation: 20, average fitness: 240654.4905046914
+Generation: 21, average fitness: 7391.402815235335
+Generation: 22, average fitness: 392840.60392047
+Generation: 23, average fitness: 18748.80846428172
+Generation: 24, average fitness: 1182.586980476014
+Generation: 25, average fitness: 51514.60392714986
+Generation: 26, average fitness: 36087.57314668148
+Generation: 27, average fitness: 1344.7439095237482
+Generation: 28, average fitness: 36547.88462715061
+Generation: 29, average fitness: 4654.902839048074
+Generation: 30, average fitness: 14114.089620472625
+Generation: 31, average fitness: 1569.879039999839
+Generation: 32, average fitness: 822.2802004760603
+Generation: 33, average fitness: 1957.715728571504
+Generation: 34, average fitness: 2308.2118095241044
+Generation: 35, average fitness: 7704.4270561894655
+Generation: 36, average fitness: 30289.344232861316
+Generation: 37, average fitness: 2776.754115238616
+Generation: 38, average fitness: 30474.307124763654
+Generation: 39, average fitness: 1728.1232085713975
+Generation: 40, average fitness: 1291.5870728569826
+Generation: 41, average fitness: 2653.551515714091
+Generation: 42, average fitness: 778863.4328306655
+Generation: 43, average fitness: 4323.363257144013
+Generation: 44, average fitness: 1483.414938094933
+Generation: 45, average fitness: 8694.331216666527
+Generation: 46, average fitness: 12237.473807142806
+Generation: 47, average fitness: 424852.8246847135
+Generation: 48, average fitness: 10671.791732379206
+Generation: 49, average fitness: 2401.6020833336984
+Generation: 50, average fitness: 8070.234596188031
+Generation: 51, average fitness: 19249.53767380973
+Generation: 52, average fitness: 1590.8672857141648
+Generation: 53, average fitness: 1309.175905714086
+Generation: 54, average fitness: 837.669310476015
+Generation: 55, average fitness: 12230.044431904967
+Generation: 56, average fitness: 1960.8596780955884
+Generation: 57, average fitness: 2633.8955876197674
+Generation: 58, average fitness: 10231.975182380986
+Generation: 59, average fitness: 2667.226060000341
 ----------- PROBLEM SOLVED: -----------
-var0 = 67 
-var0
-5 + var0 + var0 / 84 - var0
-output input  + input 
-var1 = var0 
-var0
+var0 = 83 
+var1 = var0 - var0 
+output input  - var1 + input 
+if (var1 + var1) { var2 = input  output 49 } 
+var3 = var1 
+var3
 
-0.0
+Program fitness: 0.0
 ---------------------------------------
