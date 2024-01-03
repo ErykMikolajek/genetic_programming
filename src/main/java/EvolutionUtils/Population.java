@@ -2,10 +2,7 @@ package EvolutionUtils;
 
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Random;
-import java.util.Scanner;
+import java.util.*;
 
 import static java.lang.Math.abs;
 
@@ -16,7 +13,8 @@ public class Population {
     private static final double SIMILARITY_WEIGHT = 0.7;
     private static final double GRAMMATICAL_WEIGHT = 0.3;
     private static final double FIT_THRESHOLD = 0.001;
-    public enum searchFlags {LENGTH_IMPORTANT, VALUE_IMPORTANT, POSITION_IMPORTANT}
+    public enum searchFlags {LENGTH_IMPORTANT, POSITION_IMPORTANT}
+    public static searchFlags[] FLAGS = {};
     public String inputFile;
     public boolean isProblemSolved;
     public Individual solvedIndividual;
@@ -112,7 +110,7 @@ public class Population {
             for (int i = 0; i < testCases; i++) {
                 int[] generatedVector = individual.eval(PROGRAMS_MAX_OPERATIONS, inputVector.get(i)).stream().mapToInt(k -> k).toArray();
                 int[] targetVector = targetOutputVector.get(i);
-                System.out.println();
+//                System.out.println();
 
                 similarityRatio += calculateSimilarity(targetVector, generatedVector);
     //            double grammaticalScore = individual.isFailed ? 0.0 : 1 + GRAMMATICAL_WEIGHT;
@@ -149,17 +147,33 @@ public class Population {
 
     private static double calculateSimilarity(int[] targetVector, int[] generatedVector) {
         double similarity = 0;
-        int lengthDifference = Math.abs(targetVector.length - generatedVector.length);
-        similarity += SIMILARITY_WEIGHT * (lengthDifference);
 
-        double difference = Math.abs(Arrays.stream(generatedVector).sum() - Arrays.stream(targetVector).sum());
-        similarity += difference;
-
-        for (int i = 0; i < Math.min(targetVector.length, generatedVector.length); i++){
-            if (targetVector[i] != generatedVector[i])
-                similarity += (double) Math.abs(targetVector[i] - generatedVector[i]) / Math.abs(targetVector[i]);
+        List flagsList = Arrays.asList(FLAGS);
+        if (flagsList.contains(searchFlags.LENGTH_IMPORTANT))
+        {
+            int lengthDifference = Math.abs(targetVector.length - generatedVector.length);
+            similarity += SIMILARITY_WEIGHT * (lengthDifference);
         }
 
+        if (flagsList.contains(searchFlags.POSITION_IMPORTANT))
+        {
+            for (int i = 0; i < Math.min(targetVector.length, generatedVector.length); i++){
+                if (targetVector[i] != generatedVector[i])
+                    similarity += (double) Math.abs(targetVector[i] - generatedVector[i]) / Math.abs(targetVector[i]);
+            }
+        } else {
+            List generaterdList = Arrays.asList(generatedVector);
+            for (int element : targetVector){
+                if (!generaterdList.contains(element))
+                    similarity += Math.abs(element);
+            }
+
+        }
+//        double difference = Math.abs(Arrays.stream(generatedVector).sum() - Arrays.stream(targetVector).sum());
+//        similarity += difference;
+        if (generatedVector.length != 0) {
+            similarity /= 2;
+        }
         return similarity;
     }
 

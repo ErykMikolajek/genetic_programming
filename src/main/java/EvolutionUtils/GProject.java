@@ -65,4 +65,25 @@ public class GProject {
         if (!population.isProblemSolved)
             System.out.println("--------- PROBLEM NOT SOLVED ---------");
     }
+
+    public static void run(int iterations, int[][] inputMatrix, int maxRandomValue, Population.searchFlags[] flags){
+        Population.FLAGS = flags;
+        Individual.MAX_RANDOM_VALUE = maxRandomValue;
+        Population population = new Population(inputMatrix);
+        population.createPopulation(10000);
+
+        for (int i = 0; i < iterations; i++) {
+            population.updatePopulationFitness();
+            population.generateNewPopulation(population.selectKBest(5));
+            if (population.isProblemSolved){
+                System.out.println("----------- PROBLEM SOLVED: -----------");
+                System.out.println(population.solvedIndividual.plot());
+                System.out.println("Program fitness: " + population.solvedIndividual.fitness);
+                System.out.println("---------------------------------------");
+                break;
+            }
+        }
+        if (!population.isProblemSolved)
+            System.out.println("--------- PROBLEM NOT SOLVED ---------");
+    }
 }
