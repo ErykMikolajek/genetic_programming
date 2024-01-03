@@ -15,27 +15,37 @@ public class Population {
     public int PROGRAMS_MAX_OPERATIONS = 10;
     private static final double SIMILARITY_WEIGHT = 0.7;
     private static final double GRAMMATICAL_WEIGHT = 0.3;
-    private static final double FIT_THRESHOLD = 10;
-    public String outputFile = "output1.txt";
+    private static final double FIT_THRESHOLD = 0.01;
+    public String inputFile;
     public boolean isProblemSolved;
     public Individual solvedIndividual;
     private int generation;
     static Random random = new Random();
-    public ArrayList<Integer> outputTemplateVector;
+    public int testCases;
+    public ArrayList<int[]> inputVector;
+    public ArrayList<int[]> targetOutputVector;
 
-
-    public Population(String outputFile){
-        this.outputFile = outputFile;
-        outputTemplateVector = new ArrayList<>();
+    public Population(String inputFile){
+        this.inputFile = inputFile;
+        inputVector = new ArrayList<>();
+        targetOutputVector = new ArrayList<>();
         this.isProblemSolved = false;
 
         try {
-            File file = new File(outputFile);
-
+            File file = new File(inputFile);
             Scanner scanner = new Scanner(file);
-            while (scanner.hasNextLine()) {
-                String line = scanner.nextLine();
-                outputTemplateVector.add(Integer.parseInt(line));
+            testCases = scanner.nextInt();
+            int inputNumbers = scanner.nextInt();
+            int outputNumbers = scanner.nextInt();
+
+            for (int i = 0; i < testCases; i++){
+                int[] inputValues = new int[inputNumbers];
+                for (int j = 0; j < inputNumbers; j++) inputValues[j] = scanner.nextInt();
+                inputVector.add(inputValues);
+
+                int[] outputValues = new int[outputNumbers];
+                for (int j = 0; j < outputNumbers; j++) outputValues[j] = scanner.nextInt();
+                targetOutputVector.add(outputValues);
             }
             scanner.close();
         } catch (FileNotFoundException e) {
@@ -73,14 +83,17 @@ public class Population {
 
     public void updatePopulationFitness(){
         double avgFitness = 0;
-        for (Individual individual : this.population){
-            int[] generatedVector = individual.eval(PROGRAMS_MAX_OPERATIONS).stream().mapToInt(i -> i).toArray();
-            int[] targetVector = outputTemplateVector.stream().mapToInt(i -> i).toArray();
+        for (Individual individual : this.population) {
+            double similarityRatio = 0;
+            for (int i = 0; i < testCases; i++) {
+                int[] generatedVector = individual.eval(PROGRAMS_MAX_OPERATIONS, inputVector.get(i)).stream().mapToInt(k -> k).toArray();
+                int[] targetVector = targetOutputVector.get(i);
 
-            double similarityRatio = calculateSimilarity(targetVector, generatedVector);
-//            double grammaticalScore = individual.isFailed ? 0.0 : 1 + GRAMMATICAL_WEIGHT;
-            double grammaticalScore = individual.isFailed ? 100.0 : 0.0;
-            similarityRatio += grammaticalScore;
+                similarityRatio += calculateSimilarity(targetVector, generatedVector);
+    //            double grammaticalScore = individual.isFailed ? 0.0 : 1 + GRAMMATICAL_WEIGHT;
+                double grammaticalScore = individual.isFailed ? 100.0 : 0.0;
+                similarityRatio += grammaticalScore;
+            }
             individual.fitness = similarityRatio;
 
             avgFitness += individual.fitness;
@@ -91,14 +104,6 @@ public class Population {
                 isProblemSolved = true;
                 solvedIndividual = individual;
             }
-//            if (Math.abs(targetVector.length - generatedVector.length) == 0 && !individual.isFailed){
-////                System.out.println("Individual fitness: " + individual.fitness);
-////                System.out.println("Generated vector: " + Arrays.toString(generatedVector));
-////                System.out.println("Target vector: " + Arrays.toString(targetVector));
-//                isProblemSolved = true;
-//                solvedIndividual = individual;
-//            }
-
         }
         System.out.println("Generation: " + generation + ", average fitness: " + avgFitness/this.population.size());
     }
@@ -125,12 +130,6 @@ public class Population {
                 similarity += (double) Math.abs(targetVector[i] - generatedVector[i]) / Math.abs(targetVector[i]);
         }
 
-//        return 1.0 - ((double) dp[targetVector.length][generatedVector.length] / Math.max(targetVector.length, generatedVector.length));
-//        System.out.println("--------");
-//        System.out.println("Generated vector: " + Arrays.toString(generatedVector));
-//        System.out.println("Target vector: " + Arrays.toString(targetVector));
-//        System.out.println("Length difference: " + lengthDifference);
-//        System.out.println("Similarity: " + similarity);
         return similarity;
     }
 

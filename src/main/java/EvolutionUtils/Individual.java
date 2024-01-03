@@ -16,7 +16,7 @@ import com.google.gson.GsonBuilder;
 public class Individual {
     Node programHead;
     int MAX_RANDOM_VALUE = 100;
-    public String inputFileName = "inputFile.txt";
+//    public ArrayList<Integer> inputVector;
     int individualDepth;
     public boolean isFailed = false;
     public double fitness;
@@ -28,12 +28,6 @@ public class Individual {
     private ArrayList<String> LogicalOperator = new ArrayList<String>(List.of("LogicalOperator"));
     private ArrayList<String> ProgramNode = new ArrayList<String>(List.of("ProgramNode"));
     private ArrayList<String> Expression = new ArrayList<String>(List.of("Expression"));
-//    private ArrayList<String> commands = new ArrayList<>();
-//    private ArrayList<String> BoolStatement = new ArrayList<>();
-//    private ArrayList<String> ComparisonOperator = new ArrayList<>();
-//    private ArrayList<String> LogicalOperator = new ArrayList<>();
-//    private ArrayList<String> ProgramNode = new ArrayList<>();
-
 
     public Individual(Node root){
         programHead = root;
@@ -47,11 +41,9 @@ public class Individual {
     public String plot() {
         return this.programHead.plot();
     }
-    public ArrayList<Integer> eval(int maxOperations){
+    public ArrayList<Integer> eval(int maxOperations, int[] inputVector){
         InterpreterInterface interpreter = new InterpreterInterface(maxOperations);
-
-//        ArrayList<Integer> returnArray = interpreter.evaluateProgram(program, inputFileName);
-        ArrayList<Integer> returnArray = interpreter.evaluateProgram(this.plot(), inputFileName);
+        ArrayList<Integer> returnArray = interpreter.evaluateProgram(this.plot(), inputVector);
         this.isFailed = interpreter.didProgramFail;
         return returnArray;
     }
@@ -90,9 +82,7 @@ public class Individual {
                                         (   ProgramNode.contains(node1.children.get(index).getSuperClass()) && ProgramNode.contains(newNode.getSuperClass())  )||
                                         (   Expression.contains(node1.children.get(index).getSuperClass()) && Expression.contains(newNode.getSuperClass())  )  ))
                 {
-//                    System.out.println(node1.children.get(index).getSuperClass());
                     node1.children.set(index, newNode);
-//                    System.out.println(node1.children.get(index).getSuperClass());
                     break;
                 }
             } else if (!node1.childrenBlock1.isEmpty()) {
@@ -110,9 +100,7 @@ public class Individual {
                                         (   ProgramNode.contains(node1.childrenBlock1.get(index).getSuperClass()) && ProgramNode.contains(newNode.getSuperClass()))||
                                         (   Expression.contains(node1.childrenBlock1.get(index).getSuperClass()) && Expression.contains(newNode.getSuperClass())  )  ))
                 {
-//                    System.out.println(node1.childrenBlock1.get(index).getSuperClass());
                     node1.childrenBlock1.set(index, newNode);
-//                    System.out.println(node1.childrenBlock1.get(index).getSuperClass());
                     break;
                 }
             } else if (!node1.childrenBlock2.isEmpty()) {
@@ -130,9 +118,7 @@ public class Individual {
                                         (   ProgramNode.contains(node1.childrenBlock2.get(index).getSuperClass()) && ProgramNode.contains(newNode.getSuperClass()))||
                                         (   Expression.contains(node1.childrenBlock2.get(index).getSuperClass()) && Expression.contains(newNode.getSuperClass())  )  ))
                 {
-//                    System.out.println(node1.childrenBlock2.get(index).getSuperClass());
                     node1.childrenBlock2.set(index, newNode);
-//                    System.out.println(node1.childrenBlock2.get(index).getSuperClass());
                     break;
                 }
 
@@ -149,9 +135,7 @@ public class Individual {
                                         (   ProgramNode.contains(node1.child.getSuperClass()) && ProgramNode.contains(newNode.getSuperClass())  )||
                                         (   Expression.contains(node1.child.getSuperClass()) && Expression.contains(newNode.getSuperClass())  )  ))
                 {
-//                    System.out.println(node1.child.getSuperClass());
                     node1.child = newNode;
-//                    System.out.println(node1.child.getSuperClass());
                     break;
                 }
             }
@@ -288,138 +272,6 @@ public class Individual {
         }
     }
 
-
-//    public void print(Node node){
-//        if (node.parent_ == null) {
-//            node = node.children_[0];
-//        }
-//
-//        if (node.children_ == null) {
-//            System.out.print(node.value_);
-//            return;
-//        }
-//
-//        if (node.expression_ == null) {
-//            selfRepresent(node.children_[0]);
-//            System.out.print(node.value_);
-//        }
-//        else {
-//            System.out.print("(");
-//            selfRepresent(node.children_[0]);
-//            switch (node.expression_){
-//                case MUL -> System.out.print("*");
-//                case DIV -> System.out.print("/");
-//                case ADD -> System.out.print("+");
-//                case SUB -> System.out.print("-");
-//            }
-//            selfRepresent(node.children_[1]);
-//            System.out.print(")");
-//        }
-//    }
-//
-//    public void save(String fileName) throws IOException {
-//        ObjectMapper objectMapper = new ObjectMapper();
-//        objectMapper.enable(SerializationFeature.INDENT_OUTPUT);
-//        ObjectNode rootNode = createJsonNode(head);
-//
-//        objectMapper.writeValue(new File(fileName), rootNode);
-//    }
-//
-//    public Node load(String fileName) throws IOException {
-//        ObjectMapper objectMapper = new ObjectMapper();
-//        JsonNode rootNode = objectMapper.readTree(new File(fileName));
-//
-//        return createTreeNode(rootNode);
-//    }
-//
-//    private ObjectNode createJsonNode(Node node){
-//        if (node == null)
-//            return null;
-//        ObjectMapper objectMapper = new ObjectMapper();
-//        ObjectNode nodeObject = objectMapper.createObjectNode();
-//        if (node.expression_ == null)
-//            nodeObject.put("expression_label", "null");
-//        else
-//            nodeObject.put("expression_label", node.expression_.label);
-//        nodeObject.put("value", node.value_);
-////        if (node.parent_ == null)
-////            nodeObject.put("parent", "null");
-////        else
-////            nodeObject.put("parent", node.parent_);
-//
-//        ArrayNode childrenArray = objectMapper.createArrayNode();
-//        if (node.children_ != null) {
-//            for (Node child : node.children_) {
-//                ObjectNode childNode = createJsonNode(child);
-//                childrenArray.add(childNode);
-//            }
-//        }
-//
-//        nodeObject.set("children", childrenArray);
-//
-//        return nodeObject;
-//    }
-//
-//    private Node createTreeNode(JsonNode jsonNode) {
-//        if (jsonNode == null || jsonNode.isNull())
-//            return null;
-//        Node treeNode;
-//        Expression[] enumValues = Expression.values();
-//        if (Objects.equals(jsonNode.get("expression_label").asText(), "null"))
-//            treeNode = new Node(null, null, null, jsonNode.get("value").asInt());
-//        else {
-//            Expression expression = enumValues[jsonNode.get("expression_label").asInt() - 1];
-//            treeNode = new Node(expression, null, null, jsonNode.get("value").asInt());
-//        }
-//
-//
-//        JsonNode childrenNode = jsonNode.get("children");
-//        if (childrenNode != null && childrenNode.isArray()) {
-//            Node[] children = new Node[childrenNode.size()];
-//            int index = 0;
-//            for (JsonNode child : childrenNode) {
-//                Node childTreeNode = createTreeNode(child);
-//                children[index++] = childTreeNode;
-////                if (childTreeNode != null) {
-////                    treeNode.addChild(childTreeNode);
-////                }
-//                treeNode.children_ = children;
-//                System.out.println(Arrays.toString(children));
-//            }
-//        }
-//
-//        return treeNode;
-//    }
-
-
-
-//
-//    public ProgramNode.Node copy() {
-//        ProgramNode.Node copyNode = new ProgramNode.Node(this.expression_, null, null, this.value_);
-//
-//        if (this.children_ != null) {
-//            copyNode.children_ = new ProgramNode.Node[this.children_.length];
-//            for (int i = 0; i < this.children_.length; i++) {
-//                ProgramNode.Node childCopy = this.children_[i].copy();
-//                childCopy.parent_ = copyNode;
-//                copyNode.children_[i] = childCopy;
-//            }
-//        }
-//
-//        return copyNode;
-//    }
-//
-//    public static ProgramNode.Node copyTree(ProgramNode.Node root) {
-//        if (root == null) {
-//            return null;
-//        }
-//
-//        ProgramNode.Node rootCopy = root.copy();
-//        rootCopy.parent_ = null;
-//
-//        return rootCopy;
-//    }
-
     public int height(Node myNode) {
         int maxHeight1 = 0;
         int maxHeight2 = 0;
@@ -452,7 +304,7 @@ public class Individual {
     }
 
     public void serialize(String filePath) {
-        try{
+        try {
             Gson gson = new GsonBuilder()
                     .registerTypeAdapter(Node.class,
                             new IndividualDesSer()).setPrettyPrinting().create();
@@ -460,52 +312,22 @@ public class Individual {
             gson.toJson(this, writer);
             writer.flush(); //flush data to file   <---
             writer.close(); //close write          <---
-        }catch(Exception e){
+        } catch(Exception e){
             e.printStackTrace();
         }
     }
 
     public static Individual deserialize(String filePath) {
-        try{
+        try {
             Gson gson = new GsonBuilder()
                     .registerTypeAdapter(Node.class,
                             new IndividualDesSer()).setPrettyPrinting().create();
 
             return gson.fromJson(new FileReader(filePath), Individual.class);
-        }catch(Exception e){
+        } catch(Exception e){
             e.printStackTrace();
             System.out.println("Incorrect file!!!");
         }
         return null;
     }
-//
-//    public static ArrayList<ProgramNode.Node> getNodesAtLevel(ProgramNode.Node root, int level) {
-//        ArrayList<ProgramNode.Node> nodesAtLevel = new ArrayList<>();
-//        Queue<ProgramNode.Node> queue = new LinkedList<>();
-//        int currentLevel = 0;
-//
-//        if (root != null) {
-//            queue.add(root);
-//
-//            while (!queue.isEmpty() && currentLevel < level) {
-//                int levelSize = queue.size();
-//
-//                for (int i = 0; i < levelSize; i++) {
-//                    ProgramNode.Node node = queue.poll();
-//
-//                    if (node.children_ != null) {
-//                        Collections.addAll(queue, node.children_);
-//                    }
-//                }
-//
-//                currentLevel++;
-//            }
-//
-//            while (!queue.isEmpty() && currentLevel == level) {
-//                nodesAtLevel.add(queue.poll());
-//            }
-//        }
-//
-//        return nodesAtLevel;
-//    }
 }

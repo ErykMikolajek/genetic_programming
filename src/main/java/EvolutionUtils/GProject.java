@@ -5,23 +5,11 @@ import java.util.Arrays;
 
 public class GProject {
     public static void main(String[] args) {
-//        for (int i =0; i < 1000; i++){
-//        Individual test1 = new Individual();
-//        Individual test2 = new Individual();
-//        test1.generate(3);
-//        test2.generate(3);
-////        test1.mutate();
-////        System.out.println(test1.plot());
-////        test1.eval(20);
-//        Individual test3 = test1.crossover(test2);
-//        System.out.println(test3.plot());
-//        System.out.println(test3.eval(50));
-//        }
         run(100000);
     }
 
     public static void run(int iterations){
-        Population population = new Population("target/output1.txt");
+        Population population = new Population("target/inputFile.txt");
         population.createPopulation(100000);
 
         for (int i = 0; i < iterations; i++) {
@@ -31,7 +19,7 @@ public class GProject {
                 System.out.println("----------- PROBLEM SOLVED: -----------");
                 System.out.println(population.solvedIndividual.plot());
                 System.out.println(population.solvedIndividual.fitness);
-                System.out.println(Arrays.toString(population.solvedIndividual.eval(10).stream().mapToInt(l -> l).toArray()));
+//                System.out.println(Arrays.toString(population.solvedIndividual.eval(10).stream().mapToInt(l -> l).toArray()));
                 System.out.println("---------------------------------------");
                 break;
             }
