@@ -121,6 +121,9 @@ public class Population {
 //                    System.out.println("Target vector: " + Arrays.toString(targetVector));
 //                    System.out.println("Fitness: " + similarityRatio);
 //                }
+                if (generatedVector.length != 0) {
+                    similarityRatio /= 2;
+                }
             }
             individual.fitness = similarityRatio;
 
@@ -171,9 +174,6 @@ public class Population {
         }
 //        double difference = Math.abs(Arrays.stream(generatedVector).sum() - Arrays.stream(targetVector).sum());
 //        similarity += difference;
-        if (generatedVector.length != 0) {
-            similarity /= 2;
-        }
         return similarity;
     }
 
