@@ -71,8 +71,6 @@ public class Population {
             System.arraycopy(inputMatrix[i + 1], inputNumbers, outputValues, 0, outputNumbers);
             targetOutputVector.add(outputValues);
 
-            System.out.println("Input vector: " + Arrays.toString(inputValues));
-            System.out.println("Target vector: " + Arrays.toString(outputValues));
         }
 
 

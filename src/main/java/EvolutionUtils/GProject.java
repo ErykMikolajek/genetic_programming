@@ -46,7 +46,8 @@ public class GProject {
             System.out.println("--------- PROBLEM NOT SOLVED ---------");
     }
 
-    public static void run(int iterations, int[][] inputMatrix){
+    public static void run(int iterations, int[][] inputMatrix, int maxRandomValue){
+        Individual.MAX_RANDOM_VALUE = maxRandomValue;
         Population population = new Population(inputMatrix);
         population.createPopulation(10000);
 
