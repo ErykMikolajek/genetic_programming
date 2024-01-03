@@ -15,7 +15,7 @@ import com.google.gson.GsonBuilder;
 
 public class Individual {
     Node programHead;
-    int MAX_RANDOM_VALUE = 1000;
+    public static int MAX_RANDOM_VALUE = 1000;
 //    public ArrayList<Integer> inputVector;
     int individualDepth;
     public boolean isFailed = false;

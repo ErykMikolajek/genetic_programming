@@ -16,6 +16,7 @@ public class Population {
     private static final double SIMILARITY_WEIGHT = 0.7;
     private static final double GRAMMATICAL_WEIGHT = 0.3;
     private static final double FIT_THRESHOLD = 0.001;
+    public enum searchFlags {LENGTH_IMPORTANT, VALUE_IMPORTANT, POSITION_IMPORTANT}
     public String inputFile;
     public boolean isProblemSolved;
     public Individual solvedIndividual;
@@ -111,6 +112,7 @@ public class Population {
             for (int i = 0; i < testCases; i++) {
                 int[] generatedVector = individual.eval(PROGRAMS_MAX_OPERATIONS, inputVector.get(i)).stream().mapToInt(k -> k).toArray();
                 int[] targetVector = targetOutputVector.get(i);
+                System.out.println();
 
                 similarityRatio += calculateSimilarity(targetVector, generatedVector);
     //            double grammaticalScore = individual.isFailed ? 0.0 : 1 + GRAMMATICAL_WEIGHT;
