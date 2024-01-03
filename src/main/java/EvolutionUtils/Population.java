@@ -68,12 +68,14 @@ public class Population {
             inputVector.add(inputValues);
 
             int[] outputValues = new int[outputNumbers];
-            System.arraycopy(inputMatrix[i + 1], outputNumbers - 1, outputValues, 0, outputNumbers);
+            System.arraycopy(inputMatrix[i + 1], inputNumbers, outputValues, 0, outputNumbers);
             targetOutputVector.add(outputValues);
 
-            System.out.println(inputVector);
-            System.out.println(targetOutputVector);
+            System.out.println("Input vector: " + Arrays.toString(inputValues));
+            System.out.println("Target vector: " + Arrays.toString(outputValues));
         }
+
+
     }
 
     public void createPopulation(int populationSize){
@@ -116,6 +118,11 @@ public class Population {
     //            double grammaticalScore = individual.isFailed ? 0.0 : 1 + GRAMMATICAL_WEIGHT;
                 double grammaticalScore = individual.isFailed ? 100.0 : 0.0;
                 similarityRatio += grammaticalScore;
+//                if (similarityRatio == 0) {
+//                    System.out.println("Generated vector: " + Arrays.toString(generatedVector));
+//                    System.out.println("Target vector: " + Arrays.toString(targetVector));
+//                    System.out.println("Fitness: " + similarityRatio);
+//                }
             }
             individual.fitness = similarityRatio;
 
