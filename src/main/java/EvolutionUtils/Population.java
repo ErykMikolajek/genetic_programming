@@ -16,6 +16,7 @@ public class Population {
     private static final double SIMILARITY_WEIGHT = 0.7;
     private static final double GRAMMATICAL_WEIGHT = 0.3;
     private static final double FIT_THRESHOLD = 0.001;
+    private int populationSize;
     public enum searchFlags {LENGTH_IMPORTANT, VALUE_IMPORTANT, POSITION_IMPORTANT}
     public String inputFile;
     public boolean isProblemSolved;
@@ -78,6 +79,7 @@ public class Population {
     }
 
     public void createPopulation(int populationSize){
+        this.populationSize = populationSize;
         this.population = new ArrayList<>(populationSize);
         generation = 1;
         for (int i = 0; i < populationSize; i++){
@@ -88,20 +90,40 @@ public class Population {
     }
 
     public void generateNewPopulation(ArrayList<Individual> bestIndividuals){
-        ArrayList<Individual> newIndividuals = new ArrayList<>();
         generation++;
-        for (int i = 0; i < population.size()/2; i++){
+        // New pop:
+        // 5% - previous best individuals, 25% - crossovers, 25% - best individuals mutations,
+        // 25% - children mutations, 20% - new individuals
+        ArrayList<Individual> newIndividuals = new ArrayList<>(populationSize);
+        newIndividuals.addAll(bestIndividuals);
+
+        for (int i = 0; i < populationSize/4; i++) {
+            // crossovers:
             int program1 = random.nextInt(bestIndividuals.size());
             int program2 = random.nextInt(bestIndividuals.size());
             while (program1 == program2) program2 = random.nextInt(bestIndividuals.size());
-
             Individual crossoverIndividual = bestIndividuals.get(program1).crossover(bestIndividuals.get(program2));
+            newIndividuals.add(crossoverIndividual);
+
+            // children mutations
             crossoverIndividual.mutate();
             newIndividuals.add(crossoverIndividual);
+
+            // best individuals mutations:
+            for (int j = 0; j < populationSize/(4 * bestIndividuals.size()); j++) {
+                Individual bestIndividualMutation = bestIndividuals.get(j % bestIndividuals.size());
+                bestIndividualMutation.mutate();
+                newIndividuals.add(bestIndividualMutation);
+            }
+        }
+
+        // new individuals
+        for (int i = 0; i < populationSize/5; i++){
             Individual randomIndividual = new Individual();
             randomIndividual.generate(this.PROGRAMS_DEPTH);
             newIndividuals.add(randomIndividual);
         }
+
         this.population = newIndividuals;
     }
 
@@ -112,7 +134,6 @@ public class Population {
             for (int i = 0; i < testCases; i++) {
                 int[] generatedVector = individual.eval(PROGRAMS_MAX_OPERATIONS, inputVector.get(i)).stream().mapToInt(k -> k).toArray();
                 int[] targetVector = targetOutputVector.get(i);
-                System.out.println();
 
                 similarityRatio += calculateSimilarity(targetVector, generatedVector);
     //            double grammaticalScore = individual.isFailed ? 0.0 : 1 + GRAMMATICAL_WEIGHT;
@@ -170,13 +191,11 @@ public class Population {
 
         for (int i = 0; i < k; i++) {
             int maxIndex = 0;
-
             for (int j = 1; j < tempArray.size(); j++) {
                 if (tempArray.get(j).fitness > tempArray.get(maxIndex).fitness) {
                     maxIndex = j;
                 }
             }
-
             elite.add(tempArray.remove(maxIndex));
         }
         return elite;

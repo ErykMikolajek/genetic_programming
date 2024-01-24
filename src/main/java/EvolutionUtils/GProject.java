@@ -27,7 +27,7 @@ public class GProject {
             System.out.println("--------- PROBLEM NOT SOLVED ---------");
     }
 
-    public static void run(int iterations, String inputFileName){
+    public static void run(int iterations, String inputFileName, Population.searchFlags[] flags){
         Population population = new Population(inputFileName);
         population.createPopulation(10000);
 
@@ -62,6 +62,7 @@ public class GProject {
                 break;
             }
         }
+
         if (!population.isProblemSolved)
             System.out.println("--------- PROBLEM NOT SOLVED ---------");
     }
