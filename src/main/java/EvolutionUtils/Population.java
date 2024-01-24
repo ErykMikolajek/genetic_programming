@@ -11,7 +11,7 @@ import static java.lang.Math.abs;
 
 public class Population {
     public ArrayList<Individual> population;
-    public int PROGRAMS_DEPTH = 6;
+    public int PROGRAMS_DEPTH = 3;
     public int PROGRAMS_MAX_OPERATIONS = 10;
     private static final double SIMILARITY_WEIGHT = 0.7;
     private static final double GRAMMATICAL_WEIGHT = 0.3;
@@ -92,10 +92,17 @@ public class Population {
     public void generateNewPopulation(ArrayList<Individual> bestIndividuals){
         generation++;
         // New pop:
-        // 5% - previous best individuals, 25% - crossovers, 25% - best individuals mutations,
-        // 25% - children mutations, 20% - new individuals
+        // 5 - previous best individuals, 25% - crossovers, 25% - best individuals mutations,
+        // 25% - children mutations, 25% - 5 - new individuals
         ArrayList<Individual> newIndividuals = new ArrayList<>(populationSize);
         newIndividuals.addAll(bestIndividuals);
+
+        // best individuals mutations:
+        for (int j = 0; j < populationSize/4; j++) {
+            Individual bestIndividualMutation = bestIndividuals.get(j % bestIndividuals.size());
+            bestIndividualMutation.mutate();
+            newIndividuals.add(bestIndividualMutation);
+        }
 
         for (int i = 0; i < populationSize/4; i++) {
             // crossovers:
@@ -108,22 +115,14 @@ public class Population {
             // children mutations
             crossoverIndividual.mutate();
             newIndividuals.add(crossoverIndividual);
-
-            // best individuals mutations:
-            for (int j = 0; j < populationSize/(4 * bestIndividuals.size()); j++) {
-                Individual bestIndividualMutation = bestIndividuals.get(j % bestIndividuals.size());
-                bestIndividualMutation.mutate();
-                newIndividuals.add(bestIndividualMutation);
-            }
         }
-
         // new individuals
-        for (int i = 0; i < populationSize/5; i++){
+        int individualsLeft = populationSize - newIndividuals.size();
+        for (int i = 0; i < individualsLeft; i++){
             Individual randomIndividual = new Individual();
             randomIndividual.generate(this.PROGRAMS_DEPTH);
             newIndividuals.add(randomIndividual);
         }
-
         this.population = newIndividuals;
     }
 
