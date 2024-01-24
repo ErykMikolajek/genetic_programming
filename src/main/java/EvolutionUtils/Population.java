@@ -17,7 +17,6 @@ public class Population {
     private static final double GRAMMATICAL_WEIGHT = 0.3;
     private static final double FIT_THRESHOLD = 0.001;
     private int populationSize;
-    public enum searchFlags {LENGTH_IMPORTANT, VALUE_IMPORTANT, POSITION_IMPORTANT}
     public String inputFile;
     public boolean isProblemSolved;
     public Individual solvedIndividual;
@@ -127,7 +126,6 @@ public class Population {
     }
 
     public void updatePopulationFitness(){
-        double avgFitness = 0;
         for (Individual individual : this.population) {
             double similarityRatio = 0;
             for (int i = 0; i < testCases; i++) {
@@ -145,8 +143,6 @@ public class Population {
 //                }
             }
             individual.fitness = similarityRatio;
-
-            avgFitness += individual.fitness;
             if (individual.fitness <= FIT_THRESHOLD){
 //                System.out.println("Individual fitness: " + individual.fitness);
 //                System.out.println("Generated vector: " + Arrays.toString(generatedVector));
@@ -155,7 +151,7 @@ public class Population {
                 solvedIndividual = individual;
             }
         }
-        System.out.println("Generation: " + generation + ", average fitness: " + avgFitness/this.population.size());
+        plotData();
     }
 
 //    public static double calculateFitness(int[] targetVector, int[] generatedVector, boolean grammaticalCorrectness) {
@@ -185,20 +181,34 @@ public class Population {
 
 
     public ArrayList<Individual> selectKBest(int k){
-        ArrayList<Individual> tempArray = new ArrayList<>(this.population);
         ArrayList<Individual> elite = new ArrayList<>(k);
 
         for (int i = 0; i < k; i++) {
             int maxIndex = 0;
-            for (int j = 1; j < tempArray.size(); j++) {
-                if (tempArray.get(j).fitness > tempArray.get(maxIndex).fitness) {
+            for (int j = 1; j < populationSize; j++) {
+                if (population.get(j).fitness < population.get(maxIndex).fitness) {
                     maxIndex = j;
                 }
             }
-            elite.add(tempArray.remove(maxIndex));
+            elite.add(population.get(maxIndex));
         }
         return elite;
     }
 
+    public void plotData(){
+        double avgFitness = 0;
+//        Individual bestOfPopulation = population.get(0);
+        for (Individual ind : population) {
+            avgFitness += ind.fitness;
+//            if (ind.fitness < bestOfPopulation.fitness)
+//                bestOfPopulation = ind;
+        }
+        avgFitness /= populationSize;
+        Individual bestOfPopulation = selectKBest(1).get(0);
+        double bestFitness = bestOfPopulation.fitness;
+        System.out.println("Generation: " + generation +
+                ", average fitness: " + avgFitness + ", best fitness: " + bestFitness);
+        System.out.println("Best individual: " + bestOfPopulation.plot());
+    }
 
 }

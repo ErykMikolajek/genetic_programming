@@ -16,7 +16,6 @@ import java.util.ArrayList;
 import static org.antlr.v4.runtime.CharStreams.fromString;
 
 public class InterpreterInterface {
-    //TODO: deafultowa wartość gdy nie można wczytać inputu
     private final int maxOperationCount;
     public boolean didProgramFail;
     public InterpreterInterface(int maxOperationCount){
