@@ -23,12 +23,12 @@ public class Program {
     }
 
     public static Node generateCommand(int depth){
-        if (depth == 0) return null;
+        if (depth <= 1) return null;
 
         Commands[] commandsValues = Commands.values();
 
-        if (depth == 1)
-            commandsValues = new Commands[] {Commands.EXPRESSION /*, Commands.ASSIGN, Commands.OUTPUT*/};
+        if (depth == 2)
+            commandsValues = new Commands[] {/*Commands.EXPRESSION*/Commands.ASSIGN, Commands.OUTPUT};
 
         Commands randomCommand = commandsValues[random.nextInt(commandsValues.length)];
 
@@ -40,9 +40,9 @@ public class Program {
             case IF_STATEMENT -> {
                 return generateIfStatement(depth);
             }
-            case EXPRESSION -> {
-                return generateExpression(depth);
-            }
+//            case EXPRESSION -> {
+//                return generateExpression(depth);
+//            }
             case ASSIGN -> {
                 return generateAssign(depth);
             }
@@ -80,7 +80,7 @@ public class Program {
     }
 
     private static Node generateIfStatement(int depth){
-        if (depth == 0) return null;
+        if (depth <= 2) return null;
 
         boolean elseCondition = random.nextInt(2) > 0;
         IfStatement returnNode;

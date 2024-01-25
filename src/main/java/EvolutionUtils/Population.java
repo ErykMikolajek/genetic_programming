@@ -13,9 +13,9 @@ public class Population {
     public ArrayList<Individual> population;
     public int PROGRAMS_DEPTH = 3;
     public int PROGRAMS_MAX_OPERATIONS = 10;
-    private static final double SIMILARITY_WEIGHT = 0.7;
-    private static final double GRAMMATICAL_WEIGHT = 0.3;
-    private static final double FIT_THRESHOLD = 0.001;
+//    private static final double SIMILARITY_WEIGHT = 0.7;
+//    private static final double GRAMMATICAL_WEIGHT = 0.3;
+    private static final double FIT_THRESHOLD = 0;
     private int populationSize;
     public String inputFile;
     public boolean isProblemSolved;
@@ -129,51 +129,33 @@ public class Population {
         for (Individual individual : this.population) {
             double similarityRatio = 0;
             for (int i = 0; i < testCases; i++) {
-                int[] generatedVector = individual.eval(PROGRAMS_MAX_OPERATIONS, inputVector.get(i)).stream().mapToInt(k -> k).toArray();
+                int[] generatedVector = individual
+                        .eval(PROGRAMS_MAX_OPERATIONS, inputVector.get(i)).stream().mapToInt(k -> k).toArray();
                 int[] targetVector = targetOutputVector.get(i);
 
                 similarityRatio += calculateSimilarity(targetVector, generatedVector);
-    //            double grammaticalScore = individual.isFailed ? 0.0 : 1 + GRAMMATICAL_WEIGHT;
-                double grammaticalScore = individual.isFailed ? 100.0 : 0.0;
+                double outputExistent = generatedVector.length == 0 ? 999 : 0;
+                similarityRatio += outputExistent;
+                double grammaticalScore = individual.isFailed ? 999 : 0;
                 similarityRatio += grammaticalScore;
-//                if (similarityRatio == 0) {
-//                    System.out.println("Generated vector: " + Arrays.toString(generatedVector));
-//                    System.out.println("Target vector: " + Arrays.toString(targetVector));
-//                    System.out.println("Fitness: " + similarityRatio);
-//                }
             }
-            individual.fitness = similarityRatio;
+            individual.fitness = similarityRatio * similarityRatio;
             if (individual.fitness <= FIT_THRESHOLD){
-//                System.out.println("Individual fitness: " + individual.fitness);
-//                System.out.println("Generated vector: " + Arrays.toString(generatedVector));
-//                System.out.println("Target vector: " + Arrays.toString(targetVector));
                 isProblemSolved = true;
                 solvedIndividual = individual;
+                break;
             }
         }
         plotData();
     }
 
-//    public static double calculateFitness(int[] targetVector, int[] generatedVector, boolean grammaticalCorrectness) {
-//        double similarityRatio = calculateSimilarity(targetVector, generatedVector);
-//        double grammaticalScore = grammaticalCorrectness ? GRAMMATICAL_WEIGHT : 0.0;
-//        double differenceLength = Math.abs(targetVector.length - generatedVector.length) /
-//                (double) Math.max(targetVector.length, generatedVector.length);
-//
-//        return (SIMILARITY_WEIGHT * similarityRatio) + ((1 - SIMILARITY_WEIGHT) * (1 - differenceLength)) + grammaticalScore;
-//    }
-
     private static double calculateSimilarity(int[] targetVector, int[] generatedVector) {
         double similarity = 0;
         int lengthDifference = Math.abs(targetVector.length - generatedVector.length);
-        similarity += SIMILARITY_WEIGHT * (lengthDifference);
-
-        double difference = Math.abs(Arrays.stream(generatedVector).sum() - Arrays.stream(targetVector).sum());
-        similarity += difference;
+        similarity += (lengthDifference * lengthDifference);
 
         for (int i = 0; i < Math.min(targetVector.length, generatedVector.length); i++){
-            if (targetVector[i] != generatedVector[i])
-                similarity += (double) Math.abs(targetVector[i] - generatedVector[i]) / Math.abs(targetVector[i]);
+            similarity += Math.abs(targetVector[i] - generatedVector[i]);
         }
 
         return similarity;

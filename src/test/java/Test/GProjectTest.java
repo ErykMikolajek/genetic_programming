@@ -41,7 +41,7 @@ class GProjectTest {
                 {1, 2, 3, 4, 5, 31415},
                 {1, 1, 1, 1, 1, 31415}};
 
-        GProject.run(100, test, 10000);
+        GProject.run(100, test, 40000);
     }
     @Test
     void Test1_1_D() {
@@ -126,8 +126,9 @@ class GProjectTest {
                 {-4321, 8765, -13086},
                 {-1111, 2222, -3333}};
 
-        GProject.run(100, test, 123);
+        GProject.run(100, test, 1000);
     }
+    //TODO: nie da się wygenerować input * input?
     @Test
     void Test1_2_E() {
         int[][] test = {
@@ -138,7 +139,7 @@ class GProjectTest {
                 {-1, 5, -5},
                 {-1111, 2, -2222}};
 
-        GProject.run(100, test, 123);
+        GProject.run(100, test, 1000);
     }
     @Test
     void Test1_3_A() {

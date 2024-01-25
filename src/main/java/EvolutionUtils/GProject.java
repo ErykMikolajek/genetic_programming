@@ -4,17 +4,22 @@ import java.io.IOException;
 import java.util.Arrays;
 
 public class GProject {
+
     public static void main(String[] args) {
-        run(100000);
+//        run(100000);
+        for (int i = 0; i < 100; i++){
+            Individual individual = new Individual();
+            individual.generate(3);
+            System.out.println(individual.plot());
+            System.out.println("----------------------");
+        }
     }
 
     public static void run(int iterations){
         Population population = new Population("target/inputFile.txt");
-        population.createPopulation(10000);
-
+        population.createPopulation(100000);
         for (int i = 0; i < iterations; i++) {
             population.updatePopulationFitness();
-            population.generateNewPopulation(population.selectKBest(5));
             if (population.isProblemSolved){
                 System.out.println("----------- PROBLEM SOLVED: -----------");
                 System.out.println(population.solvedIndividual.plot());
@@ -22,6 +27,7 @@ public class GProject {
                 System.out.println("---------------------------------------");
                 break;
             }
+            population.generateNewPopulation(population.selectKBest(5));
         }
         if (!population.isProblemSolved)
             System.out.println("--------- PROBLEM NOT SOLVED ---------");
@@ -33,7 +39,6 @@ public class GProject {
 
         for (int i = 0; i < iterations; i++) {
             population.updatePopulationFitness();
-            population.generateNewPopulation(population.selectKBest(5));
             if (population.isProblemSolved){
                 System.out.println("----------- PROBLEM SOLVED: -----------");
                 System.out.println(population.solvedIndividual.plot());
@@ -41,6 +46,7 @@ public class GProject {
                 System.out.println("---------------------------------------");
                 break;
             }
+            population.generateNewPopulation(population.selectKBest(5));
         }
         if (!population.isProblemSolved)
             System.out.println("--------- PROBLEM NOT SOLVED ---------");
@@ -53,7 +59,6 @@ public class GProject {
 
         for (int i = 0; i < iterations; i++) {
             population.updatePopulationFitness();
-            population.generateNewPopulation(population.selectKBest(5));
             if (population.isProblemSolved){
                 System.out.println("----------- PROBLEM SOLVED: -----------");
                 System.out.println(population.solvedIndividual.plot());
@@ -61,6 +66,7 @@ public class GProject {
                 System.out.println("---------------------------------------");
                 break;
             }
+            population.generateNewPopulation(population.selectKBest(5));
         }
 
         if (!population.isProblemSolved)
