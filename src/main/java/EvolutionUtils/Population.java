@@ -11,8 +11,8 @@ import static java.lang.Math.abs;
 
 public class Population {
     public ArrayList<Individual> population;
-    public int PROGRAMS_DEPTH = 3;
-    public int PROGRAMS_MAX_OPERATIONS = 10;
+    public int PROGRAMS_DEPTH = 4;
+    public int PROGRAMS_MAX_OPERATIONS = 1000;
 //    private static final double SIMILARITY_WEIGHT = 0.7;
 //    private static final double GRAMMATICAL_WEIGHT = 0.3;
     private static final double FIT_THRESHOLD = 0;

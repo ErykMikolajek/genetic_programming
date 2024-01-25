@@ -7,16 +7,7 @@ public class GProject {
 
     public static void main(String[] args) {
 //        run(100000);
-        for (int i = 0; i < 100; i++){
-            Individual individual = new Individual();
-            individual.generate(3);
-            String program = individual.plot().replaceAll("\\s", "");
-            if (program.contains("input*input")) {
-                System.out.println(individual.plot());
-                System.out.println("----------------------");
-            }
-
-        }
+        System.out.println(280/10);
     }
 
     public static void run(int iterations){
