@@ -128,14 +128,13 @@ class GProjectTest {
 
         GProject.run(100, test, 1000);
     }
-    //TODO: nie da się wygenerować input * input?
     @Test
     void Test1_2_E() {
         int[][] test = {
                 {5, 2, 1},
                 {-234, 56, -13104},
-                {789, -12, 9468},
-                {99, -85, 8415},
+                {789, -12, -9468},
+                {99, -85, -8415},
                 {-1, 5, -5},
                 {-1111, 2, -2222}};
 

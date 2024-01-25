@@ -10,8 +10,12 @@ public class GProject {
         for (int i = 0; i < 100; i++){
             Individual individual = new Individual();
             individual.generate(3);
-            System.out.println(individual.plot());
-            System.out.println("----------------------");
+            String program = individual.plot().replaceAll("\\s", "");
+            if (program.contains("input*input")) {
+                System.out.println(individual.plot());
+                System.out.println("----------------------");
+            }
+
         }
     }
 
