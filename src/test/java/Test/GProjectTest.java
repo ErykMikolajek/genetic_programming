@@ -156,7 +156,7 @@ class GProjectTest {
                 {6, 4, 6},
                 {5, 3, 5}};
 
-        GProject.run(1000, test, 10);
+        GProject.run(100, test, 10);
     }
     @Test
     void Test1_3_B() {
@@ -173,7 +173,7 @@ class GProjectTest {
                 {6, 4, 6},
                 {5444, 3000, 5444}};
 
-        GProject.run(1000, test, 10);
+        GProject.run(100, test, 10);
     }
     @Test
     void Test1_4_A() {
@@ -190,6 +190,113 @@ class GProjectTest {
                 {94, -7, -7, -56, -67, 92, 8, -46, 47, -72, -1},
                 {53, 74, -56, 79, 21, 86, 8, 13, 42, -40, 28}};
 
-        GProject.run(1000, test, 15);
+        GProject.run(100, test, 15);
+    }
+    @Test
+    void TestBenchmark_2() { //Small or Large: if n < 100 return 0 if n >= 200 return 1
+        int[][] test = {
+                {10, 1, 1},
+                {1, 0},
+                {33, 0},
+                {234, 1},
+                {200, 1},
+                {99, 0},
+                {82, 0},
+                {9, 0},
+                {274, 1},
+                {262, 1},
+                {239, 1}};
+
+        GProject.run(100, test, 300);
+    }
+    @Test
+    void TestBenchmark_12() { //Last index of zero:
+        int[][] test = {
+                {10, 5, 1},
+                {1, 0, 3, 1, 0, 2},
+                {33, 13, 23, 33, 0, 5},
+                {0, 1, -2, 0, 1, 1},
+                {200, -3, 0, 200, 0, 3},
+                {0, 1, 2, 0, 1, 1},
+                {-8, 1, 0, 0, 1, 3},
+                {-9, 2, -3, 2, 0, 5},
+                {-274, -32, 2, 0, 2, 4},
+                {262, -12, -23, 0, 0, 4},
+                {-239, 0, -2, 0, 0, 2}};
+
+        GProject.run(100, test, 300);
+    }
+    @Test
+    void TestBenchmark_15() {
+        int[][] test = {
+                {10, 6, 1},
+                {1, 0, 3, 3, 0, 1, 1},
+                {33, 13, 23, 23, 13, 33, 1},
+                {0, 1, 2, 2, 1, 0, 1},
+                {200, 3, 2, 2, 3, 200, 1},
+                {0, 1, 2, 3, 1, 2, 0},
+                {8, 1, 0, 3, 4, 2, 0},
+                {9, 2, 8, 4, 1, 2, 0},
+                {274, 0, 2, 2, 0, 274, 1},
+                {262, 12, 23, 11, 1, 2, 0},
+                {0, 1, 82, 41, 13, 23, 0}};
+
+        GProject.run(100, test, 300);
+    }
+    @Test
+    void TestBenchmark_21() { //Negative to zero: Given a vector of integers, return the vector where all negative int have been replaced by 0
+        int[][] test = {
+                {10, 3, 3},
+                {1, 0, 3, 1, 0, 3},
+                {33, 13, 23, 33, 13, 23},
+                {0, 1, -2, 0, 1, 0},
+                {200, -3, 2, 200, 0, 2},
+                {0, 1, 2, 0, 1, 2},
+                {-8, 1, 0, 0, 1, 0},
+                {-9, 2, -3, 0, 2, 0},
+                {-274, -32, 2, 0, 0, 2},
+                {262, -12, -23, 262, 0, 0},
+                {-239, -1, -2, 0, 0, 0}};
+
+        GProject.run(100, test, 300);
+    }
+
+    @Test
+    void TestBool_and() {
+        int[][] test = {
+                {4, 2, 1},
+                {0, 0, 0},
+                {0, 1, 0},
+                {1, 0, 0},
+                {1, 1, 1}};
+        GProject.run(100, test, 300);
+    }
+    @Test
+    void TestBool_or() {
+        int[][] test = {
+                {4, 2, 1},
+                {0, 0, 0},
+                {0, 1, 1},
+                {1, 0, 1},
+                {1, 1, 1}};
+        GProject.run(100, test, 300);
+    }
+    @Test
+    void TestBool_xor() {
+        int[][] test = {
+                {4, 2, 1},
+                {0, 0, 1},
+                {0, 1, 0},
+                {1, 0, 0},
+                {1, 1, 0}};
+        GProject.run(100, test, 300);
+    }
+    @Test
+    void TestBool_not() {
+        int[][] test = {
+                {2, 1, 1},
+                {0, 1},
+                {1, 0}};
+        GProject.run(100, test, 300);
     }
 }
