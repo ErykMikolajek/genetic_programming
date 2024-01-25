@@ -11,7 +11,7 @@ import static java.lang.Math.abs;
 
 public class Population {
     public ArrayList<Individual> population;
-    public int PROGRAMS_DEPTH = 4;
+    public int PROGRAMS_DEPTH = 3;
     public int PROGRAMS_MAX_OPERATIONS = 1000;
 //    private static final double SIMILARITY_WEIGHT = 0.7;
 //    private static final double GRAMMATICAL_WEIGHT = 0.3;
@@ -151,8 +151,10 @@ public class Population {
 
     private static double calculateSimilarity(int[] targetVector, int[] generatedVector) {
         double similarity = 0;
+        // ((-1/(x+1)) + 1)*5
         int lengthDifference = Math.abs(targetVector.length - generatedVector.length);
-        similarity += (lengthDifference * lengthDifference);
+//        similarity += (lengthDifference * lengthDifference);
+        similarity += (((double) -1 /(lengthDifference+1)) + 1)*5;
 
         for (int i = 0; i < Math.min(targetVector.length, generatedVector.length); i++){
             similarity += Math.abs(targetVector[i] - generatedVector[i]);
