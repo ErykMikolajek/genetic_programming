@@ -155,6 +155,6 @@ class GProjectTest {
                 {6, 4, 6},
                 {5, 3, 5}};
 
-        GProject.run(100, test, 123);
+        GProject.run(1000, test, 10);
     }
 }

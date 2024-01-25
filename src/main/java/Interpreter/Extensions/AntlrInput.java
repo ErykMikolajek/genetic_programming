@@ -10,6 +10,7 @@ public class AntlrInput extends MiniGPLangBaseVisitor<Variable> {
     public Variable visitInput(MiniGPLangParser.InputContext ctx) {
         if (!AntlrProgram.inputVector.isEmpty()) {
             int value = AntlrProgram.inputVector.remove(0);
+            AntlrProgram.inputVector.add(value);
             return new Variable(value);
         }
         else return new Variable(0);
