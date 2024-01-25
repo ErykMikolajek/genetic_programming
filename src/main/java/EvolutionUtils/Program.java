@@ -16,7 +16,7 @@ public class Program {
         MAX_VARIABLE_VALUE = maxRandomValue;
         maxVariableId = 0;
         ArrayList<Node> children = new ArrayList<>();
-        while (depth > 0){
+        while (depth > 1){
             children.add(generateCommand(depth--));
         }
         return new ProgramNode(children);
