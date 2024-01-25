@@ -4,38 +4,66 @@ import java.io.IOException;
 import java.util.Arrays;
 
 public class GProject {
+
     public static void main(String[] args) {
-//        for (int i =0; i < 1000; i++){
-//        Individual test1 = new Individual();
-//        Individual test2 = new Individual();
-//        test1.generate(3);
-//        test2.generate(3);
-////        test1.mutate();
-////        System.out.println(test1.plot());
-////        test1.eval(20);
-//        Individual test3 = test1.crossover(test2);
-//        System.out.println(test3.plot());
-//        System.out.println(test3.eval(50));
-//        }
-        run(100000);
+//        run(100000);
+        System.out.println(280/10);
     }
 
     public static void run(int iterations){
-        Population population = new Population("target/output1.txt");
+        Population population = new Population("target/inputFile.txt");
         population.createPopulation(100000);
-
         for (int i = 0; i < iterations; i++) {
             population.updatePopulationFitness();
-            population.generateNewPopulation(population.selectKBest(5));
             if (population.isProblemSolved){
                 System.out.println("----------- PROBLEM SOLVED: -----------");
                 System.out.println(population.solvedIndividual.plot());
-                System.out.println(population.solvedIndividual.fitness);
-                System.out.println(Arrays.toString(population.solvedIndividual.eval(10).stream().mapToInt(l -> l).toArray()));
+                System.out.println("Program fitness: " + population.solvedIndividual.fitness);
                 System.out.println("---------------------------------------");
                 break;
             }
+            population.generateNewPopulation(population.selectKBest(5));
         }
+        if (!population.isProblemSolved)
+            System.out.println("--------- PROBLEM NOT SOLVED ---------");
+    }
+
+    public static void run(int iterations, String inputFileName){
+        Population population = new Population(inputFileName);
+        population.createPopulation(10000);
+
+        for (int i = 0; i < iterations; i++) {
+            population.updatePopulationFitness();
+            if (population.isProblemSolved){
+                System.out.println("----------- PROBLEM SOLVED: -----------");
+                System.out.println(population.solvedIndividual.plot());
+                System.out.println("Program fitness: " + population.solvedIndividual.fitness);
+                System.out.println("---------------------------------------");
+                break;
+            }
+            population.generateNewPopulation(population.selectKBest(5));
+        }
+        if (!population.isProblemSolved)
+            System.out.println("--------- PROBLEM NOT SOLVED ---------");
+    }
+
+    public static void run(int iterations, int[][] inputMatrix, int maxRandomValue){
+        Individual.MAX_RANDOM_VALUE = maxRandomValue;
+        Population population = new Population(inputMatrix);
+        population.createPopulation(10000);
+
+        for (int i = 0; i < iterations; i++) {
+            population.updatePopulationFitness();
+            if (population.isProblemSolved){
+                System.out.println("----------- PROBLEM SOLVED: -----------");
+                System.out.println(population.solvedIndividual.plot());
+                System.out.println("Program fitness: " + population.solvedIndividual.fitness);
+                System.out.println("---------------------------------------");
+                break;
+            }
+            population.generateNewPopulation(population.selectKBest(5));
+        }
+
         if (!population.isProblemSolved)
             System.out.println("--------- PROBLEM NOT SOLVED ---------");
     }

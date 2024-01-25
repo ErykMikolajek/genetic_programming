@@ -16,7 +16,6 @@ import java.util.ArrayList;
 import static org.antlr.v4.runtime.CharStreams.fromString;
 
 public class InterpreterInterface {
-
     private final int maxOperationCount;
     public boolean didProgramFail;
     public InterpreterInterface(int maxOperationCount){
@@ -24,15 +23,10 @@ public class InterpreterInterface {
         this.didProgramFail = false;
     }
 
-    public ArrayList<Integer> evaluateProgram(String program, String inputFileName){
-//        ANTLRErrorListener errorListener = new BaseErrorListener();
+    public ArrayList<Integer> evaluateProgram(String program, int[] inputVector){
         MiniGPLangParser parser = getParser(program);
-//        parser.addErrorListener(errorListener);
         ParseTree antlrAST = parser.prog();
-//        System.out.println("------------- Program: -------------");
-//        System.out.println(program);
-//        System.out.println("------------------------------------");
-        AntlrProgram programVisitor = new AntlrProgram(inputFileName, maxOperationCount);
+        AntlrProgram programVisitor = new AntlrProgram(inputVector, maxOperationCount);
         programVisitor.visit(antlrAST);
         this.didProgramFail = AntlrProgram.didProgramFail;
 

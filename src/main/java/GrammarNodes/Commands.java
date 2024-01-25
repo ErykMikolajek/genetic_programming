@@ -3,7 +3,7 @@ package GrammarNodes;
 public enum Commands {
         LOOP,
         IF_STATEMENT,
-        EXPRESSION,
+//        EXPRESSION,
         ASSIGN,
         OUTPUT
 }

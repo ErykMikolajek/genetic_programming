@@ -6,28 +6,32 @@ import Interpreter.MiniGPLangParser;
 
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Scanner;
 import java.io.File;
+import java.util.stream.Collectors;
 
 public class AntlrProgram extends MiniGPLangBaseVisitor<Program> {
 
     public static ArrayList<Integer> programOutput = new ArrayList<>();
     public static boolean didProgramFail = false;
-    public static Scanner inputFile;
+//    public static Scanner inputFile;
+    public static ArrayList<Integer> inputVector;
     static int maxOperationCount;
 
-    public AntlrProgram(String inputFileName, int maxCount){
+    public AntlrProgram(int[] inputVector, int maxCount){
         maxOperationCount = maxCount;
         programOutput = new ArrayList<>();
         VariablesTable.reset();
         didProgramFail = false;
 
-        File inFile = new File("target/" + inputFileName);
-        try {
-            inputFile = new Scanner(inFile);
-        } catch (FileNotFoundException e) {
-            throw new RuntimeException(e);
-        }
+        AntlrProgram.inputVector = Arrays.stream(inputVector).boxed().collect(Collectors.toCollection(ArrayList::new));
+//        File inFile = new File("target/" + inputFileName);
+//        try {
+//            inputFile = new Scanner(inFile);
+//        } catch (FileNotFoundException e) {
+//            throw new RuntimeException(e);
+//        }
     }
 
     @Override
@@ -43,7 +47,7 @@ public class AntlrProgram extends MiniGPLangBaseVisitor<Program> {
             }
         }
 
-        inputFile.close();
+//        inputFile.close();
         return null;
     }
 }
