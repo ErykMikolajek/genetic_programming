@@ -261,7 +261,7 @@ class GProjectTest {
     }
 
     @Test
-    void TestBool_and() {
+    void TestBool_AND() {
         int[][] test = {
                 {4, 2, 1},
                 {0, 0, 0},
@@ -281,7 +281,7 @@ class GProjectTest {
         GProject.run(100, test, 300);
     }
     @Test
-    void TestBool_xor() {
+    void TestBool_XOR() {
         int[][] test = {
                 {4, 2, 1},
                 {0, 0, 0},
@@ -291,11 +291,31 @@ class GProjectTest {
         GProject.run(100, test, 300);
     }
     @Test
-    void TestBool_not() {
+    void TestBool_NOT() {
         int[][] test = {
                 {2, 1, 1},
                 {0, 1},
                 {1, 0}};
+        GProject.run(100, test, 300);
+    }
+    @Test
+    void TestBool_NOR() {
+        int[][] test = {
+                {4, 2, 1},
+                {0, 0, 1},
+                {0, 1, 0},
+                {1, 0, 0},
+                {1, 1, 0}};
+        GProject.run(100, test, 300);
+    }
+    @Test
+    void TestBool_NAND() {
+        int[][] test = {
+                {4, 2, 1},
+                {0, 0, 1},
+                {0, 1, 1},
+                {1, 0, 1},
+                {1, 1, 0}};
         GProject.run(100, test, 300);
     }
 }
