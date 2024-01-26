@@ -7,7 +7,16 @@ public class GProject {
 
     public static void main(String[] args) {
 //        run(100000);
-        System.out.println(280/10);
+        Individual program1 = new Individual();
+        program1.generate(5);
+        System.out.println(program1.plot());
+        Individual program2 = new Individual(program1);
+        program2.mutate();
+        program2.mutate();
+        program2.mutate();
+        System.out.println(program1.plot());
+        System.out.println("-------------------");
+        System.out.println(program2.plot());
     }
 
     public static void run(int iterations){

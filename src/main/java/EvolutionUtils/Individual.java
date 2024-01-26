@@ -8,6 +8,7 @@ import java.util.*;
 import static java.lang.Math.min;
 
 import GrammarNodes.*;
+import Interpreter.Extensions.VariablesTable;
 import Interpreter.InterpreterInterface;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -32,6 +33,9 @@ public class Individual {
     public Individual(Node root){
         programHead = root;
     }
+    public Individual(Individual other) {
+        this.programHead = other.programHead.copy();
+    }
     public Individual() {}
 
     public void generate(int depth){
@@ -46,6 +50,10 @@ public class Individual {
         ArrayList<Integer> returnArray = interpreter.evaluateProgram(this.plot(), inputVector);
         this.isFailed = interpreter.didProgramFail;
         return returnArray;
+    }
+
+    public double getFitness() {
+        return fitness;
     }
 
     public Individual crossover(Individual parent2){
@@ -180,6 +188,7 @@ public class Individual {
     }
 
     public void mutate(){
+        Program.maxVariableId = VariablesTable.savedVariables.size();
         while (true){
             Node node = this.getRandomNode(this.programHead);
 
@@ -302,6 +311,10 @@ public class Individual {
             return 0;
         }
     }
+
+//    public Node copy(){
+//       return programHead.copy();
+//    }
 
     public void serialize(String filePath) {
         try {

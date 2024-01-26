@@ -23,6 +23,13 @@ public class Variable extends Node{
         return output;
     }
 
+    public Variable copy(){
+        if (rule == PossibleVariables.VARIABLE_NAME)
+            return new Variable(rule, variableName);
+        else
+            return new Variable(rule, variableValue);
+    }
+
     @Override
     public String getSuperClass() {
         return "Variable";

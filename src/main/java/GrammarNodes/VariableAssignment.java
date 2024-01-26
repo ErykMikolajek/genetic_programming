@@ -11,6 +11,11 @@ public class VariableAssignment extends Node{
     public String plot(){
         return variableName + " = " + child.plot() + " ";
     }
+    public VariableAssignment copy(){
+        return new VariableAssignment(
+                this.child.copy(), variableName
+        );
+    }
 
     @Override
     public String getSuperClass() {

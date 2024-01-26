@@ -189,7 +189,7 @@ class GProjectTest {
                 {94, -7, -7, -56, -67, 92, 8, -46, 47, -72, -1},
                 {53, 74, -56, 79, 21, 86, 8, 13, 42, -40, 28}};
 
-        GProject.run(100, test, 15);
+        GProject.run(1000, test, 15);
     }
     @Test
     void TestBenchmark_2() { //Small or Large: if n < 100 return 0 if n >= 200 return 1

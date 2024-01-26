@@ -22,6 +22,12 @@ public class LogicalOperator extends Node{
         return output;
     }
 
+    public LogicalOperator copy(){
+        return new LogicalOperator(
+          this.rule, this.children.get(0).copy(), this.children.get(1).copy()
+        );
+    }
+
     @Override
     public String getSuperClass() {
         return "LogicalOperator";

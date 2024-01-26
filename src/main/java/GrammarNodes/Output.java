@@ -9,6 +9,9 @@ public class Output extends Node{
     public String plot(){
         return "output " + child.plot();
     }
+    public Output copy(){
+        return new Output(this.child.copy());
+    }
 
     @Override
     public String getSuperClass() {

@@ -2,10 +2,8 @@ package EvolutionUtils;
 
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Random;
-import java.util.Scanner;
+import java.lang.reflect.Array;
+import java.util.*;
 
 import static java.lang.Math.abs;
 
@@ -94,12 +92,17 @@ public class Population {
         // 5 - previous best individuals, 25% - crossovers, 25% - best individuals mutations,
         // 25% - children mutations, 25% - 5 - new individuals
         ArrayList<Individual> newIndividuals = new ArrayList<>(populationSize);
-        newIndividuals.addAll(bestIndividuals);
+        for (Individual bestIndividual : bestIndividuals){
+            Individual newBest = new Individual(bestIndividual);
+            newBest.fitness = bestIndividual.fitness;
+            newIndividuals.add(newBest);
+        }
 
         // best individuals mutations:
         for (int j = 0; j < populationSize/4; j++) {
-            Individual bestIndividualMutation = bestIndividuals.get(j % bestIndividuals.size());
+            Individual bestIndividualMutation = new Individual(bestIndividuals.get(j % bestIndividuals.size()));
             bestIndividualMutation.mutate();
+            bestIndividualMutation.fitness = 0;
             newIndividuals.add(bestIndividualMutation);
         }
 
@@ -108,12 +111,19 @@ public class Population {
             int program1 = random.nextInt(bestIndividuals.size());
             int program2 = random.nextInt(bestIndividuals.size());
             while (program1 == program2) program2 = random.nextInt(bestIndividuals.size());
-            Individual crossoverIndividual = bestIndividuals.get(program1).crossover(bestIndividuals.get(program2));
+            Individual parent1 = new Individual(bestIndividuals.get(program1));
+            Individual parent2 = new Individual(bestIndividuals.get(program2));
+//            Individual crossoverIndividual = new Individual(
+//                    bestIndividuals.get(program1).crossover(bestIndividuals.get(program2)));
+            Individual crossoverIndividual = new Individual(parent1.crossover(parent2));
+            crossoverIndividual.fitness = 0;
             newIndividuals.add(crossoverIndividual);
 
             // children mutations
-            crossoverIndividual.mutate();
-            newIndividuals.add(crossoverIndividual);
+            Individual crossoverMutation = new Individual(crossoverIndividual);
+            crossoverMutation.mutate();
+            crossoverMutation.fitness = 0;
+            newIndividuals.add(crossoverMutation);
         }
         // new individuals
         int individualsLeft = populationSize - newIndividuals.size();
@@ -122,7 +132,9 @@ public class Population {
             randomIndividual.generate(this.PROGRAMS_DEPTH);
             newIndividuals.add(randomIndividual);
         }
-        this.population = newIndividuals;
+        this.population.clear();
+        this.population.addAll(newIndividuals);
+
     }
 
     public void updatePopulationFitness(){
@@ -139,8 +151,9 @@ public class Population {
                 double grammaticalScore = individual.isFailed ? 999 : 0;
                 similarityRatio += grammaticalScore;
             }
-            individual.fitness = similarityRatio * similarityRatio;
-            if (individual.fitness <= FIT_THRESHOLD){
+            individual.fitness = similarityRatio;
+
+            if (individual.fitness <= FIT_THRESHOLD) {
                 isProblemSolved = true;
                 solvedIndividual = individual;
                 break;
@@ -166,26 +179,23 @@ public class Population {
 
     public ArrayList<Individual> selectKBest(int k){
         ArrayList<Individual> elite = new ArrayList<>(k);
-
+        ArrayList<Individual> populationCopy = new ArrayList<>(this.population);
         for (int i = 0; i < k; i++) {
-            int maxIndex = 0;
-            for (int j = 1; j < populationSize; j++) {
-                if (population.get(j).fitness < population.get(maxIndex).fitness) {
+            int maxIndex = 0, popTempSize = populationCopy.size();
+            for (int j = 1; j < popTempSize; j++) {
+                if (populationCopy.get(j).fitness < populationCopy.get(maxIndex).fitness) {
                     maxIndex = j;
                 }
             }
-            elite.add(population.get(maxIndex));
+            elite.add(populationCopy.remove(maxIndex));
         }
         return elite;
     }
 
     public void plotData(){
         double avgFitness = 0;
-//        Individual bestOfPopulation = population.get(0);
         for (Individual ind : population) {
             avgFitness += ind.fitness;
-//            if (ind.fitness < bestOfPopulation.fitness)
-//                bestOfPopulation = ind;
         }
         avgFitness /= populationSize;
         Individual bestOfPopulation = selectKBest(1).get(0);

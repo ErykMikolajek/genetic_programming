@@ -10,6 +10,7 @@ public abstract class Node {
     public Node child = null;
 
     public abstract String plot();
+    public abstract Node copy();
 
     public abstract String getSuperClass();
 }

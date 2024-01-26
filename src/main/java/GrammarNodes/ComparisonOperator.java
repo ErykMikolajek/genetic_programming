@@ -29,6 +29,12 @@ public class ComparisonOperator extends Node{
         return output;
     }
 
+    public ComparisonOperator copy(){
+        return new ComparisonOperator(
+          this.rule, this.children.get(0).copy(), this.children.get(1).copy()
+        );
+    }
+
     @Override
     public String getSuperClass() {
         return "ComparisonOperator";

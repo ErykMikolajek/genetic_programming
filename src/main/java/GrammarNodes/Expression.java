@@ -26,6 +26,12 @@ public class Expression extends Node{
         return output;
     }
 
+    public Expression copy(){
+        return new Expression(
+                this.rule, this.children.get(0).copy(), this.children.get(1).copy()
+        );
+    }
+
     @Override
     public String getSuperClass() {
         return "Expression";

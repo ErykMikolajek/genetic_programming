@@ -27,6 +27,15 @@ public class Loop extends Node {
         return output.toString();
     }
 
+    public Loop copy(){
+        ArrayList<Node> childrenBlockCopy = new ArrayList<>();
+        for (Node n : children)
+            childrenBlockCopy.add(n.copy());
+        return new Loop(
+            this.rule, this.statementExpressionChild.copy(), childrenBlockCopy
+        );
+    }
+
     @Override
     public String getSuperClass() {
         return "Loop";

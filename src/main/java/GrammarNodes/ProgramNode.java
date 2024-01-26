@@ -18,6 +18,15 @@ public class ProgramNode extends Node{
         return output.toString();
     }
 
+    public ProgramNode copy(){
+        ArrayList<Node> childrenCopy = new ArrayList<>();
+        for (Node n : children)
+            childrenCopy.add(n.copy());
+        return new ProgramNode(
+                childrenCopy
+        );
+    }
+
     @Override
     public String getSuperClass() {
         return "ProgramNode";
