@@ -318,4 +318,14 @@ class GProjectTest {
                 {1, 1, 0}};
         GProject.run(100, test, 300);
     }
+    @Test
+    void TestBool_XNOR() {
+        int[][] test = {
+                {4, 2, 1},
+                {0, 0, 1},
+                {0, 1, 0},
+                {1, 0, 0},
+                {1, 1, 1}};
+        GProject.run(100, test, 300);
+    }
 }
